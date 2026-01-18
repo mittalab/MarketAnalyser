@@ -1,352 +1,205 @@
-Below is a **complete, professional `README.md`** that captures:
+# Institutional Futures & Options Market State Engine
 
-* The **mental model**
-* The **institutional trading philosophy**
-* The **strategy logic**
-* The **system architecture**
-* The **execution rules**
-* The **code structure**
-* The **future roadmap**
+This project implements an **institution-grade futures and options analysis engine**
+designed to identify **big money behavior**, **risk transfer**, and **high-quality
+directional trade opportunities** in Indian equity markets.
 
-Anyone reading this file will understand the **entire project and reasoning** without reading our conversation.
-
----
-
-```markdown
-# 📈 Institutional Big-Money Aligned Trading System (EOD, Indian F&O)
-
-## Overview
-
-This project implements an **End-of-Day (EOD), institutional-grade trading system** for the Indian equity derivatives market (Stock Futures & Stock Options).
-
-The system is **not a pattern-based strategy**.  
-It is a **risk-flow and positioning-based framework**, designed to align trades with **big money (institutions, FIIs, DIIs)** by analyzing:
-
-- Futures **price + open interest**
-- Options **open interest, OI change, and strike clustering**
-- Liquidity, spread, and execution risk
-- Risk transfer dynamics between market participants
-
-The goal is **directional swing trading (1–7 days)** with:
-- 2–3 high-quality trades per week
-- Maximum **5% capital risk per trade**
-- Fully **rule-based, automatable decisions**
+The system is explicitly designed for:
+- Short-term to swing trading (3–7 days)
+- Futures as the primary instrument
+- Options as a risk and confirmation layer
+- Low trade frequency, high signal quality
 
 ---
 
-## Core Philosophy (Mental Model)
+## 1. CORE PHILOSOPHY
 
-### Retail Thinks:
-- Risk = price going against me
-- Support/resistance = horizontal lines
-- Breakout = opportunity
-- Volume spike = confirmation
+This system is based on one guiding principle:
 
-### Institutions Think:
-- Risk = loss of control over **liquidity, exposure, and time**
-- Support/resistance = **where positions were built**
-- Breakout = **risk transfer opportunity**
-- Volume spike = **exit liquidity**
+> Futures define the market regime.  
+> Options define where and how risk is being transferred.
 
-> **Price moves only after risk has been transferred away from institutional books.**
+We explicitly separate:
+- **Market State (slow, structural)**
+- **Signals (fast, tactical)**
 
-This system is built to:
-- Enter **before risk transfer**
-- Exit **during risk transfer**
-- Avoid trading where institutions are exiting
+The engine avoids reacting to 1-day noise and instead focuses on
+**consistent behavior over time**, exactly how professional desks operate.
 
 ---
 
-## What Is “Big Money Alignment”?
+## 2. DATA MODELS (AUTHORITATIVE)
 
-Institutions cannot:
-- Enter or exit aggressively
-- Chase price
-- Trade illiquid instruments
+### 2.1 Futures Data (`futures_df`)
 
-They must:
-- Accumulate slowly
-- Use futures + options to hedge and transfer risk
-- Exit when liquidity arrives (often trapping retail)
+Granularity: 1 row per trading day (EOD)
 
-This system tracks **those footprints**.
+Columns:
+- `date`   : trading date
+- `open`   : futures open
+- `high`   : futures high
+- `low`    : futures low
+- `close`  : futures close
+- `volume` : traded volume
+- `oi`     : futures open interest (daily snapshot)
 
----
-
-## Market State Framework
-
-Every stock is classified into one of the following **market states** at EOD:
-
-### 1. ACCUMULATION
-- Futures price ↑ and OI ↑
-- Price sideways / controlled
-- Put OI building below price
-- Volatility compressing
-
-➡ Institutions are **building positions**
+Notes:
+- Historical OI is built by **your own daily snapshots**
+- FYERS provides only the current OI, not historical
 
 ---
 
-### 2. RISK TRANSFER
-- Price ↑ but Futures OI ↓
-- Call buying increases
-- Volume spikes with poor follow-through
+### 2.2 Options Data (`option_df`)
 
-➡ Institutions are **offloading risk to others**
+Granularity: 1 row per strike, per option type, per expiry, per day
 
----
+Columns:
+- `date`
+- `expiry`
+- `strike`
+- `type` (`CE` / `PE`)
+- `oi`
+- `oi_change`
+- `volume`
+- `bid`
+- `ask`
 
-### 3. EXPANSION
-- Accumulation completed
-- Risk transfer largely done
-- Price trends with shallow pullbacks
-
-➡ Price is free to move
-
----
-
-### 4. DISTRIBUTION / UNWINDING
-- Price ↓ with OI behavior confirming exits
-- Heavy Call OI above price
-- Failed rallies
-
-➡ Short-side or exit-only zone
+Notes:
+- Options are analyzed as **daily snapshots**
+- Historical behavior is inferred by storing snapshots over time
 
 ---
 
-## Institutional Support & Resistance
+## 3. MARKET STATE (FUTURES-BASED)
 
-This system **does not draw lines**.
+Market state is **structural** and uses a rolling lookback (default: 7 days).
 
-### Support Zone =
-- Strike with **maximum Put OI**
-- Positive Put OI change
-- Prior accumulation range low
+Daily price–OI relationships are classified as:
+- Price ↑ + OI ↑ → Accumulation
+- Price ↑ + OI ↓ → Risk transfer
+- Price ↓ + OI ↑ → Short build
+- Price ↓ + OI ↓ → Unwind
 
-### Resistance Zone =
-- Strike with **maximum Call OI**
-- Positive Call OI change
-- Prior distribution high
+The dominant behavior over the lookback defines the regime:
+- `ACCUMULATION`
+- `DISTRIBUTION`
+- `RISK_TRANSFER`
+- `NEUTRAL`
 
-These are **zones**, not exact prices.
-
----
-
-## Signal Logic (EOD Only)
-
-### LONG Signal
-Generated at EOD when:
-- Market state = ACCUMULATION or early EXPANSION
-- Futures price ↑ and OI ↑
-- Put OI increasing
-- Call OI not increasing aggressively
-
-➡ Enter next day using hybrid execution
+**Market state is slow to change and never flips on a single day.**
 
 ---
 
-### SHORT Signal
-Generated at EOD when:
-- Market state = DISTRIBUTION or RISK TRANSFER
-- Futures price ↓ and OI ↑
-- Call OI increasing
-- Put OI not increasing
+## 4. OPTIONS ANALYSIS (CONFIRMATION & RISK)
+
+Options never define the regime.
+They **confirm, delay, or invalidate** futures-based decisions.
+
+### 4.1 Option Buckets
+
+Strikes are bucketed dynamically using a relevance zone:
+- Preferred: `spot ± 1 × ATR`
+- Fallback: ATM ± 2 strikes
+
+Buckets:
+- PUT_ITM / PUT_ATM / PUT_OTM
+- CALL_ITM / CALL_ATM / CALL_OTM
+
+Illiquid strikes are filtered out.
 
 ---
 
-### EXIT Signal
-Generated when:
-- Price moves in favor but Futures OI ↓
-- Option writers unwind
-- High volume with no follow-through
+### 4.2 Core Option Metrics
 
-➡ Exit next trading day morning
+#### DPI — Downside Protection Index
+Measures new downside protection:
+DPI = PUT_ATM_oi_change + PUT_ITM_oi_change
 
----
+r
+Copy code
 
-## Execution Philosophy (Hybrid)
+#### USI — Upside Supply Index
+Measures upside supply (call writing):
+USI = CALL_ATM_oi_change + CALL_OTM_oi_change
 
-This is **not intraday trading**.
+shell
+Copy code
 
-### Decision Time
-- After market close (EOD)
+#### ORB — Option Risk Balance
+Net risk bias:
+ORB = DPI − USI
 
-### Execution Time (Next Day)
-- **Partial entry near open**
-- **Completion on pullback**
-- No new entries after **12:00 PM**
+yaml
+Copy code
 
-### Why?
-- Liquidity is best near open
-- Institutions add size on pullbacks
-- Afternoon moves are often noise or risk transfer
-
----
-
-## Instrument Selection Logic
-
-### Default: Futures
-Used when:
-- Bid–ask spread is tight
-- Liquidity is clean
-- No major event risk
-
-### Switch to Options when:
-- Spread widens
-- Event risk exists
-- Volatility expected to expand
-
-Only **ATM / ITM options** are allowed.  
-No OTM speculation.
+Interpretation:
+- ORB > 0 → risk absorbed (supportive)
+- ORB < 0 → risk transferred (fragile / bearish)
 
 ---
 
-## Risk Management (Non-Negotiable)
+## 5. BUCKET MIGRATION (KEY EDGE)
 
-- Max risk per trade: **5% of capital**
-- Futures: risk defined by **structure-based stop**
-- Options: defined-risk premium loss
-- No averaging losers
-- No forced trades
+Static OI shows **where risk is**.
+Migration shows **where risk is moving**.
 
-> **Skipping trades is part of the strategy.**
+Tracked daily:
+- PUT_ATM weighted strike (support)
+- CALL_ATM weighted strike (resistance)
 
----
+Trends over lookback:
+- PUT_ATM rising → accumulation strengthening
+- CALL_ATM falling → distribution tightening
 
-## System Architecture
-
-### High-Level Flow
-
-```
-
-EOD Data
-↓
-Market State Classification
-↓
-Institutional S/R Detection
-↓
-Signal Generation
-↓
-Instrument Selection
-↓
-Execution Planning
-↓
-Order Objects (Paper / Live)
-
-````
+Migration modifies:
+- HOLD vs LONG
+- Exit timing
+- Signal confidence
 
 ---
 
-## Project Structure
+## 6. SIGNAL GENERATION (FINAL LOGIC)
 
-```text
-trading_system/
-│
-├── config/
-│   └── settings.py
-│
-├── data/
-│   ├── fyers_client.py
-│   ├── fetch_eod.py
-│   ├── fetch_options.py
-│   └── storage.py
-│
-├── analysis/
-│   ├── futures_oi.py
-│   ├── option_oi.py
-│   ├── market_state.py
-│   ├── levels.py
-│   └── signals.py
-│
-├── execution/
-│   ├── instrument_selector.py
-│   ├── position_sizer.py
-│   ├── execution_plan.py
-│   └── order_model.py
-│
-├── models/
-│   └── stock_context.py
-│
-├── storage/
-│   ├── spot/
-│   ├── futures/
-│   └── options/
-│
-└── main.py
-````
+Signals are produced in stages:
+
+1. Futures define structural market state
+2. Futures generate a raw directional intent
+3. Options (DPI / USI / ORB) validate or delay
+4. Bucket migration confirms consistency
+5. Final signal is emitted:
+  - LONG
+  - SHORT
+  - HOLD
+
+**HOLD is a deliberate, intelligent state — not indecision.**
 
 ---
 
-## Data Source
+## 7. WHY THIS SYSTEM IS DIFFERENT
 
-* **FYERS API**
+- No blind indicators
+- No fixed strike assumptions
+- No 1-day regime flips
+- Explicit risk hierarchy
+- Fully explainable decisions
 
-    * EOD OHLC
-    * Futures Open Interest
-    * Option Chain (CE/PE, OI, OI change, bid/ask)
-
-Data is persisted locally (CSV-first, DB-ready).
-
----
-
-## What This System Is NOT
-
-❌ No indicators (RSI, MACD, etc.)
-❌ No chart patterns
-❌ No intraday scalping
-❌ No discretionary overrides
-❌ No prediction of news
-
-This is a **risk-alignment system**, not a forecasting engine.
+This is how professional derivative desks actually reason about markets.
 
 ---
 
-## Current Status
+## 8. NEXT EXTENSIONS
 
-### Implemented
-
-* Market state engine
-* Futures OI analysis
-* Option chain parsing (FYERS-compatible)
-* Institutional S/R
-* Signal generation
-* Instrument selection
-* Position sizing
-* Execution planning (paper)
-
-### Next (Phase 4)
-
-* Live FYERS order placement
-* Trade lifecycle management
-* Logging & performance metrics
-* Multi-stock scanner
-* Backtesting framework
+- ORB trend normalization
+- Expiry-aware futures stitching
+- Interactive dashboards
+- Portfolio-level risk aggregation
+- Live paper trading
 
 ---
 
-## Final Principle
+## FINAL NOTE
 
-> **Institutions buy when risk is boring
-> and sell when risk looks exciting.**
+This system is designed to trade **less**, but trade **with institutions**,
+not against them.
 
-This system is designed to trade **boring risk**, not exciting candles.
-
----
-
-## Disclaimer
-
-This project is for **educational and research purposes**.
-Trading involves risk. Use responsibly and test thoroughly before live deployment.
-
-```
-
----
-
-If you want, next I can:
-- Convert this into a **Notion-style doc**
-- Add **architecture diagrams**
-- Add a **“How to run”** section
-- Add **backtesting assumptions**
-
-Just tell me what you want to enhance next.
-```
+If a trade does not pass all layers, the correct action is HOLD.

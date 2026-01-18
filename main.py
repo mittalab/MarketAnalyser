@@ -1,48 +1,119 @@
-from data.fyers_client import get_fyers_client
-from data.fetch_eod import fetch_ohlc
-from data.fetch_options import fetch_option_chain
-from data.storage import save_csv
-from analysis.futures_oi import analyze_futures_oi
-from analysis.market_state import classify_market_state
-from analysis.option_oi import analyze_option_oi
-from analysis.levels import define_levels
-from analysis.signals import generate_signal
-from models.stock_context import StockContext
-import pandas as pd
+from analysis.signal_engine import generate_final_signal
+from analysis.signal_engine import classify_market_state_futures
+from execution.instrument_selector import select_instrument
+from execution.position_sizer import size_futures_position
+from execution.execution_plan import build_execution_plan
+from execution.order_model import Order
+from data.analysis_derivative_data import populate_derivatives_data
 
-SYMBOL = "NSE:M&M-EQ"
 
-def run():
-    fyers = get_fyers_client()
+CAPITAL = 1_000_000
+RISK_PCT = 0.05
 
-    # Spot EOD
-    candles = fetch_ohlc(fyers, SYMBOL, days=30)
-    df_candles = pd.DataFrame(candles, columns=["ts","o","h","l","c","v"])
-    save_csv(df_candles, "storage/spot", f"{SYMBOL}.csv")
+def plan_trade(stock_context, futures_bid, futures_ask):
+    # Instrument decision
+    spread_pct = (futures_ask - futures_bid) / ((futures_bid + futures_ask)/2)
+    instrument_decision = select_instrument(spread_pct)
 
-    # Futures OI (placeholder until API hooked)
-    futures_oi_series = [1000000 + i*10000 for i in range(len(df_candles))]
-    price_oi = analyze_futures_oi(candles, futures_oi_series)
+    # Build execution plan
+    plan = build_execution_plan(
+        stock_context.signal,
+        stock_context.levels,
+        stock_context.price_oi["price_change"],  # proxy
+        instrument_decision["instrument"]
+    )
 
-    market_state = classify_market_state(price_oi)
+    if not plan:
+        return None
 
-    # Options
-    option_df = fetch_option_chain(fyers, SYMBOL)
-    save_csv(option_df, "storage/options", f"{SYMBOL}.csv")
+    # Size position (futures example)
+    qty = size_futures_position(
+        CAPITAL,
+        RISK_PCT,
+        entry=plan["pullback_entry"]["price"],
+        stop=stock_context.levels["support_zone"]
+    )
 
-    option_zones = analyze_option_oi(option_df)
-    levels = define_levels(df_candles["c"].iloc[-1], option_zones)
+    order = Order(
+        symbol=stock_context.symbol,
+        side=stock_context.signal,
+        quantity=qty,
+        price=plan["pullback_entry"]["price"],
+        order_type="LIMIT"
+    )
 
-    signal = generate_signal(market_state, price_oi, option_zones)
+    return order
 
-    stock = StockContext(SYMBOL)
-    stock.update(market_state, price_oi, option_zones, levels, signal)
+def run(SYMBOL_EQ):
 
-    print("STOCK:", SYMBOL)
-    print("STATE:", stock.market_state)
-    print("SIGNAL:", stock.signal)
-    print("OPTION ZONES:", stock.option_zones)
-    print("LEVELS:", stock.levels)
+    # --------------------------------------------------
+    # 1️⃣ LOAD DERIVATIVES DATA DATA
+    # --------------------------------------------------
+    print(f"Getting data for {SYMBOL_EQ}")
+    derivatives_df = populate_derivatives_data(SYMBOL_EQ)
+    futures_df = derivatives_df[0]
+    options_df = derivatives_df[1]
+
+    futures_df.set_index("date")
+    futures_df.sort_values("date", inplace=True)
+    futures_df.reset_index(drop=True, inplace=True)
+
+    print(futures_df)
+    # options_df.set_index("date")
+    # options_df.sort_values("date", inplace=True)
+    # options_df.reset_index(drop=True, inplace=True)
+
+    futures_state = classify_market_state_futures(futures_df)
+    print(futures_state)
+    # # --------------------------------------------------
+    # # 2️⃣ WALK-FORWARD ANALYSIS (NO LEAKAGE)
+    # # --------------------------------------------------
+    # state_series = {}
+    # signal_series = {}
+    #
+    # option_metrics_series = {}
+    # migration_series = {}
+    #
+    # migration_history = []
+    #
+    # for i in range(0, len(futures_df)):
+    #     window = futures_df.iloc[: i + 1]
+    #
+    #     # Skip if OI not fully available yet
+    #     if window["oi"].isna().any():
+    #         continue
+    #
+    #     result = generate_final_signal(
+    #         futures_df_window=window,
+    #         option_df_today=options_df,
+    #         migration_history=migration_history,
+    #         atr=None  # ATR can be plugged in later
+    #     )
+    #
+    #     current_date = window.iloc[-1]["date"]
+    #
+    #     state_series[current_date] = result["market_state"]
+    #     signal_series[current_date] = result["final_signal"]
+    #
+    #     option_metrics_series[current_date] = result["option_metrics"]
+    #     migration_series[current_date] = result["migration_today"]
+    #
+    # # --------------------------------------------------
+    # # 5️⃣ PRINT LATEST ENGINE OUTPUT
+    # # --------------------------------------------------
+    # last_date = futures_df.iloc[-1]["date"]
+    #
+    # print("\n========== ENGINE OUTPUT ==========")
+    # print("Symbol        :", SYMBOL_EQ)
+    # print("Date          :", last_date.date())
+    # print("Close Price   :", futures_df.iloc[-1]["close"])
+    # print("Open Interest :", futures_df.iloc[-1]["oi"])
+    # print("Market State  :", state_series.get(last_date))
+    # print("Signal        :", signal_series.get(last_date))
+    #
+    # if last_date in option_metrics_series:
+    #     print("Option Metrics:", option_metrics_series[last_date])
 
 if __name__ == "__main__":
-    run()
+    SYMBOL = "JIOFIN"
+    run(SYMBOL)
