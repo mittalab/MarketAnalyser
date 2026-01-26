@@ -1,10 +1,14 @@
 import matplotlib.pyplot as plt
+import logging
+
+logger = logging.getLogger(__name__)
 
 def plot_option_oi_by_strike(option_df, spot_price):
     """
     option_df columns:
     strike, type (CE/PE), oi_change
     """
+    logger.info(f"Plotting option OI by strike with spot price: {spot_price}")
 
     ce = option_df[option_df["type"] == "CE"]
     pe = option_df[option_df["type"] == "PE"]

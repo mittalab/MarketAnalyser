@@ -1,8 +1,14 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
 def overlay_state_and_signal(ax, df, state_series, signal_series):
     """
     state_series: dict(date -> market_state)
     signal_series: dict(date -> signal)
     """
+    logger.info("Overlaying state and signal on plot...")
+    logger.debug(f"Processing {len(state_series)} states and {len(signal_series)} signals.")
 
     for i, row in df.iterrows():
         date = row["date"]

@@ -1,3 +1,4 @@
+LOGGING_ENABLED = True
 CAPITAL = 1_000_000  # example
 MAX_RISK_PCT = 0.05
 

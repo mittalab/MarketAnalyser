@@ -1,18 +1,23 @@
+import logging
 from data.fyers_client import get_fyers_client
 from data.CandleResolution import CandleResolution
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+logger = logging.getLogger(__name__)
+
 def price_with_highest_volume(bids):
+    logger.debug("Calculating price with highest volume")
     if not bids:
+        logger.warning("Bids list is empty, cannot calculate price with highest volume")
         return None
 
     highest_volume_bid = max(bids, key=lambda x: x.get("volume", 0))
     return highest_volume_bid.get("price")
 
 def fetch_futures_spot_oi(fyers, exchg, symbol, date):
-
+    logger.info(f"Fetching futures and spot OI for {exchg}:{symbol} on {date}")
     curr_time = int(time.time())
     """
     Fetches latest Futures OI using FYERS quotes API.
@@ -20,14 +25,18 @@ def fetch_futures_spot_oi(fyers, exchg, symbol, date):
     futures_symbol = exchg + ":" + symbol + date + "FUT"
     fut_response = fyers.depth({"symbol": futures_symbol, "ohlcv_flag": "1"})
     if fut_response["s"] != "ok":
+        logger.error(f"Failed to fetch futures OI for {futures_symbol}")
         raise Exception(f"Failed to fetch futures OI for {futures_symbol}")
     fut_quote = fut_response["d"][futures_symbol]
 
     spot_symbol = exchg + ":" + symbol + "-EQ"
     spot_response = fyers.depth({"symbol": spot_symbol, "ohlcv_flag": "1"})
     if spot_response["s"] != "ok":
+        logger.error(f"Failed to fetch spot OI for {spot_symbol}")
         raise Exception(f"Failed to fetch spotures OI for {spot_symbol}")
     spot_quote = spot_response["d"][spot_symbol]
+    
+    logger.debug("Successfully fetched futures and spot OI")
 
     return {
         "time": curr_time,
@@ -53,11 +62,12 @@ def is_330pm_ist(epoch_ts: int) -> bool:
     dt = datetime.fromtimestamp(epoch_ts, tz=IST)
     return dt.hour == 15 and dt.minute == 30
 
-def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_to, resolution: CandleResolution):
+def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_to, resolution: CandleResolution, lastoi):
     """
     Fetches latest Futures OI using FYERS quotes API.
     Response is an array with value order epochtime, open, high , low, close, volume, oi
     """
+    logger.info(f"Fetching historical futures OI for {exchg}:{symbol} ({exp_date}) from {range_from} to {range_to} with {resolution} resolution")
     futures_symbol = exchg + ":" + symbol + exp_date + "FUT"
     fut_data = {
         "symbol":futures_symbol,
@@ -71,9 +81,11 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
     fut_response = fyers.history(fut_data)
 
     if fut_response["s"] == "no_data":
+        logger.warning(f"No historical futures OI data found for {futures_symbol}")
         return []
 
     if fut_response["s"] != "ok":
+        logger.error(f"Failed to fetch historical futures OI for {futures_symbol}: {fut_response}")
         raise Exception(f"Failed to fetch historical futures OI for {futures_symbol}: {fut_response}")
 
     fut_data = fut_response["candles"]
@@ -89,6 +101,7 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
     }
     spot_response = fyers.history(spot_data)
     if spot_response["s"] != "ok":
+        logger.error(f"Failed to fetch historical spot data for {spot_symbol}: {spot_response}")
         raise Exception(f"Failed to fetch historical spot data for {spot_symbol}: {spot_response}")
 
     spot_data = spot_response["candles"]
@@ -96,7 +109,9 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
     results = []
 
     last_candle_oi = fut_data[0][6]
-    last_day_oi = 0
+    if int(lastoi) != 0:
+        last_candle_oi = int(lastoi)
+    last_day_oi = int(lastoi)
 
     for fut, spot in zip(fut_data, spot_data):
         epoch_time = get_epoch_time(fut[0], resolution)
@@ -126,17 +141,18 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
             last_day_oi = fut[6]
 
         results.append(result)
-
+        
+    logger.debug(f"Returning {len(results)} historical OI records")
     return results
 
 def test():
     fyers = get_fyers_client()
     # futures_oi = fetch_futures_spot_oi(fyers, "NSE", "M&M", "26JAN")
-    # print(futures_oi)
+    # logger.info(futures_oi)
     # get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2025-12-29", "2026-01-14", CandleResolution.MIN_15)
-    # print(get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2026-01-13", "2026-01-15", CandleResolution.MIN_15))
+    # logger.info(get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2026-01-13", "2026-01-15", CandleResolution.MIN_15))
     # get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2026-01-13", "2026-01-15", CandleResolution.MIN_1)
-    print(get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2026-01-16", "2026-01-16", CandleResolution.DAY_1))
+    logger.info(get_hitorical_futures_oi(fyers, "NSE", "M&M", "26JAN", "2026-01-16", "2026-01-16", CandleResolution.DAY_1, 0.0))
 
     #1768348800, 3675.4, 3683, 3637.6, 3652.2, 953000, 17685800
 

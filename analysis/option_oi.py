@@ -1,9 +1,14 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
 def analyze_option_oi(df):
     """
     Aggregates CE/PE by strike and finds institutional zones.
     """
-
+    logger.info("Analyzing option OI...")
     if df.empty:
+        logger.warning("Option OI dataframe is empty, cannot analyze.")
         return None
 
     ce = df[df["type"] == "CE"]
@@ -25,6 +30,9 @@ def analyze_option_oi(df):
 
     call_wall = ce_group.loc[ce_group["oi"].idxmax()]
     put_floor = pe_group.loc[pe_group["oi"].idxmax()]
+
+    logger.debug(f"Call wall at {call_wall['strike']} with OI {call_wall['oi']}")
+    logger.debug(f"Put floor at {put_floor['strike']} with OI {put_floor['oi']}")
 
     return {
         "call_resistance": call_wall["strike"],

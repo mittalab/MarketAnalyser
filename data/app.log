@@ -1,0 +1,419 @@
+026-01-25 20:42:46,649 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:42:46,650 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:42:46,652 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:42:46,652 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 20:42:46,652 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 20:43:29,032 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:43:29,032 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:43:29,034 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:43:29,035 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 20:43:29,035 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 20:45:39,258 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:45:39,259 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:45:39,259 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:45:39,259 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 20:45:39,260 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 20:45:39,260 - utils.expiry - INFO - Parsed year: 202626, month: 1
+2026-01-25 20:45:39,260 - utils.expiry - INFO - Previous month: 12/202625
+2026-01-25 20:46:09,005 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:46:09,005 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:46:09,006 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:46:09,006 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 20:46:09,006 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 20:46:42,416 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:46:42,416 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:46:42,417 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:46:42,417 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 20:46:42,417 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 20:46:42,417 - utils.expiry - INFO - Parsed year: 2026, month: 1
+2026-01-25 20:46:42,417 - utils.expiry - INFO - Previous month: 12/2025
+2026-01-25 20:46:42,417 - utils.expiry - INFO - Last Monday of previous month: 2025-12-29 00:00:00
+2026-01-25 20:46:42,417 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-29 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:46:43,034 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:46:43,057 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:46:43,057 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:46:43,057 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:46:43,067 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 20:46:43,067 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:46:43,368 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:46:43,368 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:30,094 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:48:30,095 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:48:30,095 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:30,121 - main - INFO - Last date found in futures file for M&M: 2026-01-19
+2026-01-25 20:48:30,122 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:48:30,423 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:48:30,424 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:30,431 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:48:30,431 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:48:30,432 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:30,433 - main - INFO - Last date found in futures file for M&M: 2026-01-19
+2026-01-25 20:48:30,433 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:48:30,752 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:48:30,752 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:55,389 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:48:55,389 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:48:55,391 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:55,411 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:48:55,411 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:48:55,717 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:48:55,718 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:55,725 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:48:55,725 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:48:55,725 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:48:55,728 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:48:55,728 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:48:56,033 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:48:56,033 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:50:27,236 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:50:27,237 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:50:27,237 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:50:27,239 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:50:27,239 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:50:27,566 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:50:27,566 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:50:27,579 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:50:27,579 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:50:27,580 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:50:27,581 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:50:27,581 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:50:27,879 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:50:27,879 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:51:23,091 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:51:23,092 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:51:23,093 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:51:23,093 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:51:23,095 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:51:23,095 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:51:23,095 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:51:23,096 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:51:23,427 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-25&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 20:51:23,432 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:51:23,432 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:51:23,439 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:51:23,440 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:51:23,440 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:51:23,440 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:51:23,442 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:51:23,442 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:51:23,442 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-25 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:51:23,443 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:51:23,739 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-25&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 20:51:23,740 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 20:51:23,740 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:52:21,935 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:52:21,936 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:52:21,937 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:52:21,937 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:52:21,939 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:52:21,939 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:52:21,939 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:52:21,940 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:52:22,242 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:52:22,245 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:52:22,546 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:52:22,559 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:52:22,559 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:52:53,512 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:52:53,513 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:52:53,513 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:52:53,514 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:52:53,515 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:52:53,515 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:52:53,515 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:52:53,516 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:52:53,807 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:52:53,814 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:52:54,097 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:52:54,101 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:52:54,101 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:53:07,536 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:53:07,536 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:53:07,537 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:53:07,537 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:53:07,538 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:53:07,538 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:53:07,538 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:53:07,539 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:53:07,831 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:53:07,835 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:53:08,127 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:53:08,131 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:53:08,136 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:54:23,961 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:54:23,961 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:54:23,962 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:54:23,962 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:54:23,964 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:54:23,964 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:54:23,964 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:54:23,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:54:24,306 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:54:24,309 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:54:24,611 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:54:24,616 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:54:24,616 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:54:24,632 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:54:24,633 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:54:24,633 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:54:24,633 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:54:24,634 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:54:24,635 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:54:24,635 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:54:24,635 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:54:24,935 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:54:24,938 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:54:25,341 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:54:25,344 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:54:25,345 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:55:56,209 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:55:56,209 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:55:56,211 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:55:56,211 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:55:56,212 - main - INFO - Last date found in futures file for M&M: 2026-01-02
+2026-01-25 20:55:56,212 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-03 to 2026-01-25
+2026-01-25 20:55:56,212 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-03 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:55:56,213 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:55:56,528 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 400
+2026-01-25 20:55:56,530 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:55:56,806 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-03&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 359
+2026-01-25 20:55:56,812 - data.fetch_futures_oi - DEBUG - Returning 14 historical OI records
+2026-01-25 20:55:56,812 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:55:56,817 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:55:56,817 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:55:56,817 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:55:56,817 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:55:56,832 - main - INFO - Last date found in futures file for M&M: 2026-01-05
+2026-01-25 20:55:56,833 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-06 to 2026-01-25
+2026-01-25 20:55:56,833 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-06 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:55:56,833 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:55:57,136 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-06&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 379
+2026-01-25 20:55:57,138 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:55:57,443 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-06&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 341
+2026-01-25 20:55:57,446 - data.fetch_futures_oi - DEBUG - Returning 13 historical OI records
+2026-01-25 20:55:57,448 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:17,910 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:56:17,911 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:56:17,911 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:56:17,911 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:17,920 - main - INFO - Last date found in futures file for M&M: 2026-01-06
+2026-01-25 20:56:17,920 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-07 to 2026-01-25
+2026-01-25 20:56:17,920 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-07 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:56:17,921 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:18,235 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-07&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 357
+2026-01-25 20:56:18,241 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:18,533 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-07&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 321
+2026-01-25 20:56:18,545 - data.fetch_futures_oi - DEBUG - Returning 12 historical OI records
+2026-01-25 20:56:18,547 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:18,553 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:56:18,553 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:56:18,554 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:56:18,554 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:18,563 - main - INFO - Last date found in futures file for M&M: 2026-01-07
+2026-01-25 20:56:18,563 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-08 to 2026-01-25
+2026-01-25 20:56:18,563 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-08 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:56:18,564 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:18,862 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-08&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 337
+2026-01-25 20:56:18,865 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:19,165 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-08&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 302
+2026-01-25 20:56:19,167 - data.fetch_futures_oi - DEBUG - Returning 11 historical OI records
+2026-01-25 20:56:19,168 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:30,495 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:56:30,495 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:56:30,496 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:56:30,496 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:30,505 - main - INFO - Last date found in futures file for M&M: 2026-01-08
+2026-01-25 20:56:30,506 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-09 to 2026-01-25
+2026-01-25 20:56:30,506 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-09 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:56:30,507 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:30,801 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-09&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 317
+2026-01-25 20:56:30,806 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:31,085 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-09&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 283
+2026-01-25 20:56:31,092 - data.fetch_futures_oi - DEBUG - Returning 10 historical OI records
+2026-01-25 20:56:31,094 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:31,100 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:56:31,101 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:56:31,101 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:56:31,101 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:56:31,112 - main - INFO - Last date found in futures file for M&M: 2026-01-09
+2026-01-25 20:56:31,112 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-10 to 2026-01-25
+2026-01-25 20:56:31,112 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-10 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:56:31,113 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:31,396 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-10&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 295
+2026-01-25 20:56:31,398 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:56:31,695 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-10&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 265
+2026-01-25 20:56:31,697 - data.fetch_futures_oi - DEBUG - Returning 9 historical OI records
+2026-01-25 20:56:31,697 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:57:22,101 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:57:22,103 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:57:22,103 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:57:22,104 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:57:22,127 - main - INFO - Last date found in futures file for M&M: 2025-12-29
+2026-01-25 20:57:22,128 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-30 to 2026-01-25
+2026-01-25 20:57:22,128 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-30 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:57:22,130 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:57:22,482 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-30&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 479
+2026-01-25 20:57:22,488 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:57:22,781 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-30&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 435
+2026-01-25 20:57:22,786 - data.fetch_futures_oi - DEBUG - Returning 18 historical OI records
+2026-01-25 20:57:22,790 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:57:22,795 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:57:22,796 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:57:22,796 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:57:22,796 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:57:22,806 - main - INFO - Last date found in futures file for M&M: 2025-12-30
+2026-01-25 20:57:22,807 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-31 to 2026-01-25
+2026-01-25 20:57:22,807 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-31 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:57:22,807 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:57:23,128 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 462
+2026-01-25 20:57:23,132 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:57:23,438 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 415
+2026-01-25 20:57:23,440 - data.fetch_futures_oi - DEBUG - Returning 17 historical OI records
+2026-01-25 20:57:23,446 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:58:10,617 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:58:10,617 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:58:10,617 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:58:10,618 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:58:10,627 - main - INFO - Last date found in futures file for M&M: 2025-12-31
+2026-01-25 20:58:10,627 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-01 to 2026-01-25
+2026-01-25 20:58:10,627 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-01 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:58:10,628 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:58:10,925 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-01&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 442
+2026-01-25 20:58:10,927 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:58:11,221 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-01&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 393
+2026-01-25 20:58:11,228 - data.fetch_futures_oi - DEBUG - Returning 16 historical OI records
+2026-01-25 20:58:11,229 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:58:11,234 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:58:11,234 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:58:11,235 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:58:11,235 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:58:11,244 - main - INFO - Last date found in futures file for M&M: 2026-01-01
+2026-01-25 20:58:11,244 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-02 to 2026-01-25
+2026-01-25 20:58:11,246 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-02 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:58:11,246 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:58:11,533 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-02&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 421
+2026-01-25 20:58:11,535 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:58:11,818 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2026-01-02&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 374
+2026-01-25 20:58:11,822 - data.fetch_futures_oi - DEBUG - Returning 15 historical OI records
+2026-01-25 20:58:11,826 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:59:36,371 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 20:59:36,372 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 20:59:36,372 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 20:59:36,372 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 20:59:36,374 - main - INFO - Last date found in futures file for M&M: 2025-12-30
+2026-01-25 20:59:36,374 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-31 to 2026-01-25
+2026-01-25 20:59:36,374 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-31 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 20:59:36,375 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:59:36,710 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 462
+2026-01-25 20:59:36,714 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 20:59:36,996 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 415
+2026-01-25 20:59:37,005 - data.fetch_futures_oi - DEBUG - Returning 17 historical OI records
+2026-01-25 21:00:00,237 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:00:00,237 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:00:00,238 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:00:00,238 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:00:00,238 - main - INFO - Last date found in futures file for M&M: 2025-12-30
+2026-01-25 21:00:00,238 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-31 to 2026-01-25
+2026-01-25 21:00:00,238 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-31 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:00:00,239 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:00:00,556 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 462
+2026-01-25 21:00:00,559 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:00:00,864 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 415
+2026-01-25 21:00:00,868 - data.fetch_futures_oi - DEBUG - Returning 17 historical OI records
+2026-01-25 21:00:00,868 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:00:00,872 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:00:00,873 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:00:00,873 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:00:00,873 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:00:00,886 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 21:00:00,886 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-24 to 2026-01-25
+2026-01-25 21:00:00,886 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-24 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:00:00,887 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:00:01,189 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 21:00:01,190 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 21:00:01,190 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:04,779 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:04:04,779 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:04:04,780 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:04:04,780 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:04,781 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 21:04:04,781 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-24 to 2026-01-25
+2026-01-25 21:04:04,782 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-24 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:04:04,783 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:05,086 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 21:04:05,090 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 21:04:05,090 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:05,094 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:04:05,094 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:04:05,095 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:04:05,095 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:05,096 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 21:04:05,096 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-24 to 2026-01-25
+2026-01-25 21:04:05,096 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-24 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:04:05,098 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:05,427 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 21:04:05,430 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 21:04:05,430 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:32,204 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:04:32,204 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:04:32,205 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:04:32,205 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:32,205 - data.storage - WARNING - File not found at storage/futures/26JAN\NSE_M&M_26JAN_FUT.csv
+2026-01-25 21:04:32,205 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-25 21:04:32,205 - utils.expiry - INFO - Parsed year: 2026, month: 1
+2026-01-25 21:04:32,205 - utils.expiry - INFO - Previous month: 12/2025
+2026-01-25 21:04:32,206 - utils.expiry - INFO - Last Monday of previous month: 2025-12-29 00:00:00
+2026-01-25 21:04:32,206 - main - DEBUG - Futures file not found for M&M, fetching historical data from 2025-12-29 to 2026-01-25
+2026-01-25 21:04:32,206 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-29 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:04:32,208 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:32,504 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-29&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 503
+2026-01-25 21:04:32,509 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:32,789 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-29&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 457
+2026-01-25 21:04:32,799 - data.fetch_futures_oi - DEBUG - Returning 19 historical OI records
+2026-01-25 21:04:32,800 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:32,813 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:04:32,814 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:04:32,814 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:04:32,814 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:32,816 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 21:04:32,816 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-24 to 2026-01-25
+2026-01-25 21:04:32,816 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-24 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:04:32,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:33,110 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 21:04:33,113 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 21:04:33,113 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:52,309 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:04:52,309 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:04:52,310 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:04:52,310 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:04:52,322 - main - INFO - Last date found in futures file for M&M: 2025-12-30
+2026-01-25 21:04:52,323 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-31 to 2026-01-25
+2026-01-25 21:04:52,323 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-31 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:04:52,324 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:52,639 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 462
+2026-01-25 21:04:52,641 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:04:52,932 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 415
+2026-01-25 21:05:59,886 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:05:59,886 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:05:59,888 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:05:59,888 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:05:59,888 - main - INFO - Last date found in futures file for M&M: 2025-12-30
+2026-01-25 21:05:59,888 - main - DEBUG - Futures file found for M&M, fetching new data from 2025-12-31 to 2026-01-25
+2026-01-25 21:05:59,888 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2025-12-31 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:05:59,889 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:06:00,212 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 462
+2026-01-25 21:06:00,217 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:06:00,508 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M-EQ&resolution=1D&date_format=1&range_from=2025-12-31&range_to=2026-01-25&cont_flag=1 HTTP/1.1" 200 415
+2026-01-25 21:06:00,517 - data.fetch_futures_oi - DEBUG - Returning 17 historical OI records
+2026-01-25 21:06:00,518 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:06:00,524 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-25 21:06:00,524 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-25 21:06:00,525 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-25 21:06:00,525 - data.storage - INFO - Loading data from NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-25 21:06:00,526 - main - INFO - Last date found in futures file for M&M: 2026-01-23
+2026-01-25 21:06:00,526 - main - DEBUG - Futures file found for M&M, fetching new data from 2026-01-24 to 2026-01-25
+2026-01-25 21:06:00,526 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26JAN) from 2026-01-24 to 2026-01-25 with CandleResolution.DAY_1 resolution
+2026-01-25 21:06:00,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-25 21:06:00,818 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
+2026-01-25 21:06:00,819 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
+2026-01-25 21:06:00,819 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN

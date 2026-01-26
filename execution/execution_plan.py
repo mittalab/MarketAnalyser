@@ -1,10 +1,16 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
 def build_execution_plan(
         signal,
         levels,
         today_close,
         instrument
 ):
+    logger.debug(f"Building execution plan with signal: {signal}, levels: {levels}, today_close: {today_close}, instrument: {instrument}")
     if signal not in ["LONG", "SHORT"]:
+        logger.warning(f"Invalid signal: {signal}. No execution plan will be built.")
         return None
 
     plan = {
@@ -35,4 +41,5 @@ def build_execution_plan(
             "price": levels["resistance_zone"]
         }
 
+    logger.info(f"Execution plan built: {plan}")
     return plan
