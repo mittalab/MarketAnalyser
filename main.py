@@ -9,7 +9,7 @@ from execution.execution_plan import build_execution_plan
 from execution.order_model import Order
 from utils.expiry import get_expiry_YYMMM
 from data.analysis_derivative_data import populate_derivatives_data
-
+from debug.export_all import export_all
 
 CAPITAL = 1_000_000
 RISK_PCT = 0.05
@@ -79,6 +79,8 @@ def run(SYMBOL_EQ):
     migration_series = {}
 
     migration_history = []
+    orb_history = []
+    decisions = []
 
     for i in range(1, len(futures_df)):
         window = futures_df.iloc[: i + 1]
@@ -93,14 +95,17 @@ def run(SYMBOL_EQ):
             continue
 
         result = generate_final_signal(
+            SYMBOL=SYMBOL_EQ,
             futures_df_window=window,
             option_df_today=option_df,
             migration_history=migration_history,
+            orb_history=orb_history,
             atr=None  # TODO: ATR can be plugged in later
         )
 
-        current_date = window.iloc[-1]["date"]
+        decisions.append(result["decision"])
 
+        current_date = window.iloc[-1]["date"]
         state_series[current_date] = result["market_state"]
         signal_series[current_date] = result["final_signal"]
 
@@ -120,6 +125,7 @@ def run(SYMBOL_EQ):
     logger.info("Market State  :%s", state_series.get(last_date))
     logger.info("Signal        :%s", signal_series.get(last_date))
 
+    export_all(decisions, SYMBOL_EQ)
     if last_date in option_metrics_series:
         logger.info("Option Metrics:", option_metrics_series[last_date])
 

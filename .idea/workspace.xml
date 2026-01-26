@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="314373a1-c7cb-4786-9260-d68ee980e8f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/option_buckets.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/option_buckets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/signal_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/signal_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logging_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/analysis_derivative_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/analysis_derivative_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/logs/fyersRequests.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/fyersRequests.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/fyersRequests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/fyersRequests.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
