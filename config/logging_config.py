@@ -1,6 +1,7 @@
 import logging
 import sys
 from logging.handlers import RotatingFileHandler
+from config.settings import LOGGING_ENABLED
 
 def setup_logging(level=logging.DEBUG):
     """
@@ -21,3 +22,8 @@ def setup_logging(level=logging.DEBUG):
     # Add handlers to the logger
     logger.addHandler(stdout_handler)
     logger.addHandler(file_handler)
+
+if LOGGING_ENABLED:
+    setup_logging(level=logging.INFO) # Explicitly setting level here
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO) # Ensuring the main logger itself is INFO

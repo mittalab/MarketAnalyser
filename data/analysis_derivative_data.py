@@ -1,10 +1,11 @@
 import calendar
 import datetime
+import json
 # from typing import List, Dict, Optional
 from data.fyers_client import get_fyers_client
 from data.storage import save_csv
 from data.storage import load_csv
-from main import logger
+from config.logging_config import logger
 from utils.expiry import get_first_day_of_this_expiry
 from utils.expiry import get_expiry_YYMMM
 from utils.util import datetime_to_YYYY_MM_DD
@@ -13,28 +14,76 @@ from data.fetch_options import fetch_option_chain
 from data.CandleResolution import CandleResolution
 import pandas as pd
 
-FUTURES_PATH_BASE = "C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/futures"
-OPTIONS_PATH_BASE = "C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options"
+FUTURES_PATH_BASE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\storage\\futures"
+OPTIONS_PATH_BASE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\storage\\options"
 Exchange = "NSE"
 
+def flatten_options_chain(rows_df):
+    """
+    df: pandas DataFrame with columns
+        ["callOi", "expiryData", "indiavixData",
+         "optionsChain", "putOi", "fetched_datetime"]
+    """
+
+    records = []
+
+    for _, row in rows_df.iterrows():
+        date = pd.to_datetime(row["fetched_datetime"]).date()
+        options_chain_str = row["optionsChain"]
+
+        if pd.isna(options_chain_str):
+            continue
+
+        try:
+            options_chain = json.loads(options_chain_str)
+        except json.JSONDecodeError:
+            continue
+
+        for opt in options_chain:
+            records.append({
+                "strike": opt.get("strike_price"),
+                "bid": opt.get("bid"),
+                "ask": opt.get("ask"),
+                "type": opt.get("option_type"),
+                "oi": opt.get("oi"),
+                "oi_change": opt.get("oich"),
+                "date": date
+            })
+
+    df = pd.DataFrame(records)
+    df = df.sort_values(by="date", ascending=True)
+    df = df.astype({
+        "date": "str",
+        "strike": "float64",
+    })
+    return df
 
 def populate_options_data(SYMBOL: str, ExpDate: str):
 
-    OPTIONS_PATH = OPTIONS_PATH_BASE + "/" + ExpDate
-    fyers = get_fyers_client()
+    OPTIONS_PATH = OPTIONS_PATH_BASE + "\\" + ExpDate
     options_file = f"{Exchange}_{SYMBOL}_{ExpDate}_OPTIONS.csv"
     data_from_file = load_csv(OPTIONS_PATH, options_file)
 
-    new_data = fetch_option_chain(fyers, Exchange, SYMBOL)
+    # TODO: Get new data from fyers and update the file
+    # fyers = get_fyers_client()
+    # new_data = fetch_option_chain(fyers, Exchange, SYMBOL)
 
     # File doesn't exist; fetching all historical data
-    if data_from_file is None:
-        data_from_file = new_data
-    else:
-        # last_date_fetched = data_from_file[-1]
-        data_from_file.append(new_data)
+    # if data_from_file is None:
+    #     data_from_file = new_data
+    # else:
+    #     # last_date_fetched = data_from_file[-1]
+    #     data_from_file.append(new_data)
 
-    save_csv(data_from_file, OPTIONS_PATH, options_file)
+    # save_csv(data_from_file, OPTIONS_PATH, options_file)
+
+    options_df = pd.DataFrame(
+        data_from_file,
+        columns=["callOi", "expiryData", "indiavixData" , "optionsChain" , "putOi" , "fetched_datetime"]
+    )
+    final_df = flatten_options_chain(options_df)
+    return final_df
+
 
 def populate_futures_data(SYMBOL: str, ExpDate: str):
 
@@ -86,6 +135,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         "volume": "int64",
         "oi": "int64",
         "spot_close": "float64",
+        "date": "str",
     })
 
     return futures_df
@@ -97,9 +147,9 @@ def populate_derivatives_data(SYMBOL: str, ExpDate: str):
     return futures_df, options_df
 
 def test():
-    today_datetime = datetime.datetime.now()
-    ExpDate = get_expiry_YYMMM(today_datetime)
-    populate_futures_data("M&M", ExpDate)
+    # today_datetime = datetime.datetime.now()
+    # ExpDate = get_expiry_YYMMM(today_datetime)
+    # populate_futures_data("M&M", ExpDate)
+    populate_options_data("TMP", "26JAN")
 
-
-test()
+# test()

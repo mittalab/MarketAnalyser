@@ -417,3 +417,69 @@
 2026-01-25 21:06:00,818 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3AM%26M26JANFUT&resolution=1D&date_format=1&range_from=2026-01-24&range_to=2026-01-25&cont_flag=1&oi_flag=1 HTTP/1.1" 200 96
 2026-01-25 21:06:00,819 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:M&M26JANFUT
 2026-01-25 21:06:00,819 - data.storage - INFO - Saving data to NSE_M&M_26JAN_FUT.csv in storage/futures/26JAN
+2026-01-26 07:45:20,424 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 07:45:20,426 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 07:45:20,427 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-26 07:45:20,427 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:45:20,427 - data.storage - WARNING - File not found at C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:45:20,427 - data.fetch_options - INFO - Fetching option chain for NSE:TMP-EQ
+2026-01-26 07:45:20,429 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-26 07:45:20,920 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/options-chain-v3?symbol=NSE%3ATMP-EQ&strikecount=50&timestamp= HTTP/1.1" 200 None
+2026-01-26 07:45:20,925 - data.fetch_options - WARNING - Could not parse option chain for NSE:TMP-EQ, returning empty dataframe. Response: {'code': -300, 'data': {}, 'message': 'Please provide a valid symbol', 's': 'error'}
+2026-01-26 07:45:20,929 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:45:34,558 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 07:45:34,558 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 07:45:34,559 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-26 07:45:34,559 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:45:34,559 - data.storage - WARNING - File not found at C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:45:34,559 - data.fetch_options - INFO - Fetching option chain for NSE:TMP-EQ
+2026-01-26 07:45:34,561 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-26 07:45:35,056 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/options-chain-v3?symbol=NSE%3ATMP-EQ&strikecount=50&timestamp= HTTP/1.1" 200 None
+2026-01-26 07:45:35,060 - data.fetch_options - WARNING - Could not parse option chain for NSE:TMP-EQ, returning empty dataframe. Response: {'code': -300, 'data': {}, 'message': 'Please provide a valid symbol', 's': 'error'}
+2026-01-26 07:45:35,070 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 07:45:35,071 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 07:45:35,072 - data.fyers_client - DEBUG - Fyers client initialized successfully.
+2026-01-26 07:45:35,072 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:45:35,072 - data.storage - WARNING - File not found at C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:45:35,072 - data.fetch_options - INFO - Fetching option chain for NSE:TMP-EQ
+2026-01-26 07:45:35,074 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2026-01-26 07:45:35,541 - urllib3.connectionpool - DEBUG - https://api-t1.fyers.in:443 "GET /data/options-chain-v3?symbol=NSE%3ATMP-EQ&strikecount=50&timestamp= HTTP/1.1" 200 None
+2026-01-26 07:45:35,546 - data.fetch_options - WARNING - Could not parse option chain for NSE:TMP-EQ, returning empty dataframe. Response: {'code': -300, 'data': {}, 'message': 'Please provide a valid symbol', 's': 'error'}
+2026-01-26 07:46:04,434 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:46:04,435 - data.storage - WARNING - File not found at C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:46:04,438 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN
+2026-01-26 07:46:04,439 - data.storage - WARNING - File not found at C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/storage/options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:46:31,190 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options/26JAN
+2026-01-26 07:46:31,191 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:46:31,194 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options/26JAN
+2026-01-26 07:46:31,194 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options/26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:46:48,551 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options\26JAN
+2026-01-26 07:46:48,554 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options\26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:46:48,607 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options\26JAN
+2026-01-26 07:46:48,607 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\storage\options\26JAN\NSE_TMP_26JAN_OPTIONS.csv
+2026-01-26 07:47:24,053 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:47:24,090 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:47:54,696 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:47:54,711 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:48:12,667 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:48:12,696 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:48:56,514 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:48:56,525 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:49:25,382 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:49:25,393 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:49:35,045 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:49:35,057 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:50:58,486 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:51:09,148 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:51:09,163 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:51:24,362 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:51:40,203 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:51:40,218 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 07:59:11,598 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:00:36,237 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:00:49,272 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:00:49,298 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:01:51,771 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:01:51,816 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:07:30,267 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 08:07:30,290 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN

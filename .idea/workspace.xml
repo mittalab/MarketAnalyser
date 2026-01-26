@@ -6,40 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="314373a1-c7cb-4786-9260-d68ee980e8f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODOs.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODOs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/futures_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/futures_oi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/levels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/market_state.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/market_state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/option_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/option_oi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/option_buckets.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/option_buckets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/analysis_derivative_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/analysis_derivative_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fetch_eod.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fetch_eod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fetch_futures_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fetch_futures_oi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fetch_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fetch_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fyers_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fyers_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_data/historical_data_fetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_data/historical_data_fetch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/logs/fyersRequests.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/fyersRequests.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution/execution_plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/execution_plan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution/instrument_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/instrument_selector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution/order_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/order_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution/position_sizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/execution/position_sizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fyersApi.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/fyersApi.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/fyersRequests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/fyersRequests.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/stock_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/stock_context.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/HISTORICAL_DATA/derivatives.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/HISTORICAL_DATA/equities.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/futures/NSE_JIOFIN_26JAN_FUT.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/futures/NSE_M&amp;M_26JAN_FUT.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/options/NSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/spot/NSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/expiry.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/expiry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/plot_option_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/plot_option_oi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/plot_price_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/plot_price_oi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/plot_state_signal.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/plot_state_signal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,18 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Abhishek/Trading_Projects/MarketAnalyser/storage/options/26JAN",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "Settings.Markdown"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MarketAnalyser" />
@@ -143,13 +123,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>23</line>
+          <line>16</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>57</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/config/logging_config.py</url>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

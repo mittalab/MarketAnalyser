@@ -1,12 +1,5 @@
-import logging
 from datetime import datetime
-from config.logging_config import setup_logging
-from config.settings import LOGGING_ENABLED
-
-if LOGGING_ENABLED:
-    setup_logging(level=logging.DEBUG) # Explicitly setting level here
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG) # Ensuring the main logger itself is INFO
+from config.logging_config import logger
 
 from analysis.signal_engine import generate_final_signal
 from analysis.signal_engine import classify_market_state_futures
@@ -70,9 +63,9 @@ def run(SYMBOL_EQ):
     futures_df.sort_values("date", inplace=True)
     futures_df.reset_index(drop=True, inplace=True)
 
-    options_df.set_index("date")
-    options_df.sort_values("date", inplace=True)
-    options_df.reset_index(drop=True, inplace=True)
+    # options_df.set_index("date")
+    # options_df.sort_values("date", inplace=True)
+    # options_df.reset_index(drop=True, inplace=True)
 
     futures_state = classify_market_state_futures(futures_df)
     logger.info(f"FUT market state for stock: {SYMBOL_EQ} is {futures_state}")
@@ -87,7 +80,7 @@ def run(SYMBOL_EQ):
 
     migration_history = []
 
-    for i in range(0, len(futures_df)):
+    for i in range(1, len(futures_df)):
         window = futures_df.iloc[: i + 1]
 
         # Skip if OI not fully available yet
@@ -95,11 +88,8 @@ def run(SYMBOL_EQ):
             continue
 
         # Get the same day options_df as that of future df
-        option_df = next(
-            (df for df in options_df if (df["date"] == window["date"]).any()),
-            None
-        )
-        if option_df == None:
+        option_df = options_df[options_df["date"] == window["date"][0]]
+        if len(option_df) == 0:
             continue
 
         result = generate_final_signal(
@@ -123,12 +113,12 @@ def run(SYMBOL_EQ):
     last_date = futures_df.iloc[-1]["date"]
 
     logger.info("\n========== ENGINE OUTPUT ==========")
-    logger.info("Symbol        :", SYMBOL_EQ)
-    logger.info("Date          :", last_date.date())
-    logger.info("Close Price   :", futures_df.iloc[-1]["close"])
-    logger.info("Open Interest :", futures_df.iloc[-1]["oi"])
-    logger.info("Market State  :", state_series.get(last_date))
-    logger.info("Signal        :", signal_series.get(last_date))
+    logger.info("Symbol        :%s", SYMBOL_EQ)
+    logger.info("Date          :%s", futures_df.iloc[-1]["date"])
+    logger.info("Close Price   :%f", futures_df.iloc[-1]["close"])
+    logger.info("Open Interest :%f", futures_df.iloc[-1]["oi"])
+    logger.info("Market State  :%s", state_series.get(last_date))
+    logger.info("Signal        :%s", signal_series.get(last_date))
 
     if last_date in option_metrics_series:
         logger.info("Option Metrics:", option_metrics_series[last_date])
