@@ -49,12 +49,42 @@ def generate_decision_ledger(decisions, output_path):
         go.Scatter(
             x=df["date"],
             y=df["futures_oi"],
-            mode="lines",
+            mode="lines+markers",
             name="Futures OI",
-            line=dict(color="blue")
+            line=dict(color="blue"),
+            marker=dict(size=9),
+
+            # 👇 Custom hover data
+            customdata=list(
+                zip(
+                    df["futures_oi_change"],
+                    df["acc_days"],
+                    df["risk_transfer_days"],
+                    df["short_build_days"],
+                    df["unwind_days"],
+                    df['which_day'],
+                    round(df['price_change'], 2),
+                )
+            ),
+
+            hovertemplate=(
+                "<b>Date:</b> %{x}<br>"
+                "<b>Futures OI:</b> %{y}<br>"
+                "<b>OI Change:</b> %{customdata[0]}<br>"
+                "<b>Price Change:</b> %{customdata[6]}<br>"
+                "<b>Day Detail:</b> %{customdata[5]}<br>"
+                "<br>"
+                "<b>Accumulation Days:</b> %{customdata[1]}<br>"
+                "<b>Risk Transfer Days:</b> %{customdata[2]}<br>"
+                "<b>Short Build Days:</b> %{customdata[3]}<br>"
+                "<b>Unwind Days:</b> %{customdata[4]}<br>"
+                "<extra></extra>"
+            )
         ),
         row=2, col=1
     )
+
+
 
     for signal, color in [("", "green"), ("SHORT", "red"), ("HOLD", "grey")]:
         mask = df["final_signal"] == signal
@@ -105,7 +135,8 @@ def generate_decision_ledger(decisions, output_path):
         data=[go.Table(
             header=dict(
                 values=[
-                    "Date", "Close", "OI", "OI_CHG", "State",
+                    "Date", "Close", "OI", "OI_CHG",
+                    "Price Change", "State",
                     "Raw", "Final", "Confidence",
                     "ORB", "ORB Mom", "Reason"
                 ],
@@ -120,7 +151,8 @@ def generate_decision_ledger(decisions, output_path):
                     ],
                     df["futures_close"],
                     df["futures_oi"],
-                    df["futures_oi_chg"],
+                    df["futures_oi_change"],
+                    round(df["price_change"], 2),
                     df["market_state"],
                     df["raw_signal"],
                     df["final_signal"],

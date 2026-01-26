@@ -31,7 +31,13 @@ def generate_final_signal(
     # --------------------------------------------------
     # 1. Structural futures state
     # --------------------------------------------------
-    futures_state = classify_market_state_futures(futures_df_window)
+    data = classify_market_state_futures(futures_df_window)
+    market_state = data["market_state"]
+    acc_days = data["acc_days"]
+    short_build_days = data["short_build_days"]
+    risk_transfer_days = data["risk_transfer_days"]
+    unwind_days = data["unwind_days"]
+    which_day = data["which_day"]
 
     # --------------------------------------------------
     # 2. Raw futures intent (directional bias)
@@ -79,7 +85,7 @@ def generate_final_signal(
     # 7. Apply option risk rules
     # --------------------------------------------------
     signal_after_options = apply_option_rules(
-        futures_state=futures_state,
+        futures_state=market_state,
         futures_signal=futures_signal,
         option_metrics=option_metrics
     )
@@ -99,7 +105,7 @@ def generate_final_signal(
     # Compute momentum
     orb_momentum = compute_orb_momentum(orb_history)
     signal_after_orb_momentum = apply_orb_momentum(
-        market_state=futures_state,
+        market_state=market_state,
         current_signal=signal_after_options,
         orb=orb,
         orb_momentum=orb_momentum
@@ -109,13 +115,13 @@ def generate_final_signal(
     # 9. Apply migration rules
     # --------------------------------------------------
     final_signal = apply_migration_rules(
-        futures_state=futures_state,
+        futures_state=market_state,
         current_signal=signal_after_orb_momentum,
         migration_trend=migration_trend
     )
 
     print(
-        futures_state,
+        market_state,
         futures_signal,
         option_metrics,
         migration_trend,
@@ -125,6 +131,8 @@ def generate_final_signal(
     close = latest_row["close"]
     oi = latest_row["oi"]
     oi_change = latest_row["oi_change"]
+    last_price_change = latest_row["last_price_change"]
+    print(f"oi_change: {oi_change}")
     dpi = option_metrics["DPI"]
     usi = option_metrics["USI"]
     raw_signal = futures_signal
@@ -140,8 +148,9 @@ def generate_final_signal(
         # Futures
         "futures_close": close,
         "futures_oi": oi,
-        "futures_oi_chg": oi_change,
-        "market_state": futures_state,
+        "futures_oi_change": oi_change,
+        "price_change": last_price_change,
+        "market_state": market_state,
         "raw_signal": raw_signal,
 
         # Option flow
@@ -162,14 +171,21 @@ def generate_final_signal(
         "reason": "",
 
         # Drill-down
-        "option_chain": option_df_today
+        "option_chain": option_df_today,
+
+        # regime counters (rolling)
+        "acc_days": acc_days,
+        "risk_transfer_days": risk_transfer_days,
+        "short_build_days": short_build_days,
+        "unwind_days": unwind_days,
+        "which_day": which_day,
     }
     decision_snapshot["reason"] = build_reason(decision_snapshot)
     decision_snapshot["confidence"] = compute_confidence(decision_snapshot)
 
 
     return {
-        "market_state": futures_state,
+        "market_state": market_state,
         "raw_signal": futures_signal,
         "final_signal": final_signal,
         "option_metrics": option_metrics,

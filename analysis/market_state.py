@@ -13,9 +13,29 @@ def classify_market_state_futures(
     date, close, oi
     """
 
+    which_day = "UNWIND"
+    last = futures_df.tail(1).copy()
+    print(last)
+    p = float(last["last_price_change"])
+    o = float(last["oi_change"])
+    if p > 0.0 and o > 0.0:
+        which_day = "ACCUMULATE"
+    elif p > 0 and o < 0:
+        which_day = "RISK TRANSFER"
+    elif p < 0 and o > 0:
+        which_day = "SHORT BUILD"
+
     if len(futures_df) < lookback + 1:
         logger.warning("Not enough data to classify market state, returning NEUTRAL")
-        return "NEUTRAL"
+        data = {
+            "market_state": "NEUTRAL",
+            "acc_days": 0,
+            "short_build_days": 0,
+            "risk_transfer_days": 0,
+            "unwind_days": 0,
+            "which_day": which_day,
+        }
+        return data
 
     recent = futures_df.tail(lookback + 1).copy()
 
@@ -57,4 +77,12 @@ def classify_market_state_futures(
         market_state = "NEUTRAL"
     
     logger.info(f"Market state classified as: {market_state}")
-    return market_state
+    data = {
+        "market_state": market_state,
+        "acc_days": acc_days,
+        "short_build_days": short_build_days,
+        "risk_transfer_days": risk_transfer_days,
+        "unwind_days": unwind_days,
+        "which_day": which_day,
+    }
+    return data

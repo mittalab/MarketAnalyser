@@ -4620,3 +4620,545 @@
 2026-01-26 18:30:31,927 - config.logging_config - INFO - Market State  :NEUTRAL
 2026-01-26 18:30:31,927 - config.logging_config - INFO - Signal        :SHORT
 2026-01-26 18:30:33,256 - config.logging_config - INFO - Option Metrics:
+2026-01-26 21:26:31,335 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:26:31,336 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:26:31,336 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:26:31,337 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:26:31,357 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:26:31,357 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:26:31,726 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:26:31,726 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:26:31,746 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:26:31,775 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:26:31,776 - config.logging_config - INFO - FUT market state for stock: JIOFIN is ('NEUTRAL', 0, 0, 1, 6, 'RISK TRANSFER')
+2026-01-26 21:26:31,776 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:27:17,504 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:27:17,505 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:27:17,505 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:27:17,505 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:27:17,507 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:27:17,507 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:27:17,831 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:27:17,831 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:27:17,837 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:27:17,852 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:27:17,852 - config.logging_config - INFO - FUT market state for stock: JIOFIN is ('NEUTRAL', 0, 0, 1, 6, 'RISK TRANSFER')
+2026-01-26 21:27:17,853 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:30:43,122 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:30:43,122 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:30:43,123 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:30:43,123 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:30:43,126 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:30:43,126 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:30:43,607 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:30:43,608 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:30:43,618 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:30:43,643 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:30:43,643 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:30:43,644 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:31:06,190 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:31:06,190 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:31:06,190 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:31:06,191 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:31:06,192 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:31:06,192 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:31:06,524 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:31:06,524 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:31:06,531 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:31:06,546 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:31:06,546 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:31:06,547 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:32:20,272 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:32:20,273 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:32:20,273 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:32:20,275 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:32:20,277 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:32:20,277 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:32:21,599 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:32:21,600 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:32:21,625 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:32:21,725 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:32:21,727 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:32:21,730 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:47:47,978 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:47:47,980 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:47:47,980 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:47:47,981 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:47:47,991 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:47:47,991 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:47:48,429 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:47:48,431 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:47:48,436 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:47:48,451 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:47:48,451 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:47:48,451 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:48:10,509 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:48:10,509 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:48:10,509 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:48:10,510 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:48:10,512 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:48:10,512 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:48:10,839 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:48:10,839 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:48:10,845 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:48:10,861 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:48:10,861 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:48:10,862 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,040 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:50:03,041 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:50:03,041 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:50:03,041 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:50:03,043 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:50:03,043 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:50:03,432 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:50:03,433 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:50:03,440 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:50:03,453 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,454 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:50:03,454 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,461 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,465 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,466 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,467 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,468 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:03,469 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:50:03,472 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:50:03,473 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,475 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,476 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,478 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,479 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,482 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,483 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,485 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,486 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,488 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:03,489 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 21:50:03,489 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 21:50:39,569 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:50:39,570 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:50:39,570 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:50:39,571 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:50:39,572 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:50:39,572 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:50:39,900 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:50:39,900 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:50:39,907 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:50:39,922 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,922 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:50:39,923 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,924 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,926 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,927 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,928 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,930 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:50:39,931 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:50:39,933 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:50:39,935 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,936 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,938 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,939 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,942 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,943 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,945 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,946 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,948 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,950 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:50:39,951 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 21:50:39,951 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 21:50:42,397 - config.logging_config - INFO - Option Metrics:
+2026-01-26 21:54:43,322 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:54:43,322 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:54:43,322 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:54:43,323 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:54:43,323 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:54:43,325 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:54:43,645 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:54:43,645 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:54:43,650 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:54:43,664 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,664 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:54:43,665 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,666 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,667 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,669 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,670 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,671 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:54:43,673 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:54:43,676 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:54:43,678 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,680 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,682 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,684 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,686 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,688 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,690 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,693 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,695 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,697 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:54:43,698 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 21:54:43,698 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 21:54:45,102 - config.logging_config - INFO - Option Metrics:
+2026-01-26 21:55:51,412 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:55:51,412 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:55:51,412 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:55:51,413 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:55:51,414 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 21:55:51,415 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:55:51,737 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 21:55:51,738 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:55:51,746 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:55:51,763 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,763 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:55:51,764 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,765 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,767 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,768 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,769 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,770 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:55:51,772 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:55:51,775 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:55:51,776 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,778 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,780 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,783 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,785 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,787 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,789 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,792 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,793 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,795 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:55:51,796 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 21:55:51,796 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 21:55:51,798 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 21:55:51,798 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 21:55:51,798 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 21:55:51,798 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 21:55:51,798 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 21:55:53,216 - config.logging_config - INFO - Option Metrics:
+2026-01-26 21:58:14,632 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 21:58:14,632 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 21:58:14,633 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 21:58:14,633 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:58:14,633 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN\NSE_JIOFIN_26JAN_FUT.csv
+2026-01-26 21:58:14,633 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-26 21:58:14,634 - utils.expiry - INFO - Parsed year: 2026, month: 1
+2026-01-26 21:58:14,634 - utils.expiry - INFO - Previous month: 12/2025
+2026-01-26 21:58:14,634 - utils.expiry - INFO - Last Monday of previous month: 2025-12-29 00:00:00
+2026-01-26 21:58:14,634 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2025-12-29 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 21:58:15,226 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 21:58:15,232 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 21:58:15,246 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,247 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 21:58:15,247 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,248 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,250 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,251 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,253 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,254 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 21:58:15,256 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:58:15,258 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 21:58:15,261 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,262 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,264 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,266 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,268 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,271 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,273 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,275 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,277 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,279 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 21:58:15,281 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 21:58:15,281 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 21:58:16,669 - config.logging_config - INFO - Option Metrics:
+2026-01-26 22:01:21,094 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:01:21,094 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:01:21,094 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:01:21,095 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:01:21,111 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:01:21,111 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:01:21,423 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:01:21,423 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:01:21,428 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:01:21,445 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,445 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'RISK TRANSFER'}
+2026-01-26 22:01:21,446 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,447 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,449 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,450 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,451 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,455 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:01:21,457 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:01:21,459 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:01:21,462 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,464 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,466 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,468 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,470 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,473 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,475 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,478 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,480 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,482 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:01:21,483 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:01:21,483 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:01:21,484 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:01:21,484 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:01:21,484 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:01:21,484 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:01:21,484 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:01:22,789 - config.logging_config - INFO - Option Metrics:
+2026-01-26 22:10:48,817 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:10:48,817 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:10:48,817 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:10:48,818 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:10:48,818 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN\NSE_JIOFIN_26JAN_FUT.csv
+2026-01-26 22:10:48,818 - utils.expiry - INFO - Calculating first day of expiry for: 26JAN
+2026-01-26 22:10:48,818 - utils.expiry - INFO - Parsed year: 2026, month: 1
+2026-01-26 22:10:48,818 - utils.expiry - INFO - Previous month: 12/2025
+2026-01-26 22:10:48,819 - utils.expiry - INFO - Last Monday of previous month: 2025-12-29 00:00:00
+2026-01-26 22:10:48,819 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2025-12-29 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:10:49,432 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:10:49,437 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:11:30,680 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:11:30,680 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:11:30,680 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:11:30,682 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:11:30,699 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:11:30,699 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:11:30,994 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:11:30,994 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:11:30,999 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:12:22,583 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:12:22,583 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:12:22,583 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:12:22,584 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:12:22,585 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:12:22,585 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:12:22,881 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:12:22,883 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:12:22,891 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:13:36,405 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:13:36,405 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:13:36,405 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:13:36,406 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:13:36,407 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:13:36,407 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:13:36,725 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:13:36,727 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:13:36,733 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:14:21,012 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:14:21,013 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:14:21,013 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:14:21,013 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:14:21,015 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:14:21,015 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:14:21,320 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:14:21,320 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:14:21,326 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:14:21,348 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,348 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'UNWIND'}
+2026-01-26 22:14:21,354 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,360 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,365 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,371 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,377 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,382 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:14:21,390 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:14:21,395 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:14:21,404 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,411 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,416 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,423 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,428 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,434 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,441 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,446 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,453 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,459 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:14:21,460 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:14:21,460 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:14:21,460 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:14:21,460 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:14:21,462 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:14:21,462 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:14:21,462 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:15:33,659 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:15:33,659 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:15:33,659 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:15:33,660 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:15:33,662 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:15:33,662 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:15:33,957 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:15:33,957 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:15:33,964 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:15:33,986 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:33,987 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'UNWIND'}
+2026-01-26 22:15:33,991 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:33,997 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:34,002 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:34,008 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:34,014 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:34,020 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:15:34,025 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:15:34,032 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:15:34,038 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,046 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,053 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,060 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,066 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,073 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,081 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,086 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,093 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,099 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:15:34,101 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:15:34,101 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:15:35,488 - config.logging_config - INFO - Option Metrics:
+2026-01-26 22:16:45,738 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:16:45,739 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:16:45,739 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:16:45,739 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:16:45,741 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:16:45,741 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:16:46,028 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:16:46,028 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:16:46,035 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:16:46,059 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,059 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'UNWIND'}
+2026-01-26 22:16:46,065 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,072 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,077 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,084 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,089 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,096 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:16:46,103 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:16:46,109 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:16:46,115 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,122 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,127 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,134 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,139 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,146 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,152 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,159 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,164 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,170 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:16:46,172 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:16:46,172 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:16:47,461 - config.logging_config - INFO - Option Metrics:
+2026-01-26 22:20:22,180 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:20:22,180 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:20:22,180 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:20:22,181 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:20:22,182 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:20:22,182 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:20:22,499 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:20:22,499 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:20:22,506 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:20:22,529 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,530 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'UNWIND'}
+2026-01-26 22:20:22,541 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,548 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,555 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,561 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,567 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,573 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:22,578 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:20:22,585 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:20:22,591 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,596 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,603 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,609 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,616 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,622 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,628 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,635 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,640 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,647 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:22,648 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:20:22,648 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:20:22,648 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:20:22,648 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:20:22,648 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:20:22,648 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:20:22,650 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:20:23,990 - config.logging_config - INFO - Option Metrics:
+2026-01-26 22:20:46,667 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-26 22:20:46,667 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-26 22:20:46,667 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-26 22:20:46,668 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:20:46,670 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-26 22:20:46,670 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-26 with CandleResolution.DAY_1 resolution
+2026-01-26 22:20:46,969 - data.fetch_futures_oi - WARNING - No historical futures OI data found for NSE:JIOFIN26JANFUT
+2026-01-26 22:20:46,969 - data.storage - INFO - Saving data to NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-26 22:20:46,975 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-26 22:20:46,996 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:46,997 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 1, 'unwind_days': 6, 'which_day': 'UNWIND'}
+2026-01-26 22:20:47,002 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,009 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,015 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,021 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,028 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,034 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-26 22:20:47,041 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:20:47,047 - analysis.market_state - INFO - Market state classified as: ACCUMULATION
+2026-01-26 22:20:47,053 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,060 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,068 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,075 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,083 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,089 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,095 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,102 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,109 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,115 - analysis.market_state - INFO - Market state classified as: NEUTRAL
+2026-01-26 22:20:47,116 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-26 22:20:47,116 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-26 22:20:47,116 - config.logging_config - INFO - Date          :2026-01-23
+2026-01-26 22:20:47,116 - config.logging_config - INFO - Close Price   :252.750000
+2026-01-26 22:20:47,117 - config.logging_config - INFO - Open Interest :45597050.000000
+2026-01-26 22:20:47,117 - config.logging_config - INFO - Market State  :NEUTRAL
+2026-01-26 22:20:47,117 - config.logging_config - INFO - Signal        :SHORT
+2026-01-26 22:20:48,594 - config.logging_config - INFO - Option Metrics:

@@ -100,14 +100,14 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         historical_date = get_first_day_of_this_expiry(ExpDate, calendar.MONDAY)
         from_date = datetime_to_YYYY_MM_DD(historical_date)
         logger.debug(f"Futures file not found for {SYMBOL}, fetching historical data from {from_date} to {to_date}")
-        data_from_file = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0)
+        data_from_file = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0, 0.0)
     else:
         last_date_str = data_from_file[-1]['time']
         last_date = datetime.datetime.fromtimestamp(int(last_date_str))
         logger.info(f"Last date found in futures file for {SYMBOL}: {last_date.date()}")
         from_date = datetime_to_YYYY_MM_DD(last_date + datetime.timedelta(days=1))
         logger.debug(f"Futures file found for {SYMBOL}, fetching new data from {from_date} to {to_date}")
-        new_data = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'])
+        new_data = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'], data_from_file[-1]['fut_close'])
         for data in new_data:
             data_from_file.append(data)
 
@@ -116,7 +116,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
 
     futures_df = pd.DataFrame(
         data_from_file,
-        columns=["time", "fut_open", "fut_high", "fut_low", "fut_close", "fut_volume", "oi", "spot_close", "oi_change"]
+        columns=["time", "fut_open", "fut_high", "fut_low", "fut_close", "fut_volume", "oi", "spot_close", "oi_change", "last_price_change"]
     )
 
     futures_df = futures_df.sort_values(by="time", ascending=True)
@@ -125,7 +125,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
     ).dt.strftime("%Y-%m-%d")
     futures_df.drop(columns=["time"], inplace=True)
 
-    futures_df.columns = ["open", "high", "low", "close", "volume", "oi", "spot_close", "oi_change", "date"]
+    futures_df.columns = ["open", "high", "low", "close", "volume", "oi", "spot_close", "oi_change", "last_price_change", "date"]
 
     futures_df = futures_df.astype({
         "open": "float64",
@@ -137,6 +137,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         "oi_change": "float64",
         "spot_close": "float64",
         "date": "str",
+        "last_price_change": "float64",
     })
 
     return futures_df

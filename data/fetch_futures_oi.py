@@ -62,7 +62,7 @@ def is_330pm_ist(epoch_ts: int) -> bool:
     dt = datetime.fromtimestamp(epoch_ts, tz=IST)
     return dt.hour == 15 and dt.minute == 30
 
-def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_to, resolution: CandleResolution, lastoi):
+def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_to, resolution: CandleResolution, lastoi, lastclose):
     """
     Fetches latest Futures OI using FYERS quotes API.
     Response is an array with value order epochtime, open, high , low, close, volume, oi
@@ -121,6 +121,8 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
         if last_day_oi != 0:
             oiperct_from_last_day = (fut[6] - last_day_oi) / last_day_oi * 100
 
+        last_price_change = fut[4] - lastclose
+        print(f"HELLO oi_change:{oi_change}")
         result = {
             "time": epoch_time,
             "spot_close": spot[4],
@@ -136,8 +138,10 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
             "oiperct_from_last_day": round(oiperct_from_last_day, 2),
             "oiperct_from_last_candle": round(oiperct_from_last_candle, 2),
             "oi_change": oi_change,
+            "last_price_change": last_price_change,
         }
 
+        lastclose = fut[4]
         last_candle_oi = fut[6]
         if is_330pm_ist(epoch_time):
             last_day_oi = fut[6]
