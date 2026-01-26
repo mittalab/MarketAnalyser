@@ -116,7 +116,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
 
     futures_df = pd.DataFrame(
         data_from_file,
-        columns=["time", "fut_open", "fut_high", "fut_low", "fut_close", "fut_volume", "oi", "spot_close"]
+        columns=["time", "fut_open", "fut_high", "fut_low", "fut_close", "fut_volume", "oi", "spot_close", "oi_change"]
     )
 
     futures_df = futures_df.sort_values(by="time", ascending=True)
@@ -125,7 +125,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
     ).dt.strftime("%Y-%m-%d")
     futures_df.drop(columns=["time"], inplace=True)
 
-    futures_df.columns = ["open", "high", "low", "close", "volume", "oi", "spot_close", "date"]
+    futures_df.columns = ["open", "high", "low", "close", "volume", "oi", "spot_close", "oi_change", "date"]
 
     futures_df = futures_df.astype({
         "open": "float64",
@@ -134,6 +134,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         "close": "float64",
         "volume": "int64",
         "oi": "int64",
+        "oi_change": "float64",
         "spot_close": "float64",
         "date": "str",
     })

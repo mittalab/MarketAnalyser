@@ -124,6 +124,7 @@ def generate_final_signal(
 
     close = latest_row["close"]
     oi = latest_row["oi"]
+    oi_change = latest_row["oi_change"]
     dpi = option_metrics["DPI"]
     usi = option_metrics["USI"]
     raw_signal = futures_signal
@@ -139,6 +140,7 @@ def generate_final_signal(
         # Futures
         "futures_close": close,
         "futures_oi": oi,
+        "futures_oi_chg": oi_change,
         "market_state": futures_state,
         "raw_signal": raw_signal,
 

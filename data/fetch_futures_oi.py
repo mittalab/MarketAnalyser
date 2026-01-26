@@ -115,6 +115,7 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
 
     for fut, spot in zip(fut_data, spot_data):
         epoch_time = get_epoch_time(fut[0], resolution)
+        oi_change = fut[6] - last_candle_oi
         oiperct_from_last_candle = (fut[6] - last_candle_oi) / last_candle_oi * 100
         oiperct_from_last_day = 0
         if last_day_oi != 0:
@@ -134,6 +135,7 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
             "ask": 0,
             "oiperct_from_last_day": round(oiperct_from_last_day, 2),
             "oiperct_from_last_candle": round(oiperct_from_last_candle, 2),
+            "oi_change": oi_change,
         }
 
         last_candle_oi = fut[6]

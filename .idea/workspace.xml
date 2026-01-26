@@ -6,10 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="314373a1-c7cb-4786-9260-d68ee980e8f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODOs.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODOs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/signal_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/signal_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/analysis_derivative_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/analysis_derivative_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fetch_futures_oi.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fetch_futures_oi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2025-12-30.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2025-12-30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2025-12-31.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2025-12-31.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-02.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-05.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-05.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-06.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-06.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-07.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-08.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-08.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-09.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-09.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-22.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-23.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/day/2026-01-23.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/JIOFIN/decision_ledger.html" beforeDir="false" afterPath="$PROJECT_DIR$/debug/JIOFIN/decision_ledger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/decision_ledger.py" beforeDir="false" afterPath="$PROJECT_DIR$/debug/decision_ledger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/fyersRequests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/fyersRequests.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
