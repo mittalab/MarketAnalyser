@@ -125,7 +125,7 @@ def run(SYMBOL_EQ):
     logger.info("Market State  :%s", state_series.get(last_date))
     logger.info("Signal        :%s", signal_series.get(last_date))
 
-    export_all(decisions, SYMBOL_EQ)
+    export_all(decisions, SYMBOL_EQ, ExpDate)
     if last_date in option_metrics_series:
         logger.info("Option Metrics:", option_metrics_series[last_date])
 
@@ -137,5 +137,5 @@ def get_all_data(file):
 
 
 if __name__ == "__main__":
-    file = "storage/tmp_stocks.txt"
+    file = "storage/nifty50_stocks.txt"
     get_all_data(file)
