@@ -162,11 +162,11 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         columns=["time", "fut_open", "fut_high", "fut_low", "fut_close", "fut_volume", "oi", "spot_close", "oi_change", "last_price_change"]
     )
 
-    futures_df = futures_df.sort_values(by="time", ascending=True)
     futures_df["date"] = pd.to_datetime(
         futures_df["time"], unit="s"
     ).dt.strftime("%Y-%m-%d")
     futures_df.drop(columns=["time"], inplace=True)
+    futures_df = futures_df.sort_values(by="date", ascending=True)
 
     futures_df.columns = ["open", "high", "low", "close", "volume", "oi", "spot_close", "oi_change", "last_price_change", "date"]
 
