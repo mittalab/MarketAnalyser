@@ -9109,3 +9109,1554 @@
 2026-01-27 06:07:52,478 - config.logging_config - INFO - Market State  :NEUTRAL
 2026-01-27 06:07:52,478 - config.logging_config - INFO - Signal        :SHORT
 2026-01-27 06:07:54,208 - config.logging_config - INFO - Option Metrics:
+2026-01-28 06:23:55,757 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:23:55,759 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:23:55,759 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:23:55,760 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-28 06:23:55,774 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-28 06:23:55,774 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-28 with CandleResolution.DAY_1 resolution
+2026-01-28 06:23:56,326 - data.fetch_futures_oi - ERROR - Failed to fetch historical futures OI for NSE:JIOFIN26JANFUT: {'code': -300, 'message': 'Invalid symbol provided', 's': 'error'}
+2026-01-28 06:25:22,329 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:25:22,329 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:25:22,329 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:25:22,330 - data.storage - INFO - Loading data from NSE_JIOFIN_26JAN_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26JAN
+2026-01-28 06:25:22,332 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-23
+2026-01-28 06:25:22,332 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26JAN) from 2026-01-24 to 2026-01-28 with CandleResolution.DAY_1 resolution
+2026-01-28 06:25:22,862 - data.fetch_futures_oi - ERROR - Failed to fetch historical futures OI for NSE:JIOFIN26JANFUT: {'code': -300, 'message': 'Invalid symbol provided', 's': 'error'}
+2026-01-28 06:26:09,758 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:26:26,368 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:26:26,368 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:26:26,368 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:26:26,370 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:26:26,371 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_JIOFIN_26FEB_FUT.csv
+2026-01-28 06:26:26,371 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:26:26,371 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:26:26,371 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:26:26,371 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:26:26,372 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26FEB) from 2026-01-26 to 2026-01-28 with CandleResolution.DAY_1 resolution
+2026-01-28 06:26:27,443 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:26:27,461 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:26:27,462 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_JIOFIN_26FEB_OPTIONS.csv
+2026-01-28 06:26:27,462 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:26:27,462 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:26:27,464 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:26:28,060 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:27:57,784 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:27:57,784 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:27:57,785 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:27:57,786 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:27:57,826 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:27:57,826 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26FEB) from 2026-01-28 to 2026-01-28 with CandleResolution.DAY_1 resolution
+2026-01-28 06:29:20,782 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:29:20,782 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:29:20,782 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:29:20,783 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:29:20,784 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:29:20,784 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26FEB) from 2026-01-28 to 2026-01-28 with CandleResolution.DAY_1 resolution
+2026-01-28 06:34:02,361 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:34:40,387 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:34:48,904 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:35:02,513 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:35:02,513 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:35:02,514 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:35:02,515 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:35:02,515 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:35:02,516 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:35:02,538 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:35:02,554 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:35:02,554 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:35:02,555 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:35:03,240 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:35:03,354 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:35:03,354 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:35:03,354 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:35:03,354 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:35:03,356 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:35:03,356 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:35:03,357 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:35:03,357 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:35:03,358 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:43:54,920 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:43:54,921 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:43:54,922 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:43:54,923 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:43:54,925 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:43:54,925 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:43:54,948 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:43:54,962 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:43:54,963 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:43:54,963 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:43:55,485 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:43:55,532 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:43:55,532 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:43:55,532 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:43:55,532 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:43:55,532 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:43:55,533 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:43:55,533 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:43:55,533 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:43:55,533 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:44:29,974 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:44:29,974 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:44:29,974 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:44:29,975 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:44:29,977 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:44:29,977 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:44:29,989 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:44:30,033 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:44:30,035 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:44:30,036 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:44:30,730 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:44:30,859 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:44:30,861 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:44:30,861 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:44:30,861 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:44:30,861 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:44:30,862 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:44:30,862 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:44:30,862 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:44:30,862 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:45:19,651 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:45:19,653 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:45:19,653 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:45:19,654 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:45:19,656 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:45:19,658 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:45:19,677 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:45:19,756 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:45:19,757 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:45:19,758 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:45:20,546 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:45:20,607 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:45:20,607 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:45:20,608 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:45:20,608 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:45:20,608 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:45:20,609 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:45:20,609 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:45:20,609 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:45:20,610 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:45:55,515 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:45:55,517 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:45:55,517 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:45:55,518 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:45:55,520 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:45:55,521 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:45:55,534 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:45:55,567 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:45:55,567 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:45:55,568 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:45:56,101 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:45:56,174 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:45:56,174 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:45:56,174 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:45:56,174 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:45:56,175 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:45:56,175 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:45:56,175 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:45:56,175 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:45:56,177 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:48:11,918 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:48:11,918 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:48:11,918 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:48:11,920 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:48:11,923 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-01-27
+2026-01-28 06:48:11,923 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:48:11,937 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:48:11,962 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:48:11,963 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:48:11,964 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:48:12,703 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:48:12,831 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:48:12,831 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:48:12,831 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:48:12,831 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:48:12,832 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:48:12,832 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:48:12,832 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:48:12,832 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:48:12,832 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:48:57,742 - config.logging_config - INFO - Getting data for ADANIENT
+2026-01-28 06:48:57,743 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:48:57,743 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:48:57,744 - data.storage - INFO - Loading data from NSE_ADANIENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:48:57,745 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ADANIENT_26FEB_FUT.csv
+2026-01-28 06:48:57,745 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:48:57,745 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:48:57,746 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:48:57,746 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:48:57,746 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ADANIENT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:48:59,219 - data.storage - INFO - Saving data to NSE_ADANIENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:48:59,228 - data.storage - INFO - Loading data from NSE_ADANIENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:48:59,229 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ADANIENT_26FEB_OPTIONS.csv
+2026-01-28 06:48:59,229 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:48:59,229 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:48:59,230 - data.fetch_options - INFO - Fetching option chain for NSE:ADANIENT-EQ
+2026-01-28 06:48:59,859 - data.storage - INFO - Saving data to NSE_ADANIENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:37,500 - config.logging_config - INFO - Getting data for ADANIENT
+2026-01-28 06:49:37,500 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:37,501 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:37,502 - data.storage - INFO - Loading data from NSE_ADANIENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:37,502 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ADANIENT_26FEB_FUT.csv
+2026-01-28 06:49:37,502 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:37,503 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:37,503 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:37,503 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:37,503 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ADANIENT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:38,563 - data.storage - INFO - Saving data to NSE_ADANIENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:38,573 - data.storage - INFO - Loading data from NSE_ADANIENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:38,574 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ADANIENT_26FEB_OPTIONS.csv
+2026-01-28 06:49:38,574 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:38,574 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:38,575 - data.fetch_options - INFO - Fetching option chain for NSE:ADANIENT-EQ
+2026-01-28 06:49:39,224 - data.storage - INFO - Saving data to NSE_ADANIENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:39,255 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:39,256 - config.logging_config - INFO - FUT market state for stock: ADANIENT is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:39,256 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:39,256 - config.logging_config - INFO - Symbol        :ADANIENT
+2026-01-28 06:49:39,257 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:39,257 - config.logging_config - INFO - Close Price   :1956.300000
+2026-01-28 06:49:39,257 - config.logging_config - INFO - Open Interest :1803015.000000
+2026-01-28 06:49:39,258 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:39,258 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:39,258 - config.logging_config - INFO - Getting data for ADANIPORTS
+2026-01-28 06:49:39,258 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:39,259 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:39,260 - data.storage - INFO - Loading data from NSE_ADANIPORTS_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:39,260 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ADANIPORTS_26FEB_FUT.csv
+2026-01-28 06:49:39,262 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:39,262 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:39,262 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:39,263 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:39,263 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ADANIPORTS (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:40,509 - data.storage - INFO - Saving data to NSE_ADANIPORTS_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:40,517 - data.storage - INFO - Loading data from NSE_ADANIPORTS_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:40,517 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ADANIPORTS_26FEB_OPTIONS.csv
+2026-01-28 06:49:40,518 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:40,518 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:40,519 - data.fetch_options - INFO - Fetching option chain for NSE:ADANIPORTS-EQ
+2026-01-28 06:49:41,130 - data.storage - INFO - Saving data to NSE_ADANIPORTS_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:41,145 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:41,146 - config.logging_config - INFO - FUT market state for stock: ADANIPORTS is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:41,146 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:41,146 - config.logging_config - INFO - Symbol        :ADANIPORTS
+2026-01-28 06:49:41,146 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:41,147 - config.logging_config - INFO - Close Price   :1362.500000
+2026-01-28 06:49:41,147 - config.logging_config - INFO - Open Interest :1813075.000000
+2026-01-28 06:49:41,147 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:41,147 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:41,147 - config.logging_config - INFO - Getting data for APOLLOHOSP
+2026-01-28 06:49:41,147 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:41,148 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:41,148 - data.storage - INFO - Loading data from NSE_APOLLOHOSP_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:41,148 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_APOLLOHOSP_26FEB_FUT.csv
+2026-01-28 06:49:41,149 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:41,149 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:41,149 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:41,149 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:41,149 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:APOLLOHOSP (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:42,283 - data.storage - INFO - Saving data to NSE_APOLLOHOSP_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:42,293 - data.storage - INFO - Loading data from NSE_APOLLOHOSP_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:42,294 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_APOLLOHOSP_26FEB_OPTIONS.csv
+2026-01-28 06:49:42,294 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:42,295 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:42,296 - data.fetch_options - INFO - Fetching option chain for NSE:APOLLOHOSP-EQ
+2026-01-28 06:49:42,996 - data.storage - INFO - Saving data to NSE_APOLLOHOSP_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:43,019 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:43,019 - config.logging_config - INFO - FUT market state for stock: APOLLOHOSP is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:43,020 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:43,020 - config.logging_config - INFO - Symbol        :APOLLOHOSP
+2026-01-28 06:49:43,020 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:43,020 - config.logging_config - INFO - Close Price   :6804.000000
+2026-01-28 06:49:43,020 - config.logging_config - INFO - Open Interest :468625.000000
+2026-01-28 06:49:43,021 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:43,021 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:43,021 - config.logging_config - INFO - Getting data for ASIANPAINT
+2026-01-28 06:49:43,021 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:43,021 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:43,022 - data.storage - INFO - Loading data from NSE_ASIANPAINT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:43,022 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ASIANPAINT_26FEB_FUT.csv
+2026-01-28 06:49:43,022 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:43,022 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:43,022 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:43,023 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:43,023 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ASIANPAINT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:44,131 - data.storage - INFO - Saving data to NSE_ASIANPAINT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:44,139 - data.storage - INFO - Loading data from NSE_ASIANPAINT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:44,139 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ASIANPAINT_26FEB_OPTIONS.csv
+2026-01-28 06:49:44,139 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:44,140 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:44,141 - data.fetch_options - INFO - Fetching option chain for NSE:ASIANPAINT-EQ
+2026-01-28 06:49:44,662 - data.storage - INFO - Saving data to NSE_ASIANPAINT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:44,679 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:44,680 - config.logging_config - INFO - FUT market state for stock: ASIANPAINT is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:44,680 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:44,680 - config.logging_config - INFO - Symbol        :ASIANPAINT
+2026-01-28 06:49:44,680 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:44,681 - config.logging_config - INFO - Close Price   :2617.200000
+2026-01-28 06:49:44,681 - config.logging_config - INFO - Open Interest :676500.000000
+2026-01-28 06:49:44,681 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:44,681 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:44,681 - config.logging_config - INFO - Getting data for AXISBANK
+2026-01-28 06:49:44,682 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:44,682 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:44,682 - data.storage - INFO - Loading data from NSE_AXISBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:44,682 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_AXISBANK_26FEB_FUT.csv
+2026-01-28 06:49:44,682 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:44,682 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:44,683 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:44,683 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:44,683 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:AXISBANK (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:45,906 - data.storage - INFO - Saving data to NSE_AXISBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:45,918 - data.storage - INFO - Loading data from NSE_AXISBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:45,918 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_AXISBANK_26FEB_OPTIONS.csv
+2026-01-28 06:49:45,918 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:45,919 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:45,920 - data.fetch_options - INFO - Fetching option chain for NSE:AXISBANK-EQ
+2026-01-28 06:49:46,534 - data.storage - INFO - Saving data to NSE_AXISBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:46,556 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:46,556 - config.logging_config - INFO - FUT market state for stock: AXISBANK is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:46,556 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:46,556 - config.logging_config - INFO - Symbol        :AXISBANK
+2026-01-28 06:49:46,557 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:46,557 - config.logging_config - INFO - Close Price   :1312.600000
+2026-01-28 06:49:46,557 - config.logging_config - INFO - Open Interest :12181250.000000
+2026-01-28 06:49:46,557 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:46,557 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:46,558 - config.logging_config - INFO - Getting data for BAJAJ-AUTO
+2026-01-28 06:49:46,558 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:46,558 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:46,559 - data.storage - INFO - Loading data from NSE_BAJAJ-AUTO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:46,559 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_BAJAJ-AUTO_26FEB_FUT.csv
+2026-01-28 06:49:46,559 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:46,560 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:46,560 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:46,560 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:46,560 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:BAJAJ-AUTO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:47,934 - data.storage - INFO - Saving data to NSE_BAJAJ-AUTO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:47,945 - data.storage - INFO - Loading data from NSE_BAJAJ-AUTO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:47,947 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_BAJAJ-AUTO_26FEB_OPTIONS.csv
+2026-01-28 06:49:47,947 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:47,947 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:47,948 - data.fetch_options - INFO - Fetching option chain for NSE:BAJAJ-AUTO-EQ
+2026-01-28 06:49:48,660 - data.storage - INFO - Saving data to NSE_BAJAJ-AUTO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:48,693 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:48,694 - config.logging_config - INFO - FUT market state for stock: BAJAJ-AUTO is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:48,694 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:48,695 - config.logging_config - INFO - Symbol        :BAJAJ-AUTO
+2026-01-28 06:49:48,695 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:48,696 - config.logging_config - INFO - Close Price   :9490.500000
+2026-01-28 06:49:48,696 - config.logging_config - INFO - Open Interest :155550.000000
+2026-01-28 06:49:48,696 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:48,696 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:48,697 - config.logging_config - INFO - Getting data for BAJFINANCE
+2026-01-28 06:49:48,697 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:48,697 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:48,698 - data.storage - INFO - Loading data from NSE_BAJFINANCE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:48,699 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_BAJFINANCE_26FEB_FUT.csv
+2026-01-28 06:49:48,699 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:48,699 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:48,699 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:48,700 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:48,700 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:BAJFINANCE (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:51,219 - data.storage - INFO - Saving data to NSE_BAJFINANCE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:51,230 - data.storage - INFO - Loading data from NSE_BAJFINANCE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:51,231 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_BAJFINANCE_26FEB_OPTIONS.csv
+2026-01-28 06:49:51,231 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:51,232 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:51,233 - data.fetch_options - INFO - Fetching option chain for NSE:BAJFINANCE-EQ
+2026-01-28 06:49:52,022 - data.storage - INFO - Saving data to NSE_BAJFINANCE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:52,059 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:52,060 - config.logging_config - INFO - FUT market state for stock: BAJFINANCE is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:52,060 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:52,061 - config.logging_config - INFO - Symbol        :BAJFINANCE
+2026-01-28 06:49:52,061 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:52,063 - config.logging_config - INFO - Close Price   :914.700000
+2026-01-28 06:49:52,063 - config.logging_config - INFO - Open Interest :9519000.000000
+2026-01-28 06:49:52,064 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:52,064 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:52,065 - config.logging_config - INFO - Getting data for BAJAJFINSV
+2026-01-28 06:49:52,066 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:52,066 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:52,068 - data.storage - INFO - Loading data from NSE_BAJAJFINSV_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:52,068 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_BAJAJFINSV_26FEB_FUT.csv
+2026-01-28 06:49:52,068 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:52,069 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:52,069 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:52,069 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:52,070 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:BAJAJFINSV (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:53,211 - data.storage - INFO - Saving data to NSE_BAJAJFINSV_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:53,220 - data.storage - INFO - Loading data from NSE_BAJAJFINSV_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:53,220 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_BAJAJFINSV_26FEB_OPTIONS.csv
+2026-01-28 06:49:53,221 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:53,221 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:53,222 - data.fetch_options - INFO - Fetching option chain for NSE:BAJAJFINSV-EQ
+2026-01-28 06:49:53,871 - data.storage - INFO - Saving data to NSE_BAJAJFINSV_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:53,892 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:53,892 - config.logging_config - INFO - FUT market state for stock: BAJAJFINSV is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:53,892 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:53,893 - config.logging_config - INFO - Symbol        :BAJAJFINSV
+2026-01-28 06:49:53,893 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:53,893 - config.logging_config - INFO - Close Price   :1916.100000
+2026-01-28 06:49:53,893 - config.logging_config - INFO - Open Interest :1911500.000000
+2026-01-28 06:49:53,893 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:53,895 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:53,895 - config.logging_config - INFO - Getting data for BEL
+2026-01-28 06:49:53,895 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:53,895 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:53,896 - data.storage - INFO - Loading data from NSE_BEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:53,896 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_BEL_26FEB_FUT.csv
+2026-01-28 06:49:53,897 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:53,897 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:53,897 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:53,897 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:53,897 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:BEL (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:54,815 - data.storage - INFO - Saving data to NSE_BEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:54,820 - data.storage - INFO - Loading data from NSE_BEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:54,820 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_BEL_26FEB_OPTIONS.csv
+2026-01-28 06:49:54,820 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:54,820 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:54,822 - data.fetch_options - INFO - Fetching option chain for NSE:BEL-EQ
+2026-01-28 06:49:55,348 - data.storage - INFO - Saving data to NSE_BEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:55,370 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:55,370 - config.logging_config - INFO - FUT market state for stock: BEL is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:55,371 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Symbol        :BEL
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Close Price   :414.800000
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Open Interest :4074075.000000
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:55,371 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:55,372 - config.logging_config - INFO - Getting data for BHARTIARTL
+2026-01-28 06:49:55,372 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:55,372 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:55,374 - data.storage - INFO - Loading data from NSE_BHARTIARTL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:55,374 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_BHARTIARTL_26FEB_FUT.csv
+2026-01-28 06:49:55,374 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:55,374 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:55,375 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:55,375 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:55,375 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:BHARTIARTL (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:56,523 - data.storage - INFO - Saving data to NSE_BHARTIARTL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:56,530 - data.storage - INFO - Loading data from NSE_BHARTIARTL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:56,530 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_BHARTIARTL_26FEB_OPTIONS.csv
+2026-01-28 06:49:56,530 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:56,530 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:56,531 - data.fetch_options - INFO - Fetching option chain for NSE:BHARTIARTL-EQ
+2026-01-28 06:49:57,213 - data.storage - INFO - Saving data to NSE_BHARTIARTL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:57,232 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:57,232 - config.logging_config - INFO - FUT market state for stock: BHARTIARTL is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:57,234 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:57,234 - config.logging_config - INFO - Symbol        :BHARTIARTL
+2026-01-28 06:49:57,234 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:57,234 - config.logging_config - INFO - Close Price   :1973.000000
+2026-01-28 06:49:57,234 - config.logging_config - INFO - Open Interest :6002100.000000
+2026-01-28 06:49:57,235 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:57,235 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:57,235 - config.logging_config - INFO - Getting data for CIPLA
+2026-01-28 06:49:57,235 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:57,235 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:57,236 - data.storage - INFO - Loading data from NSE_CIPLA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:57,236 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_CIPLA_26FEB_FUT.csv
+2026-01-28 06:49:57,236 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:57,237 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:57,237 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:57,237 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:57,237 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:CIPLA (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:49:58,453 - data.storage - INFO - Saving data to NSE_CIPLA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:58,458 - data.storage - INFO - Loading data from NSE_CIPLA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:58,460 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_CIPLA_26FEB_OPTIONS.csv
+2026-01-28 06:49:58,460 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:58,460 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:58,461 - data.fetch_options - INFO - Fetching option chain for NSE:CIPLA-EQ
+2026-01-28 06:49:59,107 - data.storage - INFO - Saving data to NSE_CIPLA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:49:59,124 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:49:59,124 - config.logging_config - INFO - FUT market state for stock: CIPLA is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:49:59,126 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:49:59,126 - config.logging_config - INFO - Symbol        :CIPLA
+2026-01-28 06:49:59,126 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:49:59,126 - config.logging_config - INFO - Close Price   :1311.200000
+2026-01-28 06:49:59,127 - config.logging_config - INFO - Open Interest :1875375.000000
+2026-01-28 06:49:59,127 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:49:59,127 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:49:59,127 - config.logging_config - INFO - Getting data for COALINDIA
+2026-01-28 06:49:59,127 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:49:59,127 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:49:59,128 - data.storage - INFO - Loading data from NSE_COALINDIA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:49:59,128 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_COALINDIA_26FEB_FUT.csv
+2026-01-28 06:49:59,129 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:49:59,129 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:49:59,129 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:49:59,129 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:49:59,129 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:COALINDIA (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:00,135 - data.storage - INFO - Saving data to NSE_COALINDIA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:00,144 - data.storage - INFO - Loading data from NSE_COALINDIA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:00,145 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_COALINDIA_26FEB_OPTIONS.csv
+2026-01-28 06:50:00,145 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:00,145 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:00,147 - data.fetch_options - INFO - Fetching option chain for NSE:COALINDIA-EQ
+2026-01-28 06:50:00,773 - data.storage - INFO - Saving data to NSE_COALINDIA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:00,794 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:00,795 - config.logging_config - INFO - FUT market state for stock: COALINDIA is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:00,795 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:00,795 - config.logging_config - INFO - Symbol        :COALINDIA
+2026-01-28 06:50:00,795 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:00,796 - config.logging_config - INFO - Close Price   :423.900000
+2026-01-28 06:50:00,796 - config.logging_config - INFO - Open Interest :14104800.000000
+2026-01-28 06:50:00,796 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:00,796 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:00,796 - config.logging_config - INFO - Getting data for DRREDDY
+2026-01-28 06:50:00,797 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:00,797 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:00,798 - data.storage - INFO - Loading data from NSE_DRREDDY_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:00,798 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_DRREDDY_26FEB_FUT.csv
+2026-01-28 06:50:00,798 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:00,798 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:00,798 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:00,798 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:00,799 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:DRREDDY (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:02,103 - data.storage - INFO - Saving data to NSE_DRREDDY_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:02,112 - data.storage - INFO - Loading data from NSE_DRREDDY_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:02,112 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_DRREDDY_26FEB_OPTIONS.csv
+2026-01-28 06:50:02,112 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:02,114 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:02,115 - data.fetch_options - INFO - Fetching option chain for NSE:DRREDDY-EQ
+2026-01-28 06:50:02,695 - data.storage - INFO - Saving data to NSE_DRREDDY_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:02,712 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:02,713 - config.logging_config - INFO - FUT market state for stock: DRREDDY is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:02,713 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:02,713 - config.logging_config - INFO - Symbol        :DRREDDY
+2026-01-28 06:50:02,713 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:02,713 - config.logging_config - INFO - Close Price   :1240.800000
+2026-01-28 06:50:02,714 - config.logging_config - INFO - Open Interest :1305625.000000
+2026-01-28 06:50:02,714 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:02,714 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:02,714 - config.logging_config - INFO - Getting data for EICHERMOT
+2026-01-28 06:50:02,714 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:02,714 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:02,715 - data.storage - INFO - Loading data from NSE_EICHERMOT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:02,715 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_EICHERMOT_26FEB_FUT.csv
+2026-01-28 06:50:02,715 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:02,715 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:02,716 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:02,716 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:02,716 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:EICHERMOT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:03,778 - data.storage - INFO - Saving data to NSE_EICHERMOT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:03,786 - data.storage - INFO - Loading data from NSE_EICHERMOT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:03,786 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_EICHERMOT_26FEB_OPTIONS.csv
+2026-01-28 06:50:03,786 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:03,786 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:03,787 - data.fetch_options - INFO - Fetching option chain for NSE:EICHERMOT-EQ
+2026-01-28 06:50:04,298 - data.storage - INFO - Saving data to NSE_EICHERMOT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:04,411 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:04,411 - config.logging_config - INFO - FUT market state for stock: EICHERMOT is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:04,411 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Symbol        :EICHERMOT
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Close Price   :7148.000000
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Open Interest :332600.000000
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:04,412 - config.logging_config - INFO - Getting data for ETERNAL
+2026-01-28 06:50:04,413 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:04,413 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:04,414 - data.storage - INFO - Loading data from NSE_ETERNAL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:04,414 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ETERNAL_26FEB_FUT.csv
+2026-01-28 06:50:04,414 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:04,414 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:04,414 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:04,414 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:04,414 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ETERNAL (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:05,314 - data.storage - INFO - Saving data to NSE_ETERNAL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:05,320 - data.storage - INFO - Loading data from NSE_ETERNAL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:05,320 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ETERNAL_26FEB_OPTIONS.csv
+2026-01-28 06:50:05,320 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:05,321 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:05,321 - data.fetch_options - INFO - Fetching option chain for NSE:ETERNAL-EQ
+2026-01-28 06:50:05,803 - data.storage - INFO - Saving data to NSE_ETERNAL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:05,888 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:05,889 - config.logging_config - INFO - FUT market state for stock: ETERNAL is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:05,889 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:05,889 - config.logging_config - INFO - Symbol        :ETERNAL
+2026-01-28 06:50:05,889 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:05,889 - config.logging_config - INFO - Close Price   :254.300000
+2026-01-28 06:50:05,890 - config.logging_config - INFO - Open Interest :6404425.000000
+2026-01-28 06:50:05,890 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:05,890 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:05,890 - config.logging_config - INFO - Getting data for GRASIM
+2026-01-28 06:50:05,890 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:05,890 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:05,891 - data.storage - INFO - Loading data from NSE_GRASIM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:05,891 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_GRASIM_26FEB_FUT.csv
+2026-01-28 06:50:05,891 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:05,891 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:05,891 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:05,891 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:05,891 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:GRASIM (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:06,890 - data.storage - INFO - Saving data to NSE_GRASIM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:06,898 - data.storage - INFO - Loading data from NSE_GRASIM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:06,898 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_GRASIM_26FEB_OPTIONS.csv
+2026-01-28 06:50:06,898 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:06,899 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:06,900 - data.fetch_options - INFO - Fetching option chain for NSE:GRASIM-EQ
+2026-01-28 06:50:07,467 - data.storage - INFO - Saving data to NSE_GRASIM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:07,497 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:07,497 - config.logging_config - INFO - FUT market state for stock: GRASIM is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:07,497 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:07,497 - config.logging_config - INFO - Symbol        :GRASIM
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Close Price   :2861.000000
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Open Interest :608250.000000
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:07,498 - config.logging_config - INFO - Getting data for HCLTECH
+2026-01-28 06:50:07,499 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:07,499 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:07,499 - data.storage - INFO - Loading data from NSE_HCLTECH_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:07,500 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_HCLTECH_26FEB_FUT.csv
+2026-01-28 06:50:07,500 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:07,500 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:07,500 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:07,500 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:07,500 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:HCLTECH (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:08,621 - data.storage - INFO - Saving data to NSE_HCLTECH_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:08,632 - data.storage - INFO - Loading data from NSE_HCLTECH_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:08,633 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_HCLTECH_26FEB_OPTIONS.csv
+2026-01-28 06:50:08,633 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:08,634 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:08,635 - data.fetch_options - INFO - Fetching option chain for NSE:HCLTECH-EQ
+2026-01-28 06:50:09,091 - data.storage - INFO - Saving data to NSE_HCLTECH_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:09,116 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:09,117 - config.logging_config - INFO - FUT market state for stock: HCLTECH is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:09,117 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:09,117 - config.logging_config - INFO - Symbol        :HCLTECH
+2026-01-28 06:50:09,118 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:09,118 - config.logging_config - INFO - Close Price   :1715.700000
+2026-01-28 06:50:09,118 - config.logging_config - INFO - Open Interest :2059750.000000
+2026-01-28 06:50:09,119 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:09,119 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:09,119 - config.logging_config - INFO - Getting data for HDFCBANK
+2026-01-28 06:50:09,119 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:09,120 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:09,121 - data.storage - INFO - Loading data from NSE_HDFCBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:09,121 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_HDFCBANK_26FEB_FUT.csv
+2026-01-28 06:50:09,121 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:09,122 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:09,122 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:09,123 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:09,123 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:HDFCBANK (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:10,155 - data.storage - INFO - Saving data to NSE_HDFCBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:10,160 - data.storage - INFO - Loading data from NSE_HDFCBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:10,160 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_HDFCBANK_26FEB_OPTIONS.csv
+2026-01-28 06:50:10,160 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:10,160 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:10,161 - data.fetch_options - INFO - Fetching option chain for NSE:HDFCBANK-EQ
+2026-01-28 06:50:10,759 - data.storage - INFO - Saving data to NSE_HDFCBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:10,774 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:10,775 - config.logging_config - INFO - FUT market state for stock: HDFCBANK is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:10,775 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Symbol        :HDFCBANK
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Close Price   :925.200000
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Open Interest :15528700.000000
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:10,775 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:10,776 - config.logging_config - INFO - Getting data for HDFCLIFE
+2026-01-28 06:50:10,776 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:10,776 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:10,776 - data.storage - INFO - Loading data from NSE_HDFCLIFE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:10,777 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_HDFCLIFE_26FEB_FUT.csv
+2026-01-28 06:50:10,777 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:10,777 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:10,777 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:10,777 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:10,777 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:HDFCLIFE (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:11,798 - data.storage - INFO - Saving data to NSE_HDFCLIFE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:11,811 - data.storage - INFO - Loading data from NSE_HDFCLIFE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:11,812 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_HDFCLIFE_26FEB_OPTIONS.csv
+2026-01-28 06:50:11,812 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:11,812 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:11,813 - data.fetch_options - INFO - Fetching option chain for NSE:HDFCLIFE-EQ
+2026-01-28 06:50:12,382 - data.storage - INFO - Saving data to NSE_HDFCLIFE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:12,406 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:12,406 - config.logging_config - INFO - FUT market state for stock: HDFCLIFE is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:12,406 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:12,406 - config.logging_config - INFO - Symbol        :HDFCLIFE
+2026-01-28 06:50:12,407 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:12,407 - config.logging_config - INFO - Close Price   :721.800000
+2026-01-28 06:50:12,407 - config.logging_config - INFO - Open Interest :5294300.000000
+2026-01-28 06:50:12,407 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:12,408 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:12,408 - config.logging_config - INFO - Getting data for HINDALCO
+2026-01-28 06:50:12,408 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:12,409 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:12,410 - data.storage - INFO - Loading data from NSE_HINDALCO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:12,410 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_HINDALCO_26FEB_FUT.csv
+2026-01-28 06:50:12,410 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:12,410 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:12,410 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:12,410 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:12,412 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:HINDALCO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:13,505 - data.storage - INFO - Saving data to NSE_HINDALCO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:13,515 - data.storage - INFO - Loading data from NSE_HINDALCO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:13,516 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_HINDALCO_26FEB_OPTIONS.csv
+2026-01-28 06:50:13,516 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:13,517 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:13,518 - data.fetch_options - INFO - Fetching option chain for NSE:HINDALCO-EQ
+2026-01-28 06:50:14,170 - data.storage - INFO - Saving data to NSE_HINDALCO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:14,194 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:14,194 - config.logging_config - INFO - FUT market state for stock: HINDALCO is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:14,194 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Symbol        :HINDALCO
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Close Price   :960.100000
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Open Interest :2684500.000000
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:14,195 - config.logging_config - INFO - Getting data for HINDUNILVR
+2026-01-28 06:50:14,196 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:14,196 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:14,197 - data.storage - INFO - Loading data from NSE_HINDUNILVR_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:14,197 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_HINDUNILVR_26FEB_FUT.csv
+2026-01-28 06:50:14,197 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:14,197 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:14,197 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:14,197 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:14,197 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:HINDUNILVR (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:15,341 - data.storage - INFO - Saving data to NSE_HINDUNILVR_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:15,349 - data.storage - INFO - Loading data from NSE_HINDUNILVR_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:15,349 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_HINDUNILVR_26FEB_OPTIONS.csv
+2026-01-28 06:50:15,351 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:15,351 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:15,352 - data.fetch_options - INFO - Fetching option chain for NSE:HINDUNILVR-EQ
+2026-01-28 06:50:16,072 - data.storage - INFO - Saving data to NSE_HINDUNILVR_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:16,094 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:16,095 - config.logging_config - INFO - FUT market state for stock: HINDUNILVR is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:16,095 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:16,095 - config.logging_config - INFO - Symbol        :HINDUNILVR
+2026-01-28 06:50:16,096 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:16,096 - config.logging_config - INFO - Close Price   :2402.900000
+2026-01-28 06:50:16,096 - config.logging_config - INFO - Open Interest :1327200.000000
+2026-01-28 06:50:16,096 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:16,097 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:16,097 - config.logging_config - INFO - Getting data for ICICIBANK
+2026-01-28 06:50:16,097 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:16,097 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:16,099 - data.storage - INFO - Loading data from NSE_ICICIBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:16,100 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ICICIBANK_26FEB_FUT.csv
+2026-01-28 06:50:16,100 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:16,100 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:16,100 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:16,101 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:16,101 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ICICIBANK (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:17,570 - data.storage - INFO - Saving data to NSE_ICICIBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:17,579 - data.storage - INFO - Loading data from NSE_ICICIBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:17,580 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ICICIBANK_26FEB_OPTIONS.csv
+2026-01-28 06:50:17,580 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:17,580 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:17,581 - data.fetch_options - INFO - Fetching option chain for NSE:ICICIBANK-EQ
+2026-01-28 06:50:18,164 - data.storage - INFO - Saving data to NSE_ICICIBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:18,195 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:18,196 - config.logging_config - INFO - FUT market state for stock: ICICIBANK is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:18,196 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:18,196 - config.logging_config - INFO - Symbol        :ICICIBANK
+2026-01-28 06:50:18,198 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:18,198 - config.logging_config - INFO - Close Price   :1363.600000
+2026-01-28 06:50:18,199 - config.logging_config - INFO - Open Interest :7996800.000000
+2026-01-28 06:50:18,199 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:18,199 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:18,199 - config.logging_config - INFO - Getting data for ITC
+2026-01-28 06:50:18,200 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:18,200 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:18,202 - data.storage - INFO - Loading data from NSE_ITC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:18,202 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ITC_26FEB_FUT.csv
+2026-01-28 06:50:18,202 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:18,203 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:18,203 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:18,203 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:18,204 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ITC (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:19,574 - data.storage - INFO - Saving data to NSE_ITC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:19,584 - data.storage - INFO - Loading data from NSE_ITC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:19,585 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ITC_26FEB_OPTIONS.csv
+2026-01-28 06:50:19,585 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:19,586 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:19,587 - data.fetch_options - INFO - Fetching option chain for NSE:ITC-EQ
+2026-01-28 06:50:20,441 - data.storage - INFO - Saving data to NSE_ITC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:20,476 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:20,477 - config.logging_config - INFO - FUT market state for stock: ITC is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:20,477 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:20,478 - config.logging_config - INFO - Symbol        :ITC
+2026-01-28 06:50:20,478 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:20,478 - config.logging_config - INFO - Close Price   :319.200000
+2026-01-28 06:50:20,479 - config.logging_config - INFO - Open Interest :53534400.000000
+2026-01-28 06:50:20,479 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:20,480 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:20,480 - config.logging_config - INFO - Getting data for INFY
+2026-01-28 06:50:20,480 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:20,482 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:20,483 - data.storage - INFO - Loading data from NSE_INFY_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:20,484 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_INFY_26FEB_FUT.csv
+2026-01-28 06:50:20,484 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:20,484 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:20,485 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:20,485 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:20,485 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:INFY (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:21,694 - data.storage - INFO - Saving data to NSE_INFY_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:21,701 - data.storage - INFO - Loading data from NSE_INFY_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:21,701 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_INFY_26FEB_OPTIONS.csv
+2026-01-28 06:50:21,701 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:21,702 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:21,702 - data.fetch_options - INFO - Fetching option chain for NSE:INFY-EQ
+2026-01-28 06:50:22,218 - data.storage - INFO - Saving data to NSE_INFY_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:22,234 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:22,234 - config.logging_config - INFO - FUT market state for stock: INFY is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:22,235 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:22,235 - config.logging_config - INFO - Symbol        :INFY
+2026-01-28 06:50:22,235 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:22,235 - config.logging_config - INFO - Close Price   :1684.700000
+2026-01-28 06:50:22,235 - config.logging_config - INFO - Open Interest :7936000.000000
+2026-01-28 06:50:22,236 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:22,236 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:22,236 - config.logging_config - INFO - Getting data for INDIGO
+2026-01-28 06:50:22,236 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:22,236 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:22,237 - data.storage - INFO - Loading data from NSE_INDIGO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:22,237 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_INDIGO_26FEB_FUT.csv
+2026-01-28 06:50:22,237 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:22,237 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:22,237 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:22,238 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:22,238 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:INDIGO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:25,654 - data.storage - INFO - Saving data to NSE_INDIGO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:25,661 - data.storage - INFO - Loading data from NSE_INDIGO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:25,661 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_INDIGO_26FEB_OPTIONS.csv
+2026-01-28 06:50:25,662 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:25,662 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:25,662 - data.fetch_options - INFO - Fetching option chain for NSE:INDIGO-EQ
+2026-01-28 06:50:26,176 - data.storage - INFO - Saving data to NSE_INDIGO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:26,198 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:26,198 - config.logging_config - INFO - FUT market state for stock: INDIGO is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:26,199 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:26,199 - config.logging_config - INFO - Symbol        :INDIGO
+2026-01-28 06:50:26,199 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:26,199 - config.logging_config - INFO - Close Price   :4766.500000
+2026-01-28 06:50:26,199 - config.logging_config - INFO - Open Interest :717600.000000
+2026-01-28 06:50:26,199 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:26,201 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:26,201 - config.logging_config - INFO - Getting data for JSWSTEEL
+2026-01-28 06:50:26,201 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:26,201 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:26,202 - data.storage - INFO - Loading data from NSE_JSWSTEEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:26,202 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_JSWSTEEL_26FEB_FUT.csv
+2026-01-28 06:50:26,203 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:26,203 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:26,203 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:26,203 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:26,203 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JSWSTEEL (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:28,940 - data.storage - INFO - Saving data to NSE_JSWSTEEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:28,947 - data.storage - INFO - Loading data from NSE_JSWSTEEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:28,947 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_JSWSTEEL_26FEB_OPTIONS.csv
+2026-01-28 06:50:28,948 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:28,948 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:28,949 - data.fetch_options - INFO - Fetching option chain for NSE:JSWSTEEL-EQ
+2026-01-28 06:50:29,813 - data.storage - INFO - Saving data to NSE_JSWSTEEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:29,848 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:29,849 - config.logging_config - INFO - FUT market state for stock: JSWSTEEL is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:29,849 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:29,849 - config.logging_config - INFO - Symbol        :JSWSTEEL
+2026-01-28 06:50:29,850 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:29,851 - config.logging_config - INFO - Close Price   :1224.300000
+2026-01-28 06:50:29,851 - config.logging_config - INFO - Open Interest :1457325.000000
+2026-01-28 06:50:29,851 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:29,852 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:29,852 - config.logging_config - INFO - Getting data for JIOFIN
+2026-01-28 06:50:29,852 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:29,853 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:29,854 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:29,854 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_JIOFIN_26FEB_FUT.csv
+2026-01-28 06:50:29,854 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:29,855 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:29,855 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:29,855 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:29,855 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:31,287 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:31,296 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:31,297 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_JIOFIN_26FEB_OPTIONS.csv
+2026-01-28 06:50:31,297 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:31,297 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:31,298 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-01-28 06:50:31,921 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:31,953 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:31,954 - config.logging_config - INFO - FUT market state for stock: JIOFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:31,954 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:31,955 - config.logging_config - INFO - Symbol        :JIOFIN
+2026-01-28 06:50:31,955 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:31,955 - config.logging_config - INFO - Close Price   :255.250000
+2026-01-28 06:50:31,955 - config.logging_config - INFO - Open Interest :18630800.000000
+2026-01-28 06:50:31,956 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:31,956 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:31,956 - config.logging_config - INFO - Getting data for KOTAKBANK
+2026-01-28 06:50:31,956 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:31,957 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:31,957 - data.storage - INFO - Loading data from NSE_KOTAKBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:31,957 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_KOTAKBANK_26FEB_FUT.csv
+2026-01-28 06:50:31,958 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:31,958 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:31,958 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:31,958 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:31,958 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:KOTAKBANK (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:33,096 - data.storage - INFO - Saving data to NSE_KOTAKBANK_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:33,101 - data.storage - INFO - Loading data from NSE_KOTAKBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:33,102 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_KOTAKBANK_26FEB_OPTIONS.csv
+2026-01-28 06:50:33,102 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:33,102 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:33,104 - data.fetch_options - INFO - Fetching option chain for NSE:KOTAKBANK-EQ
+2026-01-28 06:50:33,752 - data.storage - INFO - Saving data to NSE_KOTAKBANK_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:33,774 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:33,774 - config.logging_config - INFO - FUT market state for stock: KOTAKBANK is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:33,775 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:33,775 - config.logging_config - INFO - Symbol        :KOTAKBANK
+2026-01-28 06:50:33,775 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:33,775 - config.logging_config - INFO - Close Price   :408.200000
+2026-01-28 06:50:33,775 - config.logging_config - INFO - Open Interest :10186000.000000
+2026-01-28 06:50:33,775 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:33,776 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:33,776 - config.logging_config - INFO - Getting data for LT
+2026-01-28 06:50:33,776 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:33,776 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:33,777 - data.storage - INFO - Loading data from NSE_LT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:33,777 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_LT_26FEB_FUT.csv
+2026-01-28 06:50:33,777 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:33,777 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:33,777 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:33,778 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:33,778 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:LT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:35,318 - data.storage - INFO - Saving data to NSE_LT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:35,326 - data.storage - INFO - Loading data from NSE_LT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:35,326 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_LT_26FEB_OPTIONS.csv
+2026-01-28 06:50:35,326 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:35,327 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:35,327 - data.fetch_options - INFO - Fetching option chain for NSE:LT-EQ
+2026-01-28 06:50:35,773 - data.storage - INFO - Saving data to NSE_LT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:35,792 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:35,793 - config.logging_config - INFO - FUT market state for stock: LT is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:35,793 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:35,793 - config.logging_config - INFO - Symbol        :LT
+2026-01-28 06:50:35,793 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:35,794 - config.logging_config - INFO - Close Price   :3786.200000
+2026-01-28 06:50:35,794 - config.logging_config - INFO - Open Interest :1067675.000000
+2026-01-28 06:50:35,794 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:35,794 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:35,794 - config.logging_config - INFO - Getting data for M&M
+2026-01-28 06:50:35,795 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:35,795 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:35,795 - data.storage - INFO - Loading data from NSE_M&M_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:35,797 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_M&M_26FEB_FUT.csv
+2026-01-28 06:50:35,797 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:35,797 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:35,797 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:35,797 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:35,798 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:37,071 - data.storage - INFO - Saving data to NSE_M&M_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:37,077 - data.storage - INFO - Loading data from NSE_M&M_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:37,077 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_M&M_26FEB_OPTIONS.csv
+2026-01-28 06:50:37,077 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:37,077 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:37,078 - data.fetch_options - INFO - Fetching option chain for NSE:M&M-EQ
+2026-01-28 06:50:37,605 - data.storage - INFO - Saving data to NSE_M&M_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:37,621 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:37,621 - config.logging_config - INFO - FUT market state for stock: M&M is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:37,622 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Symbol        :M&M
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Close Price   :3396.300000
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Open Interest :586200.000000
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:37,622 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:37,623 - config.logging_config - INFO - Getting data for MARUTI
+2026-01-28 06:50:37,623 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:37,623 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:37,624 - data.storage - INFO - Loading data from NSE_MARUTI_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:37,624 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_MARUTI_26FEB_FUT.csv
+2026-01-28 06:50:37,624 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:37,624 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:37,624 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:37,624 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:37,624 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:MARUTI (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:38,928 - data.storage - INFO - Saving data to NSE_MARUTI_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:38,937 - data.storage - INFO - Loading data from NSE_MARUTI_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:38,938 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_MARUTI_26FEB_OPTIONS.csv
+2026-01-28 06:50:38,938 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:38,938 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:38,940 - data.fetch_options - INFO - Fetching option chain for NSE:MARUTI-EQ
+2026-01-28 06:50:39,565 - data.storage - INFO - Saving data to NSE_MARUTI_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:39,588 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:39,589 - config.logging_config - INFO - FUT market state for stock: MARUTI is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:39,591 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:39,591 - config.logging_config - INFO - Symbol        :MARUTI
+2026-01-28 06:50:39,592 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:39,592 - config.logging_config - INFO - Close Price   :15230.000000
+2026-01-28 06:50:39,592 - config.logging_config - INFO - Open Interest :157850.000000
+2026-01-28 06:50:39,593 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:39,593 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:39,593 - config.logging_config - INFO - Getting data for MAXHEALTH
+2026-01-28 06:50:39,593 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:39,594 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:39,595 - data.storage - INFO - Loading data from NSE_MAXHEALTH_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:39,595 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_MAXHEALTH_26FEB_FUT.csv
+2026-01-28 06:50:39,595 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:39,595 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:39,596 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:39,596 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:39,596 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:MAXHEALTH (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:41,681 - data.storage - INFO - Saving data to NSE_MAXHEALTH_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:41,691 - data.storage - INFO - Loading data from NSE_MAXHEALTH_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:41,691 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_MAXHEALTH_26FEB_OPTIONS.csv
+2026-01-28 06:50:41,692 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:41,692 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:41,692 - data.fetch_options - INFO - Fetching option chain for NSE:MAXHEALTH-EQ
+2026-01-28 06:50:42,269 - data.storage - INFO - Saving data to NSE_MAXHEALTH_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:42,293 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:42,293 - config.logging_config - INFO - FUT market state for stock: MAXHEALTH is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:42,294 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:42,294 - config.logging_config - INFO - Symbol        :MAXHEALTH
+2026-01-28 06:50:42,294 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:42,294 - config.logging_config - INFO - Close Price   :977.600000
+2026-01-28 06:50:42,294 - config.logging_config - INFO - Open Interest :1685250.000000
+2026-01-28 06:50:42,295 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:42,295 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:42,295 - config.logging_config - INFO - Getting data for NTPC
+2026-01-28 06:50:42,295 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:42,297 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:42,297 - data.storage - INFO - Loading data from NSE_NTPC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:42,298 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_NTPC_26FEB_FUT.csv
+2026-01-28 06:50:42,298 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:42,298 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:42,298 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:42,299 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:42,299 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:NTPC (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:43,926 - data.storage - INFO - Saving data to NSE_NTPC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:43,933 - data.storage - INFO - Loading data from NSE_NTPC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:43,933 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_NTPC_26FEB_OPTIONS.csv
+2026-01-28 06:50:43,933 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:43,934 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:43,934 - data.fetch_options - INFO - Fetching option chain for NSE:NTPC-EQ
+2026-01-28 06:50:44,511 - data.storage - INFO - Saving data to NSE_NTPC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:44,543 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:44,543 - config.logging_config - INFO - FUT market state for stock: NTPC is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:44,544 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:44,544 - config.logging_config - INFO - Symbol        :NTPC
+2026-01-28 06:50:44,544 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:44,545 - config.logging_config - INFO - Close Price   :343.450000
+2026-01-28 06:50:44,545 - config.logging_config - INFO - Open Interest :9816000.000000
+2026-01-28 06:50:44,545 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:44,546 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:44,546 - config.logging_config - INFO - Getting data for NESTLEIND
+2026-01-28 06:50:44,546 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:44,547 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:44,548 - data.storage - INFO - Loading data from NSE_NESTLEIND_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:44,548 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_NESTLEIND_26FEB_FUT.csv
+2026-01-28 06:50:44,548 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:44,549 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:44,549 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:44,549 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:44,549 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:NESTLEIND (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:45,977 - data.storage - INFO - Saving data to NSE_NESTLEIND_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:45,984 - data.storage - INFO - Loading data from NSE_NESTLEIND_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:45,984 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_NESTLEIND_26FEB_OPTIONS.csv
+2026-01-28 06:50:45,985 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:45,985 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:45,987 - data.fetch_options - INFO - Fetching option chain for NSE:NESTLEIND-EQ
+2026-01-28 06:50:46,773 - data.storage - INFO - Saving data to NSE_NESTLEIND_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:46,800 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:46,800 - config.logging_config - INFO - FUT market state for stock: NESTLEIND is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:46,801 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:46,801 - config.logging_config - INFO - Symbol        :NESTLEIND
+2026-01-28 06:50:46,802 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:46,802 - config.logging_config - INFO - Close Price   :1302.000000
+2026-01-28 06:50:46,802 - config.logging_config - INFO - Open Interest :380000.000000
+2026-01-28 06:50:46,803 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:46,803 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:46,803 - config.logging_config - INFO - Getting data for ONGC
+2026-01-28 06:50:46,804 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:46,805 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:46,806 - data.storage - INFO - Loading data from NSE_ONGC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:46,806 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ONGC_26FEB_FUT.csv
+2026-01-28 06:50:46,806 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:46,806 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:46,807 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:46,807 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:46,807 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ONGC (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:48,340 - data.storage - INFO - Saving data to NSE_ONGC_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:48,347 - data.storage - INFO - Loading data from NSE_ONGC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:48,347 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ONGC_26FEB_OPTIONS.csv
+2026-01-28 06:50:48,348 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:48,348 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:48,349 - data.fetch_options - INFO - Fetching option chain for NSE:ONGC-EQ
+2026-01-28 06:50:49,166 - data.storage - INFO - Saving data to NSE_ONGC_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:49,200 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:49,200 - config.logging_config - INFO - FUT market state for stock: ONGC is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:49,202 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:49,203 - config.logging_config - INFO - Symbol        :ONGC
+2026-01-28 06:50:49,203 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:49,204 - config.logging_config - INFO - Close Price   :247.470000
+2026-01-28 06:50:49,204 - config.logging_config - INFO - Open Interest :39080250.000000
+2026-01-28 06:50:49,205 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:49,205 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:49,205 - config.logging_config - INFO - Getting data for POWERGRID
+2026-01-28 06:50:49,206 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:49,206 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:49,210 - data.storage - INFO - Loading data from NSE_POWERGRID_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:49,210 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_POWERGRID_26FEB_FUT.csv
+2026-01-28 06:50:49,210 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:49,211 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:49,211 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:49,212 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:49,212 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:POWERGRID (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:50,740 - data.storage - INFO - Saving data to NSE_POWERGRID_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:50,750 - data.storage - INFO - Loading data from NSE_POWERGRID_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:50,750 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_POWERGRID_26FEB_OPTIONS.csv
+2026-01-28 06:50:50,752 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:50,752 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:50,753 - data.fetch_options - INFO - Fetching option chain for NSE:POWERGRID-EQ
+2026-01-28 06:50:51,691 - data.storage - INFO - Saving data to NSE_POWERGRID_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:51,722 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:51,723 - config.logging_config - INFO - FUT market state for stock: POWERGRID is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:51,723 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:51,723 - config.logging_config - INFO - Symbol        :POWERGRID
+2026-01-28 06:50:51,724 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:51,724 - config.logging_config - INFO - Close Price   :254.600000
+2026-01-28 06:50:51,724 - config.logging_config - INFO - Open Interest :8804600.000000
+2026-01-28 06:50:51,724 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:51,725 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:51,725 - config.logging_config - INFO - Getting data for RELIANCE
+2026-01-28 06:50:51,725 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:51,726 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:51,727 - data.storage - INFO - Loading data from NSE_RELIANCE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:51,727 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_RELIANCE_26FEB_FUT.csv
+2026-01-28 06:50:51,727 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:51,728 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:51,728 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:51,728 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:51,728 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:RELIANCE (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:53,669 - data.storage - INFO - Saving data to NSE_RELIANCE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:53,679 - data.storage - INFO - Loading data from NSE_RELIANCE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:53,679 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_RELIANCE_26FEB_OPTIONS.csv
+2026-01-28 06:50:53,679 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:53,679 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:53,680 - data.fetch_options - INFO - Fetching option chain for NSE:RELIANCE-EQ
+2026-01-28 06:50:54,615 - data.storage - INFO - Saving data to NSE_RELIANCE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:54,646 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:54,646 - config.logging_config - INFO - FUT market state for stock: RELIANCE is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:54,647 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:54,647 - config.logging_config - INFO - Symbol        :RELIANCE
+2026-01-28 06:50:54,647 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:54,649 - config.logging_config - INFO - Close Price   :1380.500000
+2026-01-28 06:50:54,649 - config.logging_config - INFO - Open Interest :14218500.000000
+2026-01-28 06:50:54,649 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:54,649 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:54,650 - config.logging_config - INFO - Getting data for SBILIFE
+2026-01-28 06:50:54,650 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:54,651 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:54,651 - data.storage - INFO - Loading data from NSE_SBILIFE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:54,652 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_SBILIFE_26FEB_FUT.csv
+2026-01-28 06:50:54,652 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:54,652 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:54,652 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:54,652 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:54,654 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:SBILIFE (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:56,532 - data.storage - INFO - Saving data to NSE_SBILIFE_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:56,540 - data.storage - INFO - Loading data from NSE_SBILIFE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:56,540 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_SBILIFE_26FEB_OPTIONS.csv
+2026-01-28 06:50:56,540 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:56,541 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:56,541 - data.fetch_options - INFO - Fetching option chain for NSE:SBILIFE-EQ
+2026-01-28 06:50:56,933 - data.storage - INFO - Saving data to NSE_SBILIFE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:56,948 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:56,948 - config.logging_config - INFO - FUT market state for stock: SBILIFE is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:56,948 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:56,948 - config.logging_config - INFO - Symbol        :SBILIFE
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Close Price   :2041.300000
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Open Interest :1288875.000000
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:56,950 - config.logging_config - INFO - Getting data for SHRIRAMFIN
+2026-01-28 06:50:56,950 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:56,951 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:56,951 - data.storage - INFO - Loading data from NSE_SHRIRAMFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:56,951 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_SHRIRAMFIN_26FEB_FUT.csv
+2026-01-28 06:50:56,951 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:56,952 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:56,952 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:56,952 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:56,952 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:SHRIRAMFIN (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:57,871 - data.storage - INFO - Saving data to NSE_SHRIRAMFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:57,881 - data.storage - INFO - Loading data from NSE_SHRIRAMFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:57,881 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_SHRIRAMFIN_26FEB_OPTIONS.csv
+2026-01-28 06:50:57,882 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:57,882 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:57,883 - data.fetch_options - INFO - Fetching option chain for NSE:SHRIRAMFIN-EQ
+2026-01-28 06:50:58,384 - data.storage - INFO - Saving data to NSE_SHRIRAMFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:58,399 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:50:58,400 - config.logging_config - INFO - FUT market state for stock: SHRIRAMFIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:50:58,400 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Symbol        :SHRIRAMFIN
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Close Price   :1001.100000
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Open Interest :900075.000000
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:50:58,400 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:50:58,401 - config.logging_config - INFO - Getting data for SBIN
+2026-01-28 06:50:58,401 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:58,401 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:58,402 - data.storage - INFO - Loading data from NSE_SBIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:58,402 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_SBIN_26FEB_FUT.csv
+2026-01-28 06:50:58,402 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:50:58,402 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:50:58,402 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:50:58,402 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:50:58,402 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:SBIN (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:50:59,600 - data.storage - INFO - Saving data to NSE_SBIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:50:59,609 - data.storage - INFO - Loading data from NSE_SBIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:50:59,609 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_SBIN_26FEB_OPTIONS.csv
+2026-01-28 06:50:59,609 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:50:59,610 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:50:59,611 - data.fetch_options - INFO - Fetching option chain for NSE:SBIN-EQ
+2026-01-28 06:51:00,413 - data.storage - INFO - Saving data to NSE_SBIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:00,434 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:00,434 - config.logging_config - INFO - FUT market state for stock: SBIN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:00,434 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:00,435 - config.logging_config - INFO - Symbol        :SBIN
+2026-01-28 06:51:00,435 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:00,435 - config.logging_config - INFO - Close Price   :1051.050000
+2026-01-28 06:51:00,436 - config.logging_config - INFO - Open Interest :13164000.000000
+2026-01-28 06:51:00,436 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:00,436 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:00,437 - config.logging_config - INFO - Getting data for SUNPHARMA
+2026-01-28 06:51:00,437 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:00,437 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:00,438 - data.storage - INFO - Loading data from NSE_SUNPHARMA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:00,439 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_SUNPHARMA_26FEB_FUT.csv
+2026-01-28 06:51:00,439 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:00,439 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:00,439 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:00,439 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:00,440 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:SUNPHARMA (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:02,201 - data.storage - INFO - Saving data to NSE_SUNPHARMA_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:02,209 - data.storage - INFO - Loading data from NSE_SUNPHARMA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:02,209 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_SUNPHARMA_26FEB_OPTIONS.csv
+2026-01-28 06:51:02,209 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:02,210 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:02,210 - data.fetch_options - INFO - Fetching option chain for NSE:SUNPHARMA-EQ
+2026-01-28 06:51:02,953 - data.storage - INFO - Saving data to NSE_SUNPHARMA_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:02,979 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:02,980 - config.logging_config - INFO - FUT market state for stock: SUNPHARMA is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:02,980 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:02,980 - config.logging_config - INFO - Symbol        :SUNPHARMA
+2026-01-28 06:51:02,980 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:02,981 - config.logging_config - INFO - Close Price   :1638.800000
+2026-01-28 06:51:02,981 - config.logging_config - INFO - Open Interest :1689100.000000
+2026-01-28 06:51:02,981 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:02,981 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:02,981 - config.logging_config - INFO - Getting data for TCS
+2026-01-28 06:51:02,982 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:02,982 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:02,983 - data.storage - INFO - Loading data from NSE_TCS_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:02,983 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TCS_26FEB_FUT.csv
+2026-01-28 06:51:02,983 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:02,983 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:02,983 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:02,983 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:02,984 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TCS (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:04,268 - data.storage - INFO - Saving data to NSE_TCS_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:04,278 - data.storage - INFO - Loading data from NSE_TCS_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:04,279 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TCS_26FEB_OPTIONS.csv
+2026-01-28 06:51:04,279 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:04,279 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:04,280 - data.fetch_options - INFO - Fetching option chain for NSE:TCS-EQ
+2026-01-28 06:51:04,977 - data.storage - INFO - Saving data to NSE_TCS_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:05,006 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:05,006 - config.logging_config - INFO - FUT market state for stock: TCS is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:05,007 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:05,007 - config.logging_config - INFO - Symbol        :TCS
+2026-01-28 06:51:05,007 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:05,007 - config.logging_config - INFO - Close Price   :3160.200000
+2026-01-28 06:51:05,009 - config.logging_config - INFO - Open Interest :761250.000000
+2026-01-28 06:51:05,009 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:05,009 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:05,009 - config.logging_config - INFO - Getting data for TATACONSUM
+2026-01-28 06:51:05,010 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:05,010 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:05,011 - data.storage - INFO - Loading data from NSE_TATACONSUM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:05,011 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TATACONSUM_26FEB_FUT.csv
+2026-01-28 06:51:05,012 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:05,012 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:05,013 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:05,013 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:05,013 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TATACONSUM (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:08,027 - data.storage - INFO - Saving data to NSE_TATACONSUM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:08,040 - data.storage - INFO - Loading data from NSE_TATACONSUM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:08,041 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TATACONSUM_26FEB_OPTIONS.csv
+2026-01-28 06:51:08,041 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:08,042 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:08,043 - data.fetch_options - INFO - Fetching option chain for NSE:TATACONSUM-EQ
+2026-01-28 06:51:08,874 - data.storage - INFO - Saving data to NSE_TATACONSUM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:08,904 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:08,905 - config.logging_config - INFO - FUT market state for stock: TATACONSUM is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:08,905 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:08,905 - config.logging_config - INFO - Symbol        :TATACONSUM
+2026-01-28 06:51:08,905 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:08,906 - config.logging_config - INFO - Close Price   :1185.200000
+2026-01-28 06:51:08,906 - config.logging_config - INFO - Open Interest :253000.000000
+2026-01-28 06:51:08,906 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:08,906 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:08,906 - config.logging_config - INFO - Getting data for TMPV
+2026-01-28 06:51:08,906 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:08,907 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:08,908 - data.storage - INFO - Loading data from NSE_TMPV_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:08,908 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TMPV_26FEB_FUT.csv
+2026-01-28 06:51:08,910 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:08,911 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:08,911 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:08,912 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:08,912 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TMPV (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:10,089 - data.storage - INFO - Saving data to NSE_TMPV_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:10,105 - data.storage - INFO - Loading data from NSE_TMPV_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:10,105 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TMPV_26FEB_OPTIONS.csv
+2026-01-28 06:51:10,106 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:10,106 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:10,107 - data.fetch_options - INFO - Fetching option chain for NSE:TMPV-EQ
+2026-01-28 06:51:10,812 - data.storage - INFO - Saving data to NSE_TMPV_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:10,831 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:10,831 - config.logging_config - INFO - FUT market state for stock: TMPV is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:10,831 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:10,831 - config.logging_config - INFO - Symbol        :TMPV
+2026-01-28 06:51:10,832 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:10,832 - config.logging_config - INFO - Close Price   :339.950000
+2026-01-28 06:51:10,832 - config.logging_config - INFO - Open Interest :8701600.000000
+2026-01-28 06:51:10,832 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:10,832 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:10,833 - config.logging_config - INFO - Getting data for TATASTEEL
+2026-01-28 06:51:10,833 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:10,833 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:10,834 - data.storage - INFO - Loading data from NSE_TATASTEEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:10,834 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TATASTEEL_26FEB_FUT.csv
+2026-01-28 06:51:10,834 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:10,835 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:10,835 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:10,835 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:10,835 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TATASTEEL (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:12,252 - data.storage - INFO - Saving data to NSE_TATASTEEL_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:12,261 - data.storage - INFO - Loading data from NSE_TATASTEEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:12,261 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TATASTEEL_26FEB_OPTIONS.csv
+2026-01-28 06:51:12,261 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:12,261 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:12,262 - data.fetch_options - INFO - Fetching option chain for NSE:TATASTEEL-EQ
+2026-01-28 06:51:12,825 - data.storage - INFO - Saving data to NSE_TATASTEEL_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:12,844 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:12,844 - config.logging_config - INFO - FUT market state for stock: TATASTEEL is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:12,846 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:12,846 - config.logging_config - INFO - Symbol        :TATASTEEL
+2026-01-28 06:51:12,846 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:12,847 - config.logging_config - INFO - Close Price   :191.710000
+2026-01-28 06:51:12,847 - config.logging_config - INFO - Open Interest :11830500.000000
+2026-01-28 06:51:12,847 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:12,848 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:12,848 - config.logging_config - INFO - Getting data for TECHM
+2026-01-28 06:51:12,848 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:12,849 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:12,850 - data.storage - INFO - Loading data from NSE_TECHM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:12,850 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TECHM_26FEB_FUT.csv
+2026-01-28 06:51:12,850 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:12,850 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:12,850 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:12,851 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:12,851 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TECHM (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:14,011 - data.storage - INFO - Saving data to NSE_TECHM_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:14,016 - data.storage - INFO - Loading data from NSE_TECHM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:14,016 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TECHM_26FEB_OPTIONS.csv
+2026-01-28 06:51:14,016 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:14,016 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:14,018 - data.fetch_options - INFO - Fetching option chain for NSE:TECHM-EQ
+2026-01-28 06:51:14,703 - data.storage - INFO - Saving data to NSE_TECHM_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:14,727 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:14,728 - config.logging_config - INFO - FUT market state for stock: TECHM is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:14,728 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:14,728 - config.logging_config - INFO - Symbol        :TECHM
+2026-01-28 06:51:14,728 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:14,729 - config.logging_config - INFO - Close Price   :1746.400000
+2026-01-28 06:51:14,729 - config.logging_config - INFO - Open Interest :1678800.000000
+2026-01-28 06:51:14,729 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:14,729 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:14,731 - config.logging_config - INFO - Getting data for TITAN
+2026-01-28 06:51:14,731 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:14,731 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:14,732 - data.storage - INFO - Loading data from NSE_TITAN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:14,732 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TITAN_26FEB_FUT.csv
+2026-01-28 06:51:14,732 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:14,732 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:14,734 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:14,734 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:14,734 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TITAN (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:15,998 - data.storage - INFO - Saving data to NSE_TITAN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:16,008 - data.storage - INFO - Loading data from NSE_TITAN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:16,008 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TITAN_26FEB_OPTIONS.csv
+2026-01-28 06:51:16,009 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:16,009 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:16,010 - data.fetch_options - INFO - Fetching option chain for NSE:TITAN-EQ
+2026-01-28 06:51:17,006 - data.storage - INFO - Saving data to NSE_TITAN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:17,037 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:17,039 - config.logging_config - INFO - FUT market state for stock: TITAN is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:17,039 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:17,039 - config.logging_config - INFO - Symbol        :TITAN
+2026-01-28 06:51:17,040 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:17,040 - config.logging_config - INFO - Close Price   :3998.000000
+2026-01-28 06:51:17,040 - config.logging_config - INFO - Open Interest :657125.000000
+2026-01-28 06:51:17,041 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:17,041 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:17,041 - config.logging_config - INFO - Getting data for TRENT
+2026-01-28 06:51:17,042 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:17,042 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:17,043 - data.storage - INFO - Loading data from NSE_TRENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:17,043 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_TRENT_26FEB_FUT.csv
+2026-01-28 06:51:17,043 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:17,043 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:17,044 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:17,044 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:17,044 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:TRENT (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:18,869 - data.storage - INFO - Saving data to NSE_TRENT_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:18,880 - data.storage - INFO - Loading data from NSE_TRENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:18,880 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_TRENT_26FEB_OPTIONS.csv
+2026-01-28 06:51:18,880 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:18,881 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:18,882 - data.fetch_options - INFO - Fetching option chain for NSE:TRENT-EQ
+2026-01-28 06:51:19,808 - data.storage - INFO - Saving data to NSE_TRENT_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:19,837 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:19,837 - config.logging_config - INFO - FUT market state for stock: TRENT is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:19,837 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:19,837 - config.logging_config - INFO - Symbol        :TRENT
+2026-01-28 06:51:19,838 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:19,838 - config.logging_config - INFO - Close Price   :3796.800000
+2026-01-28 06:51:19,839 - config.logging_config - INFO - Open Interest :816200.000000
+2026-01-28 06:51:19,839 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:19,839 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:19,839 - config.logging_config - INFO - Getting data for ULTRACEMCO
+2026-01-28 06:51:19,840 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:19,840 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:19,841 - data.storage - INFO - Loading data from NSE_ULTRACEMCO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:19,841 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_ULTRACEMCO_26FEB_FUT.csv
+2026-01-28 06:51:19,841 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:19,843 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:19,843 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:19,843 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:19,844 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:ULTRACEMCO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:21,593 - data.storage - INFO - Saving data to NSE_ULTRACEMCO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:21,602 - data.storage - INFO - Loading data from NSE_ULTRACEMCO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:21,603 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_ULTRACEMCO_26FEB_OPTIONS.csv
+2026-01-28 06:51:21,603 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:21,603 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:21,604 - data.fetch_options - INFO - Fetching option chain for NSE:ULTRACEMCO-EQ
+2026-01-28 06:51:22,630 - data.storage - INFO - Saving data to NSE_ULTRACEMCO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:51:22,672 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:51:22,672 - config.logging_config - INFO - FUT market state for stock: ULTRACEMCO is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:51:22,673 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:51:22,673 - config.logging_config - INFO - Symbol        :ULTRACEMCO
+2026-01-28 06:51:22,673 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:51:22,674 - config.logging_config - INFO - Close Price   :12599.000000
+2026-01-28 06:51:22,674 - config.logging_config - INFO - Open Interest :208600.000000
+2026-01-28 06:51:22,676 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:51:22,676 - config.logging_config - INFO - Signal        :None
+2026-01-28 06:51:22,676 - config.logging_config - INFO - Getting data for WIPRO
+2026-01-28 06:51:22,677 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:51:22,677 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:51:22,679 - data.storage - INFO - Loading data from NSE_WIPRO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:51:22,680 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_WIPRO_26FEB_FUT.csv
+2026-01-28 06:51:22,680 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:51:22,681 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:51:22,681 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:51:22,681 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:51:22,681 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:WIPRO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:51:23,325 - data.fetch_futures_oi - ERROR - Failed to fetch historical futures OI for NSE:WIPRO26FEBFUT: {'code': -300, 'message': 'Invalid symbol provided', 's': 'error'}
+2026-01-28 06:53:21,699 - config.logging_config - INFO - Getting data for WIPRO
+2026-01-28 06:53:21,708 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:53:21,708 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:53:21,711 - data.storage - INFO - Loading data from NSE_WIPRO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:53:21,711 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB\NSE_WIPRO_26FEB_FUT.csv
+2026-01-28 06:53:21,712 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-01-28 06:53:21,713 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-01-28 06:53:21,713 - utils.expiry - INFO - Previous month: 1/2026
+2026-01-28 06:53:21,713 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-01-28 06:53:21,713 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:WIPRO (26FEB) from 2026-01-26 to 2026-01-27 with CandleResolution.DAY_1 resolution
+2026-01-28 06:53:23,561 - data.storage - INFO - Saving data to NSE_WIPRO_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-01-28 06:53:23,596 - data.storage - INFO - Loading data from NSE_WIPRO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:53:23,597 - data.storage - WARNING - File not found at C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB\NSE_WIPRO_26FEB_OPTIONS.csv
+2026-01-28 06:53:23,597 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 06:53:23,598 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 06:53:23,599 - data.fetch_options - INFO - Fetching option chain for NSE:WIPRO-EQ
+2026-01-28 06:53:25,220 - data.storage - INFO - Saving data to NSE_WIPRO_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-01-28 06:53:25,497 - analysis.market_state - WARNING - Not enough data to classify market state, returning NEUTRAL
+2026-01-28 06:53:25,497 - config.logging_config - INFO - FUT market state for stock: WIPRO is {'market_state': 'NEUTRAL', 'acc_days': 0, 'short_build_days': 0, 'risk_transfer_days': 0, 'unwind_days': 0, 'which_day': 'UNWIND'}
+2026-01-28 06:53:25,498 - config.logging_config - INFO - 
+========== ENGINE OUTPUT ==========
+2026-01-28 06:53:25,498 - config.logging_config - INFO - Symbol        :WIPRO
+2026-01-28 06:53:25,498 - config.logging_config - INFO - Date          :2026-01-27
+2026-01-28 06:53:25,498 - config.logging_config - INFO - Close Price   :234.850000
+2026-01-28 06:53:25,498 - config.logging_config - INFO - Open Interest :18303000.000000
+2026-01-28 06:53:25,500 - config.logging_config - INFO - Market State  :None
+2026-01-28 06:53:25,500 - config.logging_config - INFO - Signal        :None

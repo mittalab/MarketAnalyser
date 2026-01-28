@@ -107,7 +107,7 @@ def get_expiry_DDMMM(trade_date):
     return get_DDMMM(exp)
 
 def get_expiry_YYMMM(trade_date) -> str:
-    expiry = get_last_weekday_of_month(trade_date.year, trade_date.month, calendar.TUESDAY)
+    expiry = get_expiry(trade_date)
     return expiry.strftime("%y%b").upper()
 
 def datetime_to_YYYY_MM_DD(dt: datetime) -> str:
@@ -121,6 +121,7 @@ def days_to_expiry(trade_date):
 def test():
     today = datetime.now()
     today_plus_4 = today + timedelta(days=4)
+    print (get_expiry_DDMMM(today))
     print (get_expiry_DDMMM(today_plus_4))
     print(days_to_expiry(today_plus_4))
 

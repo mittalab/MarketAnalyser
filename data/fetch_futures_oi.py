@@ -122,7 +122,6 @@ def get_hitorical_futures_oi(fyers, exchg, symbol, exp_date, range_from, range_t
             oiperct_from_last_day = (fut[6] - last_day_oi) / last_day_oi * 100
 
         last_price_change = fut[4] - lastclose
-        print(f"HELLO oi_change:{oi_change}")
         result = {
             "time": epoch_time,
             "spot_close": spot[4],

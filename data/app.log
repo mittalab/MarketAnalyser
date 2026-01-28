@@ -483,3 +483,37 @@
 2026-01-26 08:01:51,816 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
 2026-01-26 08:07:30,267 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
 2026-01-26 08:07:30,290 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:50:41,235 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:50:41,260 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:50:41,261 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:50:41,263 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:50:42,216 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:51:30,468 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:51:30,469 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:51:30,469 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:51:30,470 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:51:30,959 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:52:33,657 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:52:33,693 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:52:33,694 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:52:33,695 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:52:34,231 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:52:59,693 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:52:59,752 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:52:59,753 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:52:59,755 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:53:00,365 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:53:56,703 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:53:56,738 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:53:56,739 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:53:56,740 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:53:57,284 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:57:03,024 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 05:57:03,026 - data.fyers_client - INFO - Initializing Fyers client...
+2026-01-28 05:57:03,027 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-01-28 05:57:03,028 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-01-28 05:57:03,653 - data.storage - INFO - Saving data to NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 06:16:22,230 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 06:16:40,088 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 06:19:01,246 - data.storage - INFO - Loading data from NSE_360ONE_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-01-28 06:19:31,038 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN

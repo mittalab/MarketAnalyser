@@ -1,0 +1,2 @@
+time,spot_close,fut_open,fut_high,fut_low,fut_close,bias,oi,fut_volume,bid,ask,oiperct_from_last_day,oiperct_from_last_candle,oi_change,last_price_change
+1769508000,2622.8,2670,2733.2,2542.8,2617.2,-5.6,676500,3261250,0,0,0,0.0,0,2617.2

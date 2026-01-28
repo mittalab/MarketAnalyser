@@ -56,13 +56,14 @@ def run(SYMBOL_EQ):
     logger.info(f"Getting data for {SYMBOL_EQ}")
     today_datetime = datetime.now()
     ExpDate = get_expiry_YYMMM(today_datetime)
-
+    print(ExpDate)
     futures_df, options_df = populate_derivatives_data(SYMBOL_EQ, ExpDate)
 
     futures_df.set_index("date")
     futures_df.sort_values("date", inplace=True)
     futures_df.reset_index(drop=True, inplace=True)
 
+    # TODO : FIX
     # options_df.set_index("date")
     # options_df.sort_values("date", inplace=True)
     # options_df.reset_index(drop=True, inplace=True)
@@ -92,8 +93,12 @@ def run(SYMBOL_EQ):
         # Get the same day options_df as that of future df
         option_df = options_df[options_df["date"] == window["date"][0]]
         if len(option_df) == 0:
+            print(options_df["date"])
+            print(window["date"][0])
             continue
 
+        print("Getting Options DF")
+        print(option_df)
         result = generate_final_signal(
             SYMBOL=SYMBOL_EQ,
             futures_df_window=window,
@@ -125,7 +130,8 @@ def run(SYMBOL_EQ):
     logger.info("Market State  :%s", state_series.get(last_date))
     logger.info("Signal        :%s", signal_series.get(last_date))
 
-    export_all(decisions, SYMBOL_EQ, ExpDate)
+    if len(decisions) > 0:
+        export_all(decisions, SYMBOL_EQ, ExpDate)
     if last_date in option_metrics_series:
         logger.info("Option Metrics:", option_metrics_series[last_date])
 
@@ -138,4 +144,5 @@ def get_all_data(file):
 
 if __name__ == "__main__":
     file = "storage/nifty50_stocks.txt"
+    # file = "storage/tmp_stocks.txt"
     get_all_data(file)
