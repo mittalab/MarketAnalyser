@@ -7,10 +7,6 @@
     <list default="true" id="314373a1-c7cb-4786-9260-d68ee980e8f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODOs.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODOs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/analysis_derivative_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/analysis_derivative_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fetch_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/fetch_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/expiry.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/expiry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/futures_roll.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/futures_roll.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
