@@ -1,5 +1,6 @@
 import calendar
 from datetime import datetime, timedelta
+from utils.nse_holiday import is_holiday
 import logging
 
 logger = logging.getLogger(__name__)
@@ -26,28 +27,21 @@ def get_first_day_of_this_expiry(YYMMM: str, day) -> datetime:
     logger.info(f"Parsed year: {full_year}, month: {month_num}")
 
     # Get previous month's year and month
-    prev_year, prev_month_num = get_prev_year_month(month_num, full_year)
+    prev_year, prev_month_num = _get_prev_year_month(month_num, full_year)
     logger.info(f"Previous month: {prev_month_num}/{prev_year}")
 
     # Get the last day of the previous month
-    last_day = get_last_weekday_of_month(prev_year, prev_month_num, day)
+    last_day = _get_last_weekday_of_month(prev_year, prev_month_num, day)
     logger.info(f"Last Monday of previous month: {last_day}")
 
     return last_day
 
-def get_current_expiry(trade_date):
+def _get_last_month_Monday(trade_date):
     """
     Monthly expiry for stock futures.
     """
-    expiry = get_last_weekday_of_month(trade_date.year, trade_date.month, calendar.TUESDAY)
-    return expiry
-
-def get_last_month_Monday(trade_date):
-    """
-    Monthly expiry for stock futures.
-    """
-    prev_month = get_prev_year_month(trade_date.month, trade_date.year)
-    mon = get_last_weekday_of_month(prev_month[0], prev_month[1], calendar.MONDAY)
+    prev_month = _get_prev_year_month(trade_date.month, trade_date.year)
+    mon = _get_last_weekday_of_month(prev_month[0], prev_month[1], calendar.MONDAY)
     return mon
 
 
@@ -64,7 +58,7 @@ def get_next_year_month(curr_month, curr_year):
 
     return next_year, next_month
 
-def get_prev_year_month(curr_month, curr_year):
+def _get_prev_year_month(curr_month, curr_year):
     """
     Monthly expiry for stock futures.
     """
@@ -77,7 +71,7 @@ def get_prev_year_month(curr_month, curr_year):
 
     return prev_year, prev_month
 
-def get_last_weekday_of_month(year, month, weekday):
+def _get_last_weekday_of_month(year, month, weekday):
     """
     Calculates the date of the last specified weekday (0=Mon, 6=Sun) of a given month.
     """
@@ -92,17 +86,26 @@ def get_last_weekday_of_month(year, month, weekday):
             return target_date
     return None
 
+def _get_last_trading_day(trade_date: datetime) -> datetime:
+    date_to_check = trade_date
+    while True:
+        if is_holiday(date_to_check) or date_to_check.weekday() == 5 or date_to_check.weekday() == 6:
+            date_to_check = date_to_check - timedelta(days=1)
+        else:
+            dt_330 = date_to_check.replace(hour=15, minute=30, second=0, microsecond=0)
+            return dt_330
+
 def get_expiry(trade_date):
-    expiry = get_last_weekday_of_month(trade_date.year, trade_date.month, calendar.TUESDAY)
+    expiry = _get_last_weekday_of_month(trade_date.year, trade_date.month, calendar.TUESDAY)
     if expiry < datetime(trade_date.year, trade_date.month, trade_date.day):
         next_year, next_month = get_next_year_month(trade_date.month, trade_date.year)
-        expiry = get_last_weekday_of_month(next_year, next_month, calendar.TUESDAY)
-    return expiry
+        expiry = _get_last_weekday_of_month(next_year, next_month, calendar.TUESDAY)
+    return _get_last_trading_day(expiry)
 
 def get_DDMMM(trade_date):
     return trade_date.strftime("%d%b").upper()
 
-def get_expiry_DDMMM(trade_date):
+def _get_expiry_DDMMM(trade_date):
     exp = get_expiry(trade_date)
     return get_DDMMM(exp)
 
@@ -120,9 +123,10 @@ def days_to_expiry(trade_date):
 
 def test():
     today = datetime.now()
-    today_plus_4 = today + timedelta(days=4)
-    print (get_expiry_DDMMM(today))
-    print (get_expiry_DDMMM(today_plus_4))
-    print(days_to_expiry(today_plus_4))
+    # today_plus_4 = today + timedelta(days=4)
+    print(_get_last_trading_day(today))
+    # print (_get_expiry_DDMMM(today))
+    # print (_get_expiry_DDMMM(today_plus_4))
+    # print(days_to_expiry(today_plus_4))
 
-# test()
+test()

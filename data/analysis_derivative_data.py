@@ -2,6 +2,8 @@ import calendar
 import datetime
 from datetime import time
 import json
+import time
+from typing import Callable, Iterable
 # from typing import List, Dict, Optional
 from data.fyers_client import get_fyers_client
 from data.storage import save_csv
@@ -20,7 +22,48 @@ FUTURES_PATH_BASE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\stor
 OPTIONS_PATH_BASE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\storage\\options"
 Exchange = "NSE"
 
-def safe_parse_option_chain(raw):
+def _retry(
+        func: Callable,
+        *,
+        max_retries: int = 2,
+        retry_delay: float = 1.0,
+):
+    """
+    Retries a function call based on return status_code or exception.
+
+    func: function to execute
+    max_retries: maximum retry attempts
+    retry_delay: delay (seconds) between retries
+    retry_on_status: HTTP-like status codes to retry on
+    retry_on_exception: exceptions that trigger retry
+    """
+
+    retry_on_status = (500, 502, 503, 504)
+    attempt = 0
+
+    while True:
+        try:
+            result = func()
+
+            # If response has status_code, evaluate it
+            status_code = getattr(result, "status_code", None)
+
+            if status_code is not None and status_code in retry_on_status:
+                raise RuntimeError(f"Retryable status code: {status_code}")
+
+            return result
+
+        except RuntimeError as e:
+            attempt += 1
+
+            if attempt > max_retries:
+                raise RuntimeError(
+                    f"Retry failed after {max_retries} attempts"
+                ) from e
+
+            time.sleep(retry_delay)
+
+def _safe_parse_option_chain(raw):
     """
     Parses optionChain string into Python list safely.
     Handles:
@@ -41,14 +84,14 @@ def safe_parse_option_chain(raw):
             return []
 
 
-def flatten_option_chain_row(row):
+def _flatten_option_chain_row(row):
     """
     Flattens ONE CSV row (any supported optionChain format)
     into list of normalized option rows.
     """
     flattened = []
 
-    option_chain = safe_parse_option_chain(row["optionsChain"])
+    option_chain = _safe_parse_option_chain(row["optionsChain"])
 
     if not isinstance(option_chain, list):
         return flattened
@@ -94,7 +137,8 @@ def populate_options_data(SYMBOL: str, ExpDate: str):
 
     fyers = get_fyers_client()
     # Fyers API provide the last data only
-    new_data = fetch_option_chain(fyers, Exchange, SYMBOL)
+    new_data = _retry(fetch_option_chain(fyers, Exchange, SYMBOL))
+
     # File doesn't exist; fetching all historical data
     if data_from_file is None:
         data_from_file = new_data
@@ -110,7 +154,7 @@ def populate_options_data(SYMBOL: str, ExpDate: str):
 
     all_rows = []
     for _, row in options_df.iterrows():
-        all_rows.extend(flatten_option_chain_row(row))
+        all_rows.extend(_flatten_option_chain_row(row))
 
     final_df = pd.DataFrame(all_rows)
     # final_df = final_df.sort_values(by="date", ascending=True)
@@ -139,7 +183,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         historical_date = get_first_day_of_this_expiry(ExpDate, calendar.MONDAY)
         from_date = datetime_to_YYYY_MM_DD(historical_date)
         logger.debug(f"Futures file not found for {SYMBOL}, fetching historical data from {from_date} to {to_date}")
-        data_from_file = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0, 0.0)
+        data_from_file = _retry(get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0, 0.0))
     else:
         print("Hello2")
         last_date_str = data_from_file[-1]['time']
@@ -148,7 +192,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
         from_date = datetime_to_YYYY_MM_DD(last_date + datetime.timedelta(days=1))
         logger.debug(f"Futures file found for {SYMBOL}, fetching new data from {from_date} to {to_date}")
         if from_date <= to_date:
-            new_data = get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'], data_from_file[-1]['fut_close'])
+            new_data = _retry(get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'], data_from_file[-1]['fut_close']))
             for data in new_data:
                 data_from_file.append(data)
         else:

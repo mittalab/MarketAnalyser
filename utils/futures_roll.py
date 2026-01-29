@@ -1,16 +1,16 @@
 import calendar
-from utils.expiry import get_current_expiry
+from utils.expiry import get_expiry
 
 ROLL_DAYS = 3
 
 
 def should_roll(trade_date):
-    expiry = get_current_expiry(trade_date)
+    expiry = get_expiry(trade_date)
     return (expiry - trade_date).days <= ROLL_DAYS
 
 
 def get_active_futures_symbol(symbol, trade_date):
-    expiry = get_current_expiry(trade_date)
+    expiry = get_expiry(trade_date)
 
     if should_roll(trade_date):
         # use next month

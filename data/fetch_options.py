@@ -10,7 +10,14 @@ def fetch_option_chain(fyers, exchg, symbol_eq):
     logger.info(f"Fetching option chain for {symbol}")
     data = {"symbol": symbol, "strikecount": 50, "timestamp": ""}
     response = fyers.optionchain(data=data)
-    records = []
+
+    if response["s"] == "no_data":
+        logger.warning(f"No option chain data found for {symbol}")
+        return []
+
+    if response["s"] != "ok":
+        logger.error(f"Failed to fetch option chain for {symbol}: {response}")
+        raise Exception(f"Failed to fetch option chain for {symbol}: {response}")
 
     if "data" not in response or "optionsChain" not in response["data"]:
         logger.warning(f"Could not parse option chain for {symbol}, returning empty dataframe. Response: {response}")
