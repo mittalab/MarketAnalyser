@@ -56,7 +56,6 @@ def run(SYMBOL_EQ):
     logger.info(f"Getting data for {SYMBOL_EQ}")
     today_datetime = datetime.now()
     ExpDate = get_expiry_YYMMM(today_datetime)
-    print(ExpDate)
     futures_df, options_df = populate_derivatives_data(SYMBOL_EQ, ExpDate)
 
     futures_df.set_index("date")
@@ -68,8 +67,8 @@ def run(SYMBOL_EQ):
     # options_df.sort_values("date", inplace=True)
     # options_df.reset_index(drop=True, inplace=True)
 
-    futures_state = classify_market_state_futures(futures_df)
-    logger.info(f"FUT market state for stock: {SYMBOL_EQ} is {futures_state}")
+    # futures_state = classify_market_state_futures(futures_df)
+    # logger.info(f"FUT market state for stock: {SYMBOL_EQ} is {futures_state}")
     # --------------------------------------------------
     # 2️⃣ WALK-FORWARD ANALYSIS (NO LEAKAGE)
     # --------------------------------------------------
@@ -83,6 +82,8 @@ def run(SYMBOL_EQ):
     orb_history = []
     decisions = []
 
+    print(futures_df)
+    print(options_df)
     for i in range(1, len(futures_df)):
         window = futures_df.iloc[: i + 1]
 
@@ -91,14 +92,16 @@ def run(SYMBOL_EQ):
             continue
 
         # Get the same day options_df as that of future df
-        option_df = options_df[options_df["date"] == window["date"][0]]
+        option_df = options_df[options_df["date"] == window.iloc[-1]["date"]]
         if len(option_df) == 0:
-            print(options_df["date"])
-            print(window["date"][0])
+            print("Date1")
+            # print(options_df["date"])
+            print("Date2")
+            print(window.iloc[-1]["date"])
             continue
 
-        print("Getting Options DF")
-        print(option_df)
+        # print("Getting Options DF")
+        # print(option_df)
         result = generate_final_signal(
             SYMBOL=SYMBOL_EQ,
             futures_df_window=window,
@@ -130,6 +133,9 @@ def run(SYMBOL_EQ):
     logger.info("Market State  :%s", state_series.get(last_date))
     logger.info("Signal        :%s", signal_series.get(last_date))
 
+    print(state_series)
+    print(signal_series)
+    print(decisions)
     if len(decisions) > 0:
         export_all(decisions, SYMBOL_EQ, ExpDate)
     if last_date in option_metrics_series:

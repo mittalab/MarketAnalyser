@@ -517,3 +517,111 @@
 2026-01-28 06:16:40,088 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
 2026-01-28 06:19:01,246 - data.storage - INFO - Loading data from NSE_360ONE_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
 2026-01-28 06:19:31,038 - data.storage - INFO - Loading data from NSE_TMP_26JAN_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26JAN
+2026-02-01 12:37:20,492 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 12:37:20,504 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 12:37:20,504 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 12:37:20,505 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 12:38:13,307 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 12:38:13,308 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 12:38:13,309 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 12:38:13,309 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 12:38:27,030 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 12:38:27,032 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 12:38:27,032 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 12:38:27,033 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 12:39:08,485 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 12:39:08,487 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 12:39:08,487 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 12:39:08,488 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 12:45:09,745 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 12:45:09,745 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 12:45:09,746 - data.storage - INFO - Loading data from NSE_M&M_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-02-01 12:45:09,761 - config.logging_config - INFO - Last date found in futures file for M&M: 2026-01-28
+2026-02-01 12:45:09,761 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:M&M (26FEB) from 2026-01-29 to 2026-01-31 with CandleResolution.DAY_1 resolution
+2026-02-01 19:18:58,042 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:18:58,058 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:18:58,059 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:18:58,060 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:26:43,675 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:26:43,678 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:26:43,679 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:26:43,680 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:28:51,179 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:28:51,182 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:28:51,182 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:28:51,183 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:29:30,261 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:29:30,263 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:29:30,264 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:29:30,264 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:29:53,507 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:29:53,509 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:29:53,510 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:29:53,511 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:34:46,211 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:34:46,213 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:34:46,213 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:34:46,214 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 19:55:02,277 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 19:55:02,296 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 19:55:02,297 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 19:55:02,298 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 20:11:14,290 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:11:14,292 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:11:14,293 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:11:14,293 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 20:12:17,479 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:12:17,481 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:12:17,481 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:12:17,482 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 20:13:27,687 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:13:27,690 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:13:27,690 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:13:27,691 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ
+2026-02-01 20:14:36,392 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:14:36,428 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:14:36,429 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:14:36,430 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 20:14:36,941 - data.storage - INFO - Saving data to NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:14:50,340 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:14:50,384 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:14:50,385 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:14:50,387 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 20:14:50,716 - data.storage - INFO - Saving data to NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:16:14,267 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:16:14,286 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:16:14,286 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:16:14,287 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 20:16:14,761 - data.storage - INFO - Saving data to NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:16:39,750 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:16:39,765 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:16:39,766 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:16:39,766 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 20:16:55,756 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 20:16:55,757 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 20:16:55,758 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 20:16:55,758 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 21:26:16,606 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-01 21:26:16,607 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-01 21:26:16,607 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-01 21:26:16,607 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-01 21:26:16,607 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-01 21:26:16,608 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-01 21:26:16,608 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-01 21:26:16,608 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-01 21:26:16,618 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 21:26:16,620 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 21:26:16,620 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 21:26:16,621 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-01 21:31:04,493 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-01 21:31:04,493 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-01 21:31:04,493 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-01 21:31:04,493 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-01 21:31:04,494 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-01 21:31:04,494 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-01 21:31:04,494 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-01 21:31:04,494 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-01 21:31:04,501 - data.storage - INFO - Loading data from NSE_360ONE_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-01 21:31:04,502 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-01 21:31:04,502 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-01 21:31:04,503 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ

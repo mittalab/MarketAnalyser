@@ -86,21 +86,48 @@ def _get_last_weekday_of_month(year, month, weekday):
             return target_date
     return None
 
-def _get_last_trading_day(trade_date: datetime) -> datetime:
+def get_last_trading_day(trade_date: datetime, include_ongoingDay = False) -> datetime:
     date_to_check = trade_date
+    trade_date_330 = trade_date.replace(hour=15, minute=30, second=0, microsecond=0)
     while True:
-        if is_holiday(date_to_check) or date_to_check.weekday() == 5 or date_to_check.weekday() == 6:
+        dt_330 = date_to_check.replace(hour=15, minute=30, second=0, microsecond=0)
+        if is_holiday(dt_330) or (include_ongoingDay == False and dt_330 == trade_date_330 and dt_330 > date_to_check):
             date_to_check = date_to_check - timedelta(days=1)
         else:
-            dt_330 = date_to_check.replace(hour=15, minute=30, second=0, microsecond=0)
             return dt_330
+
+def is_trading_ongoing():
+    trade_date = datetime.now()
+    trade_date_340 = trade_date.replace(hour=15, minute=40, second=0, microsecond=0)
+    trade_date_900 = trade_date.replace(hour=9, minute=00, second=0, microsecond=0)
+    if is_holiday(trade_date_340):
+        return False
+    if trade_date >= trade_date_900 and trade_date <= trade_date_340:
+        return True
+    return False
 
 def get_expiry(trade_date):
     expiry = _get_last_weekday_of_month(trade_date.year, trade_date.month, calendar.TUESDAY)
     if expiry < datetime(trade_date.year, trade_date.month, trade_date.day):
         next_year, next_month = get_next_year_month(trade_date.month, trade_date.year)
         expiry = _get_last_weekday_of_month(next_year, next_month, calendar.TUESDAY)
-    return _get_last_trading_day(expiry)
+    dt_330 = expiry.replace(hour=15, minute=30, second=0, microsecond=0)
+    return get_last_trading_day(dt_330, include_ongoingDay=False)
+
+def get_total_trading_days_till_expiry(include_today_traging_day_if_working: bool):
+    expiry = get_expiry(datetime.now())
+    date_to_check = datetime.now()
+    is_today_holiday = is_holiday(date_to_check)
+    date_to_check = date_to_check + timedelta(days=1)
+    total_days = 0
+    while (date_to_check <= expiry):
+        if is_holiday(date_to_check) == False:
+            total_days = total_days + 1
+        date_to_check = date_to_check + timedelta(days=1)
+
+    if include_today_traging_day_if_working and is_today_holiday == False:
+        return total_days+1
+    return total_days
 
 def get_DDMMM(trade_date):
     return trade_date.strftime("%d%b").upper()
@@ -121,10 +148,25 @@ def days_to_expiry(trade_date):
    curr_date = datetime(trade_date.year, trade_date.month, trade_date.day)
    return (exp - curr_date).days
 
+def get_historical_trade_date(trade_date, count):
+    date_to_return = trade_date
+    while count > 0 or is_holiday(date_to_return):
+        if is_holiday(date_to_return) == False:
+            count = count - 1
+        date_to_return = date_to_return - timedelta(days=1)
+    return date_to_return
+
 def test():
     today = datetime.now()
+    # date2 = today + timedelta(hours=6)
+    # print(date2)
     # today_plus_4 = today + timedelta(days=4)
-    print(_get_last_trading_day(today))
+    # print(get_last_trading_day(today))
+    # print(get_expiry(today))
+    # print(is_trading_ongoing())
+    print(get_first_day_of_this_expiry("26FEB", calendar.MONDAY))
+    print(get_historical_trade_date(get_first_day_of_this_expiry("26FEB", calendar.MONDAY), 5))
+    # print(get_total_trading_days_till_expiry(True))
     # print (_get_expiry_DDMMM(today))
     # print (_get_expiry_DDMMM(today_plus_4))
     # print(days_to_expiry(today_plus_4))

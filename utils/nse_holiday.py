@@ -5,7 +5,8 @@ from datetime import datetime, date
 from bs4 import BeautifulSoup
 
 HOLIDAY_URL = "https://www.nseindia.com/resources/exchange-communication-holidays#holiday_trading"
-HOLIDAY_FILE = "data/nse_holidays.json"
+HOLIDAY_FILE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\utils\\data\\nse_holidays.json"
+WORKING_FILE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\utils\\data\\nse_exception.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -84,6 +85,12 @@ def _load_or_update_holidays() -> set[date]:
             data = json.load(f)
     return {datetime.strptime(d, "%d-%b-%Y").date() for d in data["holidays"]}
 
+def _load_or_update_working_days() -> set[date]:
+    if _file_is_fresh(WORKING_FILE):
+        with open(WORKING_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    return {datetime.strptime(d, "%d-%b-%Y").date() for d in data["working"]}
+
     # holidays = _fetch_nse_holidays()
     #
     # payload = {
@@ -107,6 +114,15 @@ def is_holiday(check_date: date | datetime | str) -> bool:
     elif isinstance(check_date, str):
         check_date = date.fromisoformat(check_date)
 
+    working = _load_or_update_working_days()
+    if check_date in working:
+        return False
+
+    # Saturday / Sunday check
+    if check_date.weekday() == 5 or check_date.weekday() == 6:
+        return True
+
+    # NSE Holidays check
     holidays = _load_or_update_holidays()
     return check_date in holidays
 

@@ -15,7 +15,7 @@ def classify_market_state_futures(
 
     which_day = "UNWIND"
     last = futures_df.tail(1).copy()
-    print(last)
+    # print(last)
     p = float(last["last_price_change"])
     o = float(last["oi_change"])
     if p > 0.0 and o > 0.0:

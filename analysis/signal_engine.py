@@ -120,19 +120,19 @@ def generate_final_signal(
         migration_trend=migration_trend
     )
 
-    print(
-        market_state,
-        futures_signal,
-        option_metrics,
-        migration_trend,
-        final_signal
-    )
+    # print(
+    #     market_state,
+    #     futures_signal,
+    #     option_metrics,
+    #     migration_trend,
+    #     final_signal
+    # )
 
     close = latest_row["close"]
     oi = latest_row["oi"]
     oi_change = latest_row["oi_change"]
     last_price_change = latest_row["last_price_change"]
-    print(f"oi_change: {oi_change}")
+    # print(f"oi_change: {oi_change}")
     dpi = option_metrics["DPI"]
     usi = option_metrics["USI"]
     raw_signal = futures_signal

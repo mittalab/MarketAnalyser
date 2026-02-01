@@ -23,7 +23,7 @@ def parse_date_from_filename(filename):
         return None
 
     dd, mm, yy = m.groups()
-    return datetime.strptime(f"{dd}{mm}{yy}", "%d%m%y").date()
+    return datetime.strptime(f"{dd}{mm}{yy}", "%d%m%y")
 
 
 def parse_option_symbol(col1):
@@ -45,7 +45,7 @@ def parse_option_symbol(col1):
 # ------------------------------------------------------------
 # MAIN PROCESSOR
 # ------------------------------------------------------------
-def build_option_history(EXPIRY_MMM, start_date: datetime):
+def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
     # Sort files by date
     files = sorted(
         [f for f in os.listdir(BHAVCOPY_DIR) if f.startswith("op")],
@@ -113,13 +113,14 @@ def build_option_history(EXPIRY_MMM, start_date: datetime):
 
         # Build daily output rows
         for symbol in daily_rows:
+            dt_330 = trade_date.date()
             symbol_day_data[symbol].append([
                 call_oi_sum[symbol],
                 "",
                 "",
                 daily_rows[symbol],
                 put_oi_sum[symbol],
-                trade_date.isoformat()
+                dt_330
             ])
 
     return symbol_day_data
@@ -191,7 +192,7 @@ def write_symbol_csv_files(symbol_day_data, final_dir: str):
         print(f"Written: {fpath}")
 
 def test():
-    symbol_day_data = build_option_history(EXPIRY_MMM = "JAN", start_date=None)
-    write_symbol_csv_files(symbol_day_data, final_dir="26JAN")
+    symbol_day_data = build_option_history(EXPIRY_MMM = "FEB", start_date=None)
+    write_symbol_csv_files(symbol_day_data, final_dir="26FEB")
 
-test()
+# test()
