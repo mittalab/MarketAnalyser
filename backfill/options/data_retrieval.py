@@ -4,12 +4,17 @@ import csv
 import json
 from datetime import datetime
 from collections import defaultdict
+from data.storage import load_csv
+from data.storage import save_csv
+from typing import List, Callable, Any, Set
 
 # ------------------------------------------------------------
 # CONFIG
 # ------------------------------------------------------------
 BHAVCOPY_DIR = "bhavcopies"
+BHAVCOPY_DIR_TMP = "bhavcopy_temp"
 
+DIR_TO_USE = BHAVCOPY_DIR_TMP
 
 # ------------------------------------------------------------
 # HELPERS
@@ -48,7 +53,7 @@ def parse_option_symbol(col1):
 def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
     # Sort files by date
     files = sorted(
-        [f for f in os.listdir(BHAVCOPY_DIR) if f.startswith("op")],
+        [f for f in os.listdir(DIR_TO_USE) if f.startswith("op")],
         key=parse_date_from_filename
     )
 
@@ -65,7 +70,7 @@ def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
         if start_date and trade_date < start_date:
             continue
 
-        filepath = os.path.join(BHAVCOPY_DIR, fname)
+        filepath = os.path.join(DIR_TO_USE, fname)
 
         daily_rows = defaultdict(list)
         call_oi_sum = defaultdict(int)
@@ -113,7 +118,7 @@ def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
 
         # Build daily output rows
         for symbol in daily_rows:
-            dt_330 = trade_date.date()
+            dt_330 = trade_date.date().strftime("%Y-%m-%d")
             symbol_day_data[symbol].append([
                 call_oi_sum[symbol],
                 "",
@@ -151,36 +156,38 @@ def write_symbol_csv_files(symbol_day_data, final_dir: str):
         if not rows:
             continue
 
+        print(f"Populating for symbol {symbol}")
         # Ensure rows are sorted by date
         rows.sort(key=lambda r: r[-1])
 
-        # start_date = rows[0][-1]
-        # end_date = rows[-1][-1]
-
-       # fname = f"{symbol}_{format_ddmm(start_date)}_{format_ddmm(end_date)}.csv"
         fname = f"NSE_{symbol}_{final_dir}_OPTIONS.csv"
 
         outputDir = f"{OUTPUT_DIR}\\{final_dir}"
         os.makedirs(outputDir, exist_ok=True)
         fpath = os.path.join(outputDir, fname)
 
-        with open(fpath, "w", newline="") as f:
-            writer = csv.writer(f)
+        with open(fpath, "r", newline="", encoding="utf-8") as infile:
+            reader = csv.reader(infile)
+            header = next(reader)
 
-            # Header (optional but recommended)
-            writer.writerow([
-                "callOi",
-                "expiryData",
-                "indiavixData",
-                "optionsChain",
-                "putOi",
-                "fetched_datetime"
-            ])
+            sort_idx = header.index("fetched_datetime")
 
-            for row in rows:
-                calloi, c2, c3, options, putoi, date = row
+            #  Read existing rows
+            all_rows = list(reader)
 
-                writer.writerow([
+        # Track keys from file (file has priority)
+        existing_keys: Set[Any] = set()
+        for row in all_rows:
+            existing_keys.add(row[sort_idx])
+
+        # Validate & append new rows
+        for row in rows:
+            calloi, c2, c3, options, putoi, date = row
+            if date in existing_keys:
+                print(f"Date already exists {date}")
+                continue
+
+            all_rows.append([
                     calloi,
                     "",
                     "",
@@ -188,6 +195,18 @@ def write_symbol_csv_files(symbol_day_data, final_dir: str):
                     putoi,
                     date
                 ])
+
+        # Sort rows
+        all_rows.sort(
+            key=lambda r: r[sort_idx],
+            reverse=False
+        )
+
+        # Write merged & sorted CSV
+        with open(fpath, "w", newline="", encoding="utf-8") as outfile:
+            writer = csv.writer(outfile)
+            writer.writerow(header)
+            writer.writerows(all_rows)
 
         print(f"Written: {fpath}")
 

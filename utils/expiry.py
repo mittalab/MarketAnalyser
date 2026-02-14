@@ -117,7 +117,7 @@ def get_expiry(trade_date):
 def get_total_trading_days_till_expiry(include_today_traging_day_if_working: bool):
     expiry = get_expiry(datetime.now())
     date_to_check = datetime.now()
-    is_today_holiday = is_holiday(date_to_check)
+    is_trade_ongoing = is_trading_ongoing()
     date_to_check = date_to_check + timedelta(days=1)
     total_days = 0
     while (date_to_check <= expiry):
@@ -125,7 +125,7 @@ def get_total_trading_days_till_expiry(include_today_traging_day_if_working: boo
             total_days = total_days + 1
         date_to_check = date_to_check + timedelta(days=1)
 
-    if include_today_traging_day_if_working and is_today_holiday == False:
+    if include_today_traging_day_if_working and is_trade_ongoing:
         return total_days+1
     return total_days
 

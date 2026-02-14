@@ -625,3 +625,21 @@
 2026-02-01 21:31:04,502 - data.fyers_client - INFO - Initializing Fyers client...
 2026-02-01 21:31:04,502 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
 2026-02-01 21:31:04,503 - data.fetch_options - INFO - Fetching option chain for NSE:360ONE-EQ
+2026-02-15 03:48:30,857 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-15 03:48:30,858 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-15 03:48:30,858 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-15 03:48:30,858 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-15 03:48:30,858 - utils.expiry - INFO - Calculating first day of expiry for: 26FEB
+2026-02-15 03:48:30,858 - utils.expiry - INFO - Parsed year: 2026, month: 2
+2026-02-15 03:48:30,859 - utils.expiry - INFO - Previous month: 1/2026
+2026-02-15 03:48:30,859 - utils.expiry - INFO - Last Monday of previous month: 2026-01-26 00:00:00
+2026-02-15 03:48:30,887 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-15 03:48:30,887 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-15 03:48:30,889 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-02-15 03:48:30,897 - config.logging_config - INFO - Last date found in futures file for JIOFIN: 2026-02-03
+2026-02-15 03:48:30,897 - data.fetch_futures_oi - INFO - Fetching historical futures OI for NSE:JIOFIN (26FEB) from 2026-02-04 to 2026-02-14 with CandleResolution.DAY_1 resolution
+2026-02-15 03:48:31,536 - data.storage - INFO - Saving data to NSE_JIOFIN_26FEB_FUT.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\futures/26FEB
+2026-02-15 03:48:31,556 - data.storage - INFO - Loading data from NSE_JIOFIN_26FEB_OPTIONS.csv in C:\Users\Abhishek\Trading_Projects\MarketAnalyser\storage\options\26FEB
+2026-02-15 03:48:31,569 - data.fyers_client - INFO - Initializing Fyers client...
+2026-02-15 03:48:31,569 - data.fyers_client - INFO - TODO: Using hardcoded access token. This is not recommended for production.
+2026-02-15 03:48:31,570 - data.fetch_options - INFO - Fetching option chain for NSE:JIOFIN-EQ

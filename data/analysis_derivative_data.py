@@ -154,7 +154,7 @@ def populate_options_data(SYMBOL: str, ExpDate: str):
             data_from_file.append(new_data[0])
             save_csv(data_from_file, OPTIONS_PATH, options_file)
         else:
-            print(f"Data already exists for date {date} for symbol {SYMBOL}")
+            print(f"Options data already exists for date {date} for symbol {SYMBOL}")
 
     options_df = pd.DataFrame(
         data_from_file,
@@ -211,7 +211,7 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
             for data in new_data:
                 data_from_file.append(data)
         else:
-            print("Latest data exists")
+            print("Latest futures data exists")
 
     # TODO: ASSUMPTION : data_from_file is sorted from time
     save_csv(data_from_file, FUTURES_PATH, futures_file)
@@ -257,7 +257,7 @@ def populate_derivatives_data(SYMBOL: str, ExpDate: str):
 def test():
     today_datetime = datetime.datetime.now()
     ExpDate = get_expiry_YYMMM(today_datetime)
-    populate_derivatives_data("M&M", ExpDate)
+    populate_derivatives_data("JIOFIN", ExpDate)
     # print(get_last_trading_day(datetime.datetime.now(), include_ongoingDay=False))
     # populate_futures_data("M&M", ExpDate)
     # print(populate_options_data("360ONE", "26FEB"))
