@@ -134,27 +134,28 @@ def _flatten_option_chain_row(row):
 
     return flattened
 
-def populate_options_data(SYMBOL: str, ExpDate: str):
+def populate_options_data(SYMBOL: str, ExpDate: str, populate_new_data: bool = False):
 
     trading_date = get_last_trading_day(datetime.datetime.now(), include_ongoingDay=False)
     OPTIONS_PATH = OPTIONS_PATH_BASE + "\\" + ExpDate
     options_file = f"{Exchange}_{SYMBOL}_{ExpDate}_OPTIONS.csv"
     data_from_file = load_csv(OPTIONS_PATH, options_file)
 
-    fyers = get_fyers_client()
-    # Fyers API provide the last data only
-    new_data = _retry(lambda: fetch_option_chain(fyers, Exchange, SYMBOL))
-    new_data[0]["fetched_datetime"] = pd.to_datetime(trading_date).strftime("%Y-%m-%d")
+    if populate_new_data:
+        fyers = get_fyers_client()
+        # Fyers API provide the last data only
+        new_data = _retry(lambda: fetch_option_chain(fyers, Exchange, SYMBOL))
+        new_data[0]["fetched_datetime"] = pd.to_datetime(trading_date).strftime("%Y-%m-%d")
 
-    if data_from_file is None:
-        data_from_file = new_data
-    else:
-        date = new_data[0]["fetched_datetime"]
-        if data_from_file[-1]["fetched_datetime"] != new_data[0]["fetched_datetime"]:
-            data_from_file.append(new_data[0])
-            save_csv(data_from_file, OPTIONS_PATH, options_file)
+        if data_from_file is None:
+            data_from_file = new_data
         else:
-            print(f"Options data already exists for date {date} for symbol {SYMBOL}")
+            date = new_data[0]["fetched_datetime"]
+            if data_from_file[-1]["fetched_datetime"] != new_data[0]["fetched_datetime"]:
+                data_from_file.append(new_data[0])
+                save_csv(data_from_file, OPTIONS_PATH, options_file)
+            else:
+                print(f"Options data already exists for date {date} for symbol {SYMBOL}")
 
     options_df = pd.DataFrame(
         data_from_file,
@@ -179,7 +180,7 @@ def populate_options_data(SYMBOL: str, ExpDate: str):
     return final_df
 
 
-def populate_futures_data(SYMBOL: str, ExpDate: str):
+def populate_futures_data(SYMBOL: str, ExpDate: str, populate_new_data: bool = False):
 
     today_datetime = datetime.datetime.now()
     market_close = datetime.datetime.combine(today_datetime.date(), datetime.time(15, 30))
@@ -188,33 +189,35 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
     if today_datetime < market_close:
         datetime_to_fetch_date = datetime_to_fetch_date - datetime.timedelta(days=1)
 
-    to_date = datetime_to_YYYY_MM_DD(datetime_to_fetch_date)
     FUTURES_PATH = FUTURES_PATH_BASE + "/" + ExpDate
-    fyers = get_fyers_client()
     futures_file = f"{Exchange}_{SYMBOL}_{ExpDate}_FUT.csv"
     data_from_file = load_csv(FUTURES_PATH, futures_file)
-    # File doesn't exist; fetching all historical data
-    if data_from_file is None:
-        historical_date = get_first_day_of_this_expiry(ExpDate, calendar.TUESDAY)
-        pull_back_historical_date = get_historical_trade_date(historical_date, HISTORICAL_DAYS)
-        from_date = datetime_to_YYYY_MM_DD(pull_back_historical_date)
-        logger.debug(f"Futures file not found for {SYMBOL}, fetching historical data from {from_date} to {to_date}")
-        data_from_file = _retry(lambda: get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0, 0.0))
-    else:
-        last_date_str = data_from_file[-1]['time']
-        last_date = datetime.datetime.fromtimestamp(int(last_date_str))
-        logger.info(f"Last date found in futures file for {SYMBOL}: {last_date.date()}")
-        from_date = datetime_to_YYYY_MM_DD(last_date + datetime.timedelta(days=1))
-        logger.debug(f"Futures file found for {SYMBOL}, fetching new data from {from_date} to {to_date}")
-        if from_date <= to_date:
-            new_data = _retry(lambda: get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'], data_from_file[-1]['fut_close']))
-            for data in new_data:
-                data_from_file.append(data)
-        else:
-            print("Latest futures data exists")
 
-    # TODO: ASSUMPTION : data_from_file is sorted from time
-    save_csv(data_from_file, FUTURES_PATH, futures_file)
+    if populate_new_data:
+        # File doesn't exist; fetching all historical data
+        fyers = get_fyers_client()
+        to_date = datetime_to_YYYY_MM_DD(datetime_to_fetch_date)
+        if data_from_file is None:
+            historical_date = get_first_day_of_this_expiry(ExpDate, calendar.TUESDAY)
+            pull_back_historical_date = get_historical_trade_date(historical_date, HISTORICAL_DAYS)
+            from_date = datetime_to_YYYY_MM_DD(pull_back_historical_date)
+            logger.debug(f"Futures file not found for {SYMBOL}, fetching historical data from {from_date} to {to_date}")
+            data_from_file = _retry(lambda: get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, 0.0, 0.0))
+        else:
+            last_date_str = data_from_file[-1]['time']
+            last_date = datetime.datetime.fromtimestamp(int(last_date_str))
+            logger.info(f"Last date found in futures file for {SYMBOL}: {last_date.date()}")
+            from_date = datetime_to_YYYY_MM_DD(last_date + datetime.timedelta(days=1))
+            logger.debug(f"Futures file found for {SYMBOL}, fetching new data from {from_date} to {to_date}")
+            if from_date <= to_date:
+                new_data = _retry(lambda: get_hitorical_futures_oi(fyers, Exchange, SYMBOL, ExpDate, from_date, to_date, CandleResolution.DAY_1, data_from_file[-1]['oi'], data_from_file[-1]['fut_close']))
+                for data in new_data:
+                    data_from_file.append(data)
+            else:
+                print("Latest futures data exists")
+
+        # TODO: ASSUMPTION : data_from_file is sorted from time
+        save_csv(data_from_file, FUTURES_PATH, futures_file)
 
     futures_df = pd.DataFrame(
         data_from_file,
@@ -245,13 +248,18 @@ def populate_futures_data(SYMBOL: str, ExpDate: str):
     return futures_df
 
 
-def populate_derivatives_data(SYMBOL: str, ExpDate: str):
-    if is_trading_ongoing():
+def populate_derivatives_data(SYMBOL: str, ExpDate: str, populate_new_data: bool = False):
+    if populate_new_data and is_trading_ongoing():
         print(f"Trading is ongoing as per the time: {datetime.datetime.now()}. Can't populate data in ingoing trading session.")
         return
 
-    futures_df = populate_futures_data(SYMBOL, ExpDate)
-    options_df = populate_options_data(SYMBOL, ExpDate)
+    futures_df = populate_futures_data(SYMBOL, ExpDate, populate_new_data)
+    options_df = populate_options_data(SYMBOL, ExpDate, populate_new_data)
+    return futures_df, options_df
+
+def retrieve_derivatives_data(SYMBOL: str, ExpDate: str):
+    futures_df = populate_futures_data(SYMBOL, ExpDate, False)
+    options_df = populate_options_data(SYMBOL, ExpDate, False)
     return futures_df, options_df
 
 def test():

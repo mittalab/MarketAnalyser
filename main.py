@@ -8,7 +8,7 @@ from execution.position_sizer import size_futures_position
 from execution.execution_plan import build_execution_plan
 from execution.order_model import Order
 from utils.expiry import get_expiry_YYMMM
-from data.analysis_derivative_data import populate_derivatives_data
+from data.analysis_derivative_data import retrieve_derivatives_data
 from debug.export_all import export_all
 
 CAPITAL = 1_000_000
@@ -56,7 +56,7 @@ def run(SYMBOL_EQ):
     logger.info(f"Getting data for {SYMBOL_EQ}")
     today_datetime = datetime.now()
     ExpDate = get_expiry_YYMMM(today_datetime)
-    futures_df, options_df = populate_derivatives_data(SYMBOL_EQ, ExpDate)
+    futures_df, options_df = retrieve_derivatives_data(SYMBOL_EQ, ExpDate)
 
     futures_df.set_index("date")
     futures_df.sort_values("date", inplace=True)
@@ -149,6 +149,6 @@ def get_all_data(file):
 
 
 if __name__ == "__main__":
-    file = "storage/nifty50_stocks.txt"
-    # file = "storage/tmp_stocks.txt"
+    # file = "storage/nifty50_stocks.txt"
+    file = "storage/tmp_stocks.txt"
     get_all_data(file)

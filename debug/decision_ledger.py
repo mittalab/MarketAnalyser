@@ -170,6 +170,15 @@ def generate_decision_ledger(decisions, output_path):
     # 4. Write combined HTML
     # -----------------------------
     with open(output_path, "w", encoding="utf-8") as f:
+        # Navigation links
+        f.write("""
+        <div style="margin-bottom:20px;">
+            <a href="future_oi_overview.html" target="_blank">
+                Future Price & OI Overview
+            </a>
+        </div>
+        """)
+
         f.write(fig.to_html(full_html=False, include_plotlyjs="cdn"))
         f.write("<hr>")
         f.write(table.to_html(full_html=False, include_plotlyjs=False))

@@ -3,7 +3,7 @@ import json
 import requests
 from datetime import datetime, date
 from bs4 import BeautifulSoup
-
+from datetime import timedelta
 HOLIDAY_URL = "https://www.nseindia.com/resources/exchange-communication-holidays#holiday_trading"
 HOLIDAY_FILE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\utils\\data\\nse_holidays.json"
 WORKING_FILE = "C:\\Users\\Abhishek\\Trading_Projects\\MarketAnalyser\\utils\\data\\nse_exception.json"
@@ -125,6 +125,24 @@ def is_holiday(check_date: date | datetime | str) -> bool:
     # NSE Holidays check
     holidays = _load_or_update_holidays()
     return check_date in holidays
+
+def count_trading_days(start_date, end_date):
+    """
+    Count trading days between two dates (exclusive of start_date, inclusive of end_date).
+    Weekends and holidays are skipped.
+    """
+
+    current = start_date
+    trading_days = 0
+
+    while current <= end_date:
+
+        if current.weekday() < 5 and not is_holiday(current):
+            trading_days += 1
+
+        current += timedelta(days=1)
+
+    return trading_days
 
 def test():
     print(is_holiday(datetime.now()))

@@ -15,6 +15,16 @@ BHAVCOPY_DIR = "bhavcopies"
 BHAVCOPY_DIR_TMP = "bhavcopy_temp"
 
 DIR_TO_USE = BHAVCOPY_DIR_TMP
+OI_MULTIPLIER = 1000
+
+OUTPUT_HEADERS = [
+    "callOi",
+    "expiryData",
+    "indiavixData",
+    "optionsChain",
+    "putOi",
+    "fetched_datetime",
+]
 
 # ------------------------------------------------------------
 # HELPERS
@@ -37,15 +47,38 @@ def parse_option_symbol(col1):
     → SYMBOL, MMM, TYPE, STRIKE
     """
     m = re.match(
-        r"OPTSTK([A-Z0-9a-z-&]+)\d{2}-([A-Z]{3})-\d{4}(CE|PE)(\d+)",
+        r"OPTSTK([A-Z0-9a-z-&]+)\d{2}-([A-Z]{3})-([0-9]{4})(CE|PE)(\d+)",
         col1
     )
     if not m:
         return None
 
-    symbol, mmm, opt_type, strike = m.groups()
-    return symbol, mmm, opt_type, int(strike)
+    symbol, mmm, yr, opt_type, strike = m.groups()
+    return symbol, mmm, opt_type, int(strike), yr
 
+def discover_expiry_months() -> set[str]:
+    """
+    Scans all option bhavcopy files and returns set of MMM expiry months.
+    """
+    expiry_months = set()
+
+    for fname in os.listdir(DIR_TO_USE):
+        if not fname.startswith("op"):
+            continue
+
+        filepath = os.path.join(DIR_TO_USE, fname)
+        with open(filepath, newline="") as f:
+            reader = csv.reader(f)
+            for row in reader:
+                if not row:
+                    continue
+                parsed = parse_option_symbol(row[0])
+                if parsed:
+                    _, mmm, _, _, yr = parsed
+                    expiry_months.add(f'{int(yr)%100}{mmm}')
+
+    print(f"Discovered expiry months: {sorted(expiry_months)}")
+    return expiry_months
 
 # ------------------------------------------------------------
 # MAIN PROCESSOR
@@ -81,7 +114,7 @@ def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
             for row in reader:
                 try:
                     col1 = row[0]
-                    oi = int(float(row[8])) * 1000
+                    oi = int(float(row[8])) * OI_MULTIPLIER
                 except (IndexError, ValueError):
                     continue
 
@@ -89,7 +122,7 @@ def build_option_history(EXPIRY_MMM: str, start_date: datetime | None):
                 if not parsed:
                     continue
 
-                symbol, mmm, opt_type, strike = parsed
+                symbol, mmm, opt_type, strike, _ = parsed
 
                 # Filter expiry month
                 if mmm != EXPIRY_MMM:
@@ -140,6 +173,27 @@ def format_ddmm(date_str):
     return d.strftime("%d%m")
 
 
+def read_existing_data(filepath):
+    rows = {}
+    sort_idx = 0
+    if not os.path.exists(filepath):
+        return rows, sort_idx
+
+    with open(filepath, "r", newline="", encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
+        for r in reader:
+            rows[r["fetched_datetime"]] = r
+
+        # reader = csv.reader(infile)
+        # header = next(reader)
+        # sort_idx = header.index("fetched_datetime")
+
+        # # Read existing rows
+        # rows = list(reader)
+
+    print(f"Loaded existing file {filepath}, rows={len(rows)}")
+    return rows, sort_idx
+
 def write_symbol_csv_files(symbol_day_data, final_dir: str):
     """
     symbol_day_data:
@@ -166,52 +220,90 @@ def write_symbol_csv_files(symbol_day_data, final_dir: str):
         os.makedirs(outputDir, exist_ok=True)
         fpath = os.path.join(outputDir, fname)
 
-        with open(fpath, "r", newline="", encoding="utf-8") as infile:
-            reader = csv.reader(infile)
-            header = next(reader)
+        all_rows, sort_idx = read_existing_data(fpath)
 
-            sort_idx = header.index("fetched_datetime")
+        # merge existing + new rows by epoch
+        merged = {}
 
-            #  Read existing rows
-            all_rows = list(reader)
+        for epoch, r in all_rows.items():
+            print(f'OldRow: {r}')
+            merged[epoch] = r
 
+        for r in rows:
+            print(f'NewRow: {r}')
+            calloi, c2, c3, options, putoi, date = r
+            data = {
+                "callOi": calloi,
+                "expiryData": "",
+                "indiavixData": "",
+                "optionsChain": json.dumps(options),
+                "putOi": putoi,
+                "fetched_datetime": date,
+            }  # overwrite if newly found
+            print(data)
+            merged[date] = data
+
+        write_rows = []
+        all_rows = sorted(merged.values(), key=lambda x: x["fetched_datetime"])
+
+        print(f'merged length {len(merged)}, all_rows length {len(all_rows)}')
         # Track keys from file (file has priority)
-        existing_keys: Set[Any] = set()
-        for row in all_rows:
-            existing_keys.add(row[sort_idx])
+        # existing_keys: Set[Any] = set()
+        # for row in all_rows:
+        #     existing_keys.add(row[sort_idx])
 
         # Validate & append new rows
-        for row in rows:
-            calloi, c2, c3, options, putoi, date = row
-            if date in existing_keys:
-                print(f"Date already exists {date}")
-                continue
+        for row in all_rows:
+            # calloi, c2, c3, options, putoi, date = row
+            # if date in existing_keys:
+            #     print(f"Date already exists {date}")
+            #     continue
 
-            all_rows.append([
-                    calloi,
-                    "",
-                    "",
-                    json.dumps(options),   # serialize nested structure
-                    putoi,
-                    date
-                ])
+            write_rows.append({
+                "callOi": row["callOi"],
+                "expiryData": row["expiryData"],
+                "indiavixData": row["indiavixData"],
+                "optionsChain": row["optionsChain"],   # serialize nested structure
+                "putOi": row["putOi"],
+                "fetched_datetime": row["fetched_datetime"],
+            })
 
         # Sort rows
-        all_rows.sort(
-            key=lambda r: r[sort_idx],
-            reverse=False
-        )
+        # all_rows.sort(
+        #     key=lambda r: r[sort_idx],
+        #     reverse=False
+        # )
 
         # Write merged & sorted CSV
         with open(fpath, "w", newline="", encoding="utf-8") as outfile:
-            writer = csv.writer(outfile)
-            writer.writerow(header)
-            writer.writerows(all_rows)
+            writer = csv.DictWriter(outfile, fieldnames=OUTPUT_HEADERS)
+            writer.writeheader()
+            for row in write_rows:
+                print(f"writing row {row}")
+                writer.writerow(row)
 
-        print(f"Written: {fpath}")
+        print(f"Rebuilt file with {len(write_rows)} rows → {fpath}")
+
+def build_all_option_expiries(start_date=None):
+    expiry_months = discover_expiry_months()
+
+    for expiry_yymmm in sorted(expiry_months):
+        print(f"\nProcessing expiry {expiry_yymmm[2:]}")
+
+        symbol_day_data = build_option_history(
+            EXPIRY_MMM=expiry_yymmm[2:],
+            start_date=start_date
+        )
+
+
+        write_symbol_csv_files(
+            symbol_day_data=symbol_day_data,
+            final_dir=expiry_yymmm
+        )
 
 def test():
-    symbol_day_data = build_option_history(EXPIRY_MMM = "FEB", start_date=None)
-    write_symbol_csv_files(symbol_day_data, final_dir="26FEB")
+    build_all_option_expiries()
+    # symbol_day_data = build_option_history(EXPIRY_MMM = "FEB", start_date=None)
+    # write_symbol_csv_files(symbol_day_data, final_dir="26FEB")
 
-# test()
+test()
